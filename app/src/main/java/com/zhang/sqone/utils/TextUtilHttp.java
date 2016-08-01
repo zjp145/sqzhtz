@@ -48,7 +48,7 @@ TextUtilHttp {
                     case 1:
                         Toast.makeText(Globals.context, "当前网络状态不好", Toast.LENGTH_SHORT).show();
                         break;
-                    
+
                 }
                 super.handleMessage(msg);
             }
@@ -193,7 +193,9 @@ TextUtilHttp {
     }
 
     public abstract <T> void analysisInputStreamData(Test1.ReqTest11 index) throws IOException;
+
     public abstract <T> void test(OutputStream outputStream) throws IOException;
+
     public abstract <T> void test2(InputStream inputStream) throws IOException;
 
 
