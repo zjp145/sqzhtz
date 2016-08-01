@@ -26,6 +26,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.zhang.sqone.BaseActivity;
 import com.zhang.sqone.Globals;
+import com.zhang.sqone.GuideApplication;
 import com.zhang.sqone.R;
 import com.zhang.sqone.bean.Monitor;
 import com.zhang.sqone.bean.User;
@@ -108,6 +109,8 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         setTranslucentStatus();
         setContentView(R.layout.activity_huan_jing);
         ButterKnife.bind(this);
+        GuideApplication.initLocation();
+        GuideApplication.mLocationClient.start();
         onClicks();
 
     }
@@ -329,5 +332,11 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         SystemStatusManager tintManager = new SystemStatusManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setStatusBarTintResource(0);//状态栏无背景
+    }
+
+    @Override
+    public void onDestroy() {
+        GuideApplication.mLocationClient.stop();
+        super.onDestroy();
     }
 }

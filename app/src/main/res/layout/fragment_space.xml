@@ -230,7 +230,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#333"
                     android:textSize="14dp"
-                    android:text="注销登录"/>
+                    android:text="安全退出"/>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"

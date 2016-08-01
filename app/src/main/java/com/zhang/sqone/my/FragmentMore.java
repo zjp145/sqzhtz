@@ -229,6 +229,10 @@ public class FragmentMore extends Fragment implements View.OnClickListener {
                                     Globals.USER_NC, "");
                             SharedPreferencesUtils.saveString(getActivity(),
                                     Globals.USER_JJMM, "0");
+                            SharedPreferencesUtils.saveString(getActivity(),
+                                    Globals.C_id, "");
+                            SharedPreferencesUtils.saveString(getActivity(),
+                                    Globals.I_isponh, "");
                             Intent intent = new Intent();
                             intent.setClass(getActivity(), LoginActivity.class);
 //                            intent.putExtra("loginInfo", "login");

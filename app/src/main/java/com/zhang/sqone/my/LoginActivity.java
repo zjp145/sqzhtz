@@ -95,7 +95,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.activity_login);
         setTranslucentStatus();
         ButterKnife.bind(this);
-        PermissionUtil.getInstance().request(LoginActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA}, 10,
+        PermissionUtil.getInstance().request(LoginActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.ACCESS_FINE_LOCATION}, 10,
                 new PermissionUtil.PermissionResultCallBack() {
                     @Override
                     public void onPermissionGranted() {
@@ -133,11 +133,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         });
         Log.i("zhang", "手机id===" + AppUtil.isTablet(this));
         if (AppUtil.isTablet(this)) {
-
+            Log.i("zhang", "是平板");
             User.mis_id =AppUtil.getDeviceId2();
             User.type = "1";
             isponh = "1";
         } else {
+            Log.i("zhang", "是手机");
             User.mis_id =AppUtil.getDeviceId();
             User.type = "0";
             isponh = "0";
@@ -451,6 +452,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                             Globals.USER_SH, index.getLogin().getPh());
                     SharedPreferencesUtils.saveString(LoginActivity.this,
                             Globals.WY_id, User.mis_id);
+                    SharedPreferencesUtils.saveString(LoginActivity.this,
+                            Globals.C_id, User.cid);
+                    SharedPreferencesUtils.saveString(LoginActivity.this,
+                            Globals.I_isponh, isponh);
+
                     //登录成功的情况下给用户的实体类添加信息（全局使用）
                     User.isLogin = true;
                     User.sid = index.getLogin().getUsername();
@@ -462,6 +468,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     //添加默认手机号码
                     User.phone = index.getLogin().getPhone();
                     User.nc = index.getLogin().getNa();
+                    Log.i("zhang", "我的账号：" +User.sid+"-----我的密码："+User.pwd);
                     //登录成功跳转到首页
                     startActivity(intent);
                     //退出页面

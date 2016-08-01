@@ -236,6 +236,11 @@
         <activity android:name=".home.HYZLActivity" />
         <activity android:name=".xiangqing.HYCLXQActivity"></activity>
         <activity android:name=".home.SyisActivity" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="2OeZLBrsxMmtWEqXuqPh7qzCEIWEYwcv" />
     </application>
 
 </manifest>

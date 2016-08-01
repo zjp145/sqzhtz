@@ -31,6 +31,8 @@ public class Globals {
     public static final String USER_SH = "touxiang";
     /**唯一标示id*/
     public static final String WY_id = "wyid";
+    public static final String C_id = "cid";
+    public static final String I_isponh = "isponh";
     public static final String USER_NC = "usernc";
     public static String USER_TYPE = ""; // 账号类型 q表示求职者 z表示招聘者
     public static String LOCA = "北京市"; // 二级地区
@@ -208,82 +210,82 @@ public class Globals {
 
     /*外网测试环/
    /**环境上传图片*/
-    public static final String BM_URL = "http://test.zhihuitianzhu.com/MonitorPhoto";
-    /**头像上传图片*/
-    public static final String WS_URI_POTO = "http://test.zhihuitianzhu.com/UserPhoto";
-    /**服务器网络请求地址*/
-    public static final String WS_URI = "http://test.zhihuitianzhu.com/Index";
-    /**网络请求公文的地址*/
-    public static  final String GW_URI ="http://test.zhihuitianzhu.com/Document";
-    /**网络请求环境的地址*/
-    public static final String HJ_URI="http://test.zhihuitianzhu.com/Monitor";
-    /**网络请求OA的地址*/
-    public static final String OA_QQ="http://test.zhihuitianzhu.com/login.cmd";
-    /**科室工作的地址接口*/
-    public static  final String KS_URI ="http://test.zhihuitianzhu.com/DepartmentWork";
-    /**领导日程  和 日程安排*/
-    public static final  String LD_RUI = "http://test.zhihuitianzhu.com/schedulemk";
-    /**文件上传文件(传资料)*/
-    public static final String WS_CZL_WJ = "http://test.zhihuitianzhu.com/email";
-    /**科室工作查询接口*/
-    public static  final String KSCX_URI ="http://test.zhihuitianzhu.com/DepartmentWorkDoc";
-    /**会议查询接口*/
-    public static final String HYAP_URI = "http://test.zhihuitianzhu.com/MeetingRoom";
-    /**通知公告  和 通信录的接口*/
-    public static final String TZTX_URI="http://test.zhihuitianzhu.com/NoticeContacts";
-    /**h5中使用的连接地址*/
-    public static final String MY_URI="http://test.zhihuitianzhu.com/";
-    /**文件上传文件*/
-    public static final String WS_URI_WJ = "http://test.zhihuitianzhu.com/sickleave";
-    /**资料接口*/
-    public static final String ZL_URI="http://test.zhihuitianzhu.com/outbox";
-        /**班子会议接口*/
-    public static final String BZHY_URI = "http://test.zhihuitianzhu.com/meetingDiscuss";
-
-    /**值班安排  ， 我的档案*/
-    public static final String ZB_URI="http://test.zhihuitianzhu.com/myself";
-    public static final String VERSION_XML = "http://test.zhihuitianzhu.com/SoftUpdate/Update.xml";
-    public static final String GX = "http://test.zhihuitianzhu.com/test11";
+//    public static final String BM_URL = "http://test.zhihuitianzhu.com/MonitorPhoto";
+//    /**头像上传图片*/
+//    public static final String WS_URI_POTO = "http://test.zhihuitianzhu.com/UserPhoto";
+//    /**服务器网络请求地址*/
+//    public static final String WS_URI = "http://test.zhihuitianzhu.com/Index";
+//    /**网络请求公文的地址*/
+//    public static  final String GW_URI ="http://test.zhihuitianzhu.com/Document";
+//    /**网络请求环境的地址*/
+//    public static final String HJ_URI="http://test.zhihuitianzhu.com/Monitor";
+//    /**网络请求OA的地址*/
+//    public static final String OA_QQ="http://test.zhihuitianzhu.com/login.cmd";
+//    /**科室工作的地址接口*/
+//    public static  final String KS_URI ="http://test.zhihuitianzhu.com/DepartmentWork";
+//    /**领导日程  和 日程安排*/
+//    public static final  String LD_RUI = "http://test.zhihuitianzhu.com/schedulemk";
+//    /**文件上传文件(传资料)*/
+//    public static final String WS_CZL_WJ = "http://test.zhihuitianzhu.com/email";
+//    /**科室工作查询接口*/
+//    public static  final String KSCX_URI ="http://test.zhihuitianzhu.com/DepartmentWorkDoc";
+//    /**会议查询接口*/
+//    public static final String HYAP_URI = "http://test.zhihuitianzhu.com/MeetingRoom";
+//    /**通知公告  和 通信录的接口*/
+//    public static final String TZTX_URI="http://test.zhihuitianzhu.com/NoticeContacts";
+//    /**h5中使用的连接地址*/
+//    public static final String MY_URI="http://test.zhihuitianzhu.com/";
+//    /**文件上传文件*/
+//    public static final String WS_URI_WJ = "http://test.zhihuitianzhu.com/sickleave";
+//    /**资料接口*/
+//    public static final String ZL_URI="http://test.zhihuitianzhu.com/outbox";
+//        /**班子会议接口*/
+//    public static final String BZHY_URI = "http://test.zhihuitianzhu.com/meetingDiscuss";
+//
+//    /**值班安排  ， 我的档案*/
+//    public static final String ZB_URI="http://test.zhihuitianzhu.com/myself";
+//    public static final String VERSION_XML = "http://test.zhihuitianzhu.com/SoftUpdate/Update.xml";
+//    public static final String GX = "http://test.zhihuitianzhu.com/test11";
 
  /*公司测试环境*/
-//    /**环境上传图片*/
-//    public static final String BM_URL = "http://192.168.1.234:8280/MonitorPhoto";
-//    /**头像上传图片*/
-//    public static final String WS_URI_POTO = "http://192.168.1.234:8280/UserPhoto";
-//    /**服务器网络请求地址*/
-//    public static final String WS_URI = "http://192.168.1.234:8280/Index";
-//    /**网络请求公文的地址*/
-//    public static  final String GW_URI ="http://192.168.1.234:8280/Document";
-//    /**网络请求环境的地址*/
-//    public static final String HJ_URI="http://192.168.1.234:8280/Monitor";
-//    /**文件上传文件(传资料)*/
-//    public static final String WS_CZL_WJ = "http://192.168.1.234:8280/email";
-//    /**领导日程  和 日程安排*/
-//    public static final  String LD_RUI = "http://192.168.1.234:8280/schedulemk";
-//    /**网络请求OA的地址*/
-//    public static final String OA_QQ="http://192.168.1.234:8280/login.cmd";
-//    /**科室工作的地址接口*/
-//    public static  final String KS_URI ="http://192.168.1.234:8280/DepartmentWork";
-//
-//    /**科室工作查询接口*/
-//    public static  final String KSCX_URI ="http://192.168.1.234:8280/DepartmentWorkDoc";
-//    /**会议查询接口*/
-//    public static final String HYAP_URI = "http://192.168.1.234:8280/MeetingRoom";
-//    /**通知公告  和 通信录的接口*/
-//    public static final String TZTX_URI="http://192.168.1.234:8280/NoticeContacts";
-//    /**h5中使用的连接地址*/
-//    public static final String MY_URI="http://192.168.1.234:8280/";
-//    /**值班安排  ， 我的档案*/
-//    public static final String ZB_URI="http://192.168.1.234:8280/myself";
-//    /**文件上传文件*/
-//    /**班子会议接口*/
-//    public static final String BZHY_URI = "http://192.168.1.234:8280/meetingDiscuss";
-//    public static final String WS_URI_WJ = "http://192.168.1.234:8280/sickleave";
-//    /**资料接口*/
-//    public static final String ZL_URI="http://192.168.1.234:8280/outbox";
-//    public static final String VERSION_XML = "http://192.168.1.234:8280/SoftUpdate/Update.xml";
-// public static final String GX = "http://192.168.1.234:8280/test11";
-//    public static final String JBD_BS = "234";
+    /**环境上传图片*/
+    public static final String BM_URL = "http://192.168.1.234:8280/MonitorPhoto";
+    /**头像上传图片*/
+    public static final String WS_URI_POTO = "http://192.168.1.234:8280/UserPhoto";
+    /**服务器网络请求地址*/
+    public static final String WS_URI = "http://192.168.1.234:8280/Index";
+    /**网络请求公文的地址*/
+    public static  final String GW_URI ="http://192.168.1.234:8280/Document";
+    /**网络请求环境的地址*/
+    public static final String HJ_URI="http://192.168.1.234:8280/Monitor";
+    /**文件上传文件(传资料)*/
+    public static final String WS_CZL_WJ = "http://192.168.1.234:8280/email";
+    /**领导日程  和 日程安排*/
+    public static final  String LD_RUI = "http://192.168.1.234:8280/schedulemk";
+    /**网络请求OA的地址*/
+    public static final String OA_QQ="http://192.168.1.234:8280/login.cmd";
+    /**科室工作的地址接口*/
+    public static  final String KS_URI ="http://192.168.1.234:8280/DepartmentWork";
+
+    /**科室工作查询接口*/
+    public static  final String KSCX_URI ="http://192.168.1.234:8280/DepartmentWorkDoc";
+    /**会议查询接口*/
+    public static final String HYAP_URI = "http://192.168.1.234:8280/MeetingRoom";
+    /**通知公告  和 通信录的接口*/
+    public static final String TZTX_URI="http://192.168.1.234:8280/NoticeContacts";
+    /**h5中使用的连接地址*/
+    public static final String MY_URI="http://192.168.1.234:8280/";
+    /**值班安排  ， 我的档案*/
+    public static final String ZB_URI="http://192.168.1.234:8280/myself";
+    /**文件上传文件*/
+    /**班子会议接口*/
+    public static final String BZHY_URI = "http://192.168.1.234:8280/meetingDiscuss";
+    public static final String WS_URI_WJ = "http://192.168.1.234:8280/sickleave";
+    /**资料接口*/
+    public static final String ZL_URI="http://192.168.1.234:8280/outbox";
+    public static final String VERSION_XML = "http://192.168.1.234:8280/SoftUpdate/Update.xml";
+ public static final String GX = "http://192.168.1.234:8280/test11";
+    public static final String JBD_BS = "234";
     /**activity的tab判断界面*/
     public static final String TAB ="tab";
     /**判定是第三方验证还是修改密码的使用*/

@@ -119,7 +119,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile files('libs/gson-2.2.1.jar')
     compile files('libs/json-lib-2.4-jdk15.jar')
     compile files('libs/universal-image-loader-1.9.3-with-sources.jar')
@@ -141,4 +141,5 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.0'
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+    compile files('libs/BaiduLBS_Android.jar')
 }

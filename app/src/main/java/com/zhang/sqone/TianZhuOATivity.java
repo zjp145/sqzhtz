@@ -105,6 +105,7 @@ public class TianZhuOATivity extends FragmentActivity implements View.OnClickLis
         setTranslucentStatus();
         setContentView(R.layout.activity_tian_zhu_oativity);
         ButterKnife.bind(this);
+
         ceshiText1.setFocusable(true);
         ceshiText1.setFocusableInTouchMode(true);
         ceshiText1.requestFocus();

@@ -171,8 +171,8 @@ public class XiaoXiZhongXinActivity extends BaseActivity implements PullToRefres
                     if (isFlsh) {
                         fileList2.clear();
                         fileList2.addAll(fileList);
-                        Log.i("zhang", "列表个数" + fileList.size());
-                        resultAdapter = new CommonAdapter<Noticecontacts.ReqNoticeAndContacts.MessageMap>(XiaoXiZhongXinActivity.this, fileList, R.layout.xxzx_litem) {
+                        Log.i("zhang", "列表个数" + fileList2.size());
+                        resultAdapter = new CommonAdapter<Noticecontacts.ReqNoticeAndContacts.MessageMap>(XiaoXiZhongXinActivity.this, fileList2, R.layout.xxzx_litem) {
                             @Override
                             public void convert(ViewHolder holder, Noticecontacts.ReqNoticeAndContacts.MessageMap fileMap) {
                                 Log.i("zhang", "时间 " + fileMap.getTime());
