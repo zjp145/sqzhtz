@@ -8,26 +8,22 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.zhang.sqone.bean.LoginResult;
+import com.zhang.sqone.bean.Index;
 import com.zhang.sqone.bean.User;
-import com.zhang.sqone.my.Dengluactivity;
-import com.zhang.sqone.utils.AppUtil;
-import com.zhang.sqone.utils.GsonUtils;
+import com.zhang.sqone.my.LoginActivity;
 import com.zhang.sqone.utils.SharedPreferencesUtils;
+import com.zhang.sqone.utils.UpdateVersionService;
+import com.zhang.sqone.utilss.HttpUtil;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
 
-/*
-* 程序的欢迎的页面如果用户已经登录的情况下不需要登录直接进入社区界面
-* */
+/**
+ * 进入程序的时候必须进入加载页面
+ * 程序的欢迎的页面如果用户已经登录的情况下不需要登录直接进入社区界面
+ *
+ * @author ZJP
+ *         created at 2016/2/29、 9:15
+ */
 public class SplashScreenActivity extends BaseActivity {
     //获取本地的轻量级的存储对象
     private SharedPreferences myPrefer;
@@ -35,36 +31,47 @@ public class SplashScreenActivity extends BaseActivity {
     private final int SPLASH_DISPLAY_LENGHT = 1500;
     //获得的社区id ，和登录的标示符
     private String sqid, Sid;
+    private UpdateVersionService updateVersionService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i("wwwwwwwwwwww", "onCreate ");
         setContentView(R.layout.activity_splash_screen);
+
         myPrefer = getSharedPreferences(Globals.SPLASH_USERTYPE, Activity.MODE_PRIVATE);
+
+
 
         //开启一个线程将本地保存的数据 登录
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 //创建的如果本地没有存在数据的情况下跳转到登录的界面上 否则直接使用的本地的数据登录app
-                if ("".equals(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_YD, ""))){
+                if ("".equals(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_YD, ""))) {
                     SharedPreferencesUtils.saveString(SplashScreenActivity.this,
                             Globals.USER_YD, "1");
-                    Intent intent = new Intent(SplashScreenActivity.this,YinDaoYeActivity.class);
+                    Intent intent = new Intent(SplashScreenActivity.this, YinDaoYeActivity.class);
                     startActivity(intent);
                     finish();
-                }
-                else if ("".equals(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PHONE, ""))
+                } else if ("".equals(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PHONE, ""))
                         && "".equals(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PASSWORD, ""))) {
-                    Intent intent = new Intent(SplashScreenActivity.this, Dengluactivity.class);
+                    //改版之前
+//                    Intent intent = new Intent(SplashScreenActivity.this, TiZhuActivity.class);
+                    //改版之后
+                    Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                    User.isLogin= false;
                     startActivity(intent);
                     SplashScreenActivity.this.finish();
                     Log.i("zhangjianpeng", "本地没有数据");
                 } else {
-                    Log.i("zhangjianpeng", "本地有数据");
-                    //如果有数据的情况下将保存的数据昵称数据放到静态类中
-                    User.nc = SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_NC, "");
-                    initLogin();
+                    //有账号登录(旧版本)
+//                    initLogin();
+                    //改版之后
+                    Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                    User.isLogin= false;
+                    startActivity(intent);
+                    SplashScreenActivity.this.finish();
+
                 }
             }
         }, SPLASH_DISPLAY_LENGHT);
@@ -72,80 +79,58 @@ public class SplashScreenActivity extends BaseActivity {
 
     }
 
-    //登录方法
+    /**本地有数据使用本地用户名和密码登录
+     * 账号密码唯一id的验证（本地的验证）
+     * */
     public void initLogin() {
-        final Map<String, String> params = new HashMap<String, String>();
-        params.put(Globals.WS_POST_KEY, "{\"Ac\":\"Login\",\"Para\":{\"Mb\":\"" + SharedPreferencesUtils.getString(
-                SplashScreenActivity.this, Globals.USER_PHONE, null)
-                + "\",\"Pwd\":\"" + SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PASSWORD, null) + "\"}}");
-        RequestQueue mRequestQueue = Volley.newRequestQueue(SplashScreenActivity.this);
-        Log.i(Globals.LOG_TAG, "paramsss=" + params);
-        //创建请求的方式登录
-        StringRequest sr = new StringRequest(Request.Method.POST, Globals.WS_URI, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.i(Globals.LOG_TAG, "这里打印 首页是否登陆");
-                Log.i(Globals.LOG_TAG, response);
-                if (response != null) {
-                    LoginResult s = GsonUtils.json2bean(response,
-                            LoginResult.class);
-                    if (s == null || !(s.Stu == 1)) {
-//								Toast.makeText(SplashScreenActivity.this,
-//										Globals.SER_ERROR, Globals.TOAST_SHORT)
-//										.show();
-                    } else if (s.Stu == 1 && s.Rst.Scd == 0) {
-//								Toast.makeText(SplashScreenActivity.this,
-//										s.Rst.Msg, Globals.TOAST_SHORT).show();
-                    } else {
-                        Toast.makeText(SplashScreenActivity.this,
-                                s.Rst.Msg, Toast.LENGTH_SHORT);
-                        sqid = s.Rst.Sqid;
-                        Sid = s.Rst.Sid;
-                        User.setLoginInfo(SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PHONE, null),
-                                true, s.Rst.Sid + "", s.Rst.Ph, s.Rst.Sqid, s.Rst.Sh);
+        Index.ReqIndex.Login.Builder login = Index.ReqIndex.Login.newBuilder();
+        //从本地获得用户名密码
+        //账号
+        final String phone = SharedPreferencesUtils.getString(
+                SplashScreenActivity.this, Globals.USER_PHONE, null);
+        //密码
+        final String pwd = SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.USER_PASSWORD, null);
+        //唯有id
+        final String wyid = SharedPreferencesUtils.getString(SplashScreenActivity.this, Globals.WY_id, null);
 
-                    }
-                }
-                Intent mainIntent = new Intent(SplashScreenActivity.this, MainActivity.class);
-                mainIntent.putExtra(Globals.SH_ID, sqid);
-                mainIntent.putExtra(Globals.PROJECT_ID, Sid);
-                SplashScreenActivity.this.startActivity(mainIntent);
-                SplashScreenActivity.this.finish();
-
-            }
-        }, new Response.ErrorListener() {
+        //添加用户名
+        login.setUsername(phone);
+        //添加密码
+        login.setPassword(pwd);
+        login.setPhncode(wyid);
+        Index.ReqIndex index = Index.ReqIndex.newBuilder().setLogin(login).setAc("LOGIN").build();
+        new HttpUtil() {
             @Override
-            public void onErrorResponse(VolleyError error) {
-                // error
-                Log.i("Response", "error" + error.getMessage());
-                Toast.makeText(Globals.context, "您的网络有问题请查证后启动!", Toast.LENGTH_SHORT)
-                        .show();
-                if (AppUtil.networkCheck() == false) {
-                    Toast.makeText(Globals.context, "没有网络", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() {
-                return params;
-            }
-        };
-        sr.setRetryPolicy(new DefaultRetryPolicy(3000,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        mRequestQueue.add(sr);
-        if (sr.getRetryPolicy().getCurrentTimeout() > 6000) {
-            new Handler().postDelayed(new Runnable() {
-                public void run() {
+            public <T> void analysisInputStreamData(Index.ReqIndex index) throws IOException {
+                //登陆成功
+                if(index.getScd().equals("1")){
+                    Toast.makeText(SplashScreenActivity.this, index.getMsg(),
+                            Toast.LENGTH_SHORT).show();
+                    //跳转到首页(改版前)
+//                    Intent intent = new Intent(SplashScreenActivity.this,
+//                            TiZhuActivity.class);
 
-                    Intent mainIntent = new Intent(SplashScreenActivity.this,
-                            MainActivity.class);
-                    SplashScreenActivity.this.startActivity(mainIntent);
-                    SplashScreenActivity.this.finish();
+                    Intent intent = new Intent(SplashScreenActivity.this,
+                            TianZhuOATivity.class);
+                    //登录成功的情况下给用户的实体类添加信息（全局使用）
+                    User.isLogin=true;
+                    User.sid = phone;
+                    User.pwd = pwd;
+                    //头像地址
+                    User.IconPath = index.getLogin().getPh();
+                    User.wcjd=index.getLogin().getWccd();
+                    //添加默认手机号码
+                    User.phone = index.getLogin().getPhone();
+                    User.nc = index.getLogin().getNa();
+                    startActivity(intent);
+                    //退出页面
+                    finish();
                 }
-            }, sr.getRetryPolicy().getCurrentTimeout());
-        }
+//                Log.i("onsuccess", "集合数据个数" + index.getMsg());
+            }
+        }.protocolBuffer(SplashScreenActivity.this, Globals.WS_URI, index, null);
+
+    }
     }
 
 
-}

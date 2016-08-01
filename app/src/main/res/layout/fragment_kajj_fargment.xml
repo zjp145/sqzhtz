@@ -1,0 +1,36 @@
+<!--科室简介的界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/font_fff"
+    tools:context="com.zhang.sqone.home.KajjFargment">
+    <ImageView
+        android:id="@+id/keshi_jj_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keshi_zc_h"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/keshi_t_mar"
+        android:layout_marginRight="@dimen/keshi_t_mar"
+        android:layout_marginBottom="31dp"
+        android:src="@mipmap/zhnwei"
+        />
+        <TextView
+            android:id="@+id/keshi_jj_title"
+            style="@style/keshi_biaoti_text1"
+            android:layout_marginBottom="31dp"
+            android:layout_marginLeft="@dimen/keshi_t_mar"
+            />
+    <TextView
+        android:id="@+id/keshi_jj_con"
+        style="@style/keshi_biaoti_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_12"
+        android:layout_marginLeft="@dimen/keshi_t_mar"
+
+        />
+
+</LinearLayout>

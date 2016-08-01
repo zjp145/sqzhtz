@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--通讯录布局-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" android:background="@mipmap/mm2" >
-    
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/view_cr"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftButtonEnable="false"
+        android:text="值班安排"></com.zhang.sqone.views.TitleBarView>
+
+    <EditText
+        android:id="@+id/zhiban_tz"
+        android:drawableLeft="@mipmap/sousuo"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width"
+        android:layout_marginTop="@dimen/ss_layout_top"
+        android:layout_marginLeft="@dimen/ss_layout_mar"
+        android:layout_marginRight="@dimen/ss_layout_mar"
+        android:layout_marginBottom="@dimen/ss_layout_top"
+        android:drawablePadding="6dp"
+        android:background="@drawable/search_edittext_shape"
+        style="@style/ss_lint_text"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="请输入值班日期查询"/>
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:background="@color/view_cr"
+        android:id="@+id/zhiban_list"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
 
 </LinearLayout>

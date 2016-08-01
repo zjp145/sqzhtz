@@ -35,6 +35,18 @@ public class SharedPreferencesUtils {
 		}
 		return sp.getString(key, defValue);
 	}
-	
-	
+	/**
+	 * 查询某个key是否已经存在
+	 * @param context
+	 * @param key
+	 * @return
+	 */
+	public static boolean contains(Context context, String key)
+	{
+		SharedPreferences sp = context.getSharedPreferences(SP_NAME,
+				0);
+		return sp.contains(key);
+	}
+
+
 }

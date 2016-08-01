@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--详情页的下载使用的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_br"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_left"
+        android:layout_marginTop="@dimen/xiangqing_item_margintop"
+        android:layout_marginBottom="@dimen/xiangqing_item_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/xiangqing_item_marimright"
+                android:src="@mipmap/word" />
+
+            <TextView
+                style="@style/xiangqing_item_text"
+                 />
+
+
+        </LinearLayout>
+        <TextView
+            style="@style/ss_lint_text"
+            android:layout_marginTop="@dimen/xiangqing_item_top"
+            android:layout_marginLeft="@dimen/xiangqing_item_left"
+
+            />
+    </LinearLayout>
+    <TextView
+        style="@style/ss_lint_text"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/xiangqing_item_suduright"
+
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/xiangqing_item_right"
+        android:src="@mipmap/xiazai"
+        />
+
+</LinearLayout>

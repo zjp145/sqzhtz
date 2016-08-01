@@ -1,0 +1,122 @@
+<!--班子会议查询-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.home.BanZiCaoZuoActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/banzicaozuo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rightButtonEnable="true"
+        app:rightButtonBgImg="@mipmap/bz_xinzeng"
+        android:text="操作"></com.zhang.sqone.views.TitleBarView>
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:divider="@color/view_cr"
+        android:id="@+id/banzicaozuo_list"
+        android:dividerHeight="6dp"
+    android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="2dp"
+      android:background="#f5f5f5"
+      />
+    <LinearLayout
+        android:id="@+id/xieshu_button"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/shuji_huiyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束本次班子会议"
+            android:textSize="13dp"
+            android:textColor="#fb8472"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bahy_sb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/linearlayout_br"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:id="@+id/bzhy_sb_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhuanfa"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交议题"
+                android:textSize="14dp"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            />
+
+        <LinearLayout
+            android:id="@+id/bzhy_sb_zhuanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/quxiao1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="删除议题"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

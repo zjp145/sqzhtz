@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--科室之窗创建的列表item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_br"
+    android:orientation="vertical">
+<ImageView
+    android:id="@+id/keshi_lb_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/keshi_zc_h"
+    android:scaleType="fitXY"
+    android:layout_margin="@dimen/keshi_t_mar"
+    android:background="@drawable/linearlayout_br"
+    android:src="@mipmap/zhnwei"
+    />
+    <TextView
+        android:id="@+id/keshi_lb_title_text"
+        style="@style/keshi_liebiao_text1"
+        android:layout_marginLeft="@dimen/keshi_t_mar"
+        android:layout_marginBottom="8dp"
+        />
+    <TextView
+        android:id="@+id/keshi_lb_jj"
+        style="@style/keshi_liebiao_text2"
+        android:layout_marginLeft="@dimen/keshi_t_mar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="18dp"
+        />
+</LinearLayout>

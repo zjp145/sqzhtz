@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.home.DangJianYuansActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/djyl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dang_jian_name">
+    </com.zhang.sqone.views.TitleBarView>
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+
+        android:id="@+id/main_lv_search_results"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+
+</LinearLayout>

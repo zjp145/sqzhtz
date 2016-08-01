@@ -1,5 +1,4 @@
 package com.zhang.sqone.zxing;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,6 +14,8 @@ import com.zhang.sqone.R;
 import com.zhang.sqone.zxing.android.CaptureActivity;
 import com.zhang.sqone.zxing.encode.CodeCreator;
 
+
+/**项目中给使用的二维码*/
 public class ZxingActivity extends Activity {
 
     private static final int REQUEST_CODE_SCAN = 0x0000;

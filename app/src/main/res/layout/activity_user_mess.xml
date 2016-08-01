@@ -1,0 +1,177 @@
+<!--我的信息点击到用户信息-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.UserMessActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yong_hu_xin_xi"></com.zhang.sqone.views.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/zhanghu_tx"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="头像"
+            />
+
+
+        <!--<com.zhang.sqone.views.CircularImage-->
+            <!--android:id="@+id/zhanghu_tx_iamge"-->
+        <!--android:layout_width="58dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:src="@mipmap/small_portrait"-->
+        <!--/>-->
+        <ImageView
+            android:id="@+id/zhanghu_tx_iamge"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@mipmap/small_portrait"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/zhanghu_nc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="昵称"
+            />
+        <TextView
+            android:id="@+id/zhanghu_nc_text"
+            style="@style/grid_item_text"
+            android:textColor="#999999"
+            android:text="未添加"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhanghu_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="电话"
+            />
+        <TextView
+            android:id="@+id/zhanghu_phone_text"
+            style="@style/grid_item_text"
+            android:textColor="#999999"
+            android:text="138****6666"
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhanghu_xgmm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="修改密码"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhanghu_dsf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="第三方绑定"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+</LinearLayout>

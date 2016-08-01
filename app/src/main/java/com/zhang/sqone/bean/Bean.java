@@ -1,5 +1,5 @@
 package com.zhang.sqone.bean;
-//¼òµ¥µÄÊÊÅä ÊÊÅäÀà
+//ï¿½òµ¥µï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class Bean
 {
 
@@ -10,8 +10,6 @@ public class Bean
 	
 	private boolean isChecked ; 
 	
-	
-
 
 	public boolean isChecked()
 	{

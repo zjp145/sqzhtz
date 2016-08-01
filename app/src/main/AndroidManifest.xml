@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhang.sqone" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhang.sqone">
 
     <!-- 这个权限用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -23,64 +24,218 @@
     <!-- 允许应用读取低级别的系统日志文件 -->
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.call_phone" />
-
     <!-- 二维码使用的权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- 添加shared权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- ibeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".GuideApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <!-- 程序的主界面 -->
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+
 
         <!-- 用户首次登陆时显示的界面 -->
-        <activity android:name=".YinDaoYeActivity" >
-        </activity>
-        <activity android:name=".SplashScreenActivity" >
+        <activity android:name=".YinDaoYeActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".my.Dengluactivity" >
-        </activity>
+        <!-- 天竺社区的总首页 -->
         <activity
-            android:name=".ceshi.HttpasyncActivity"
-            android:label="@string/title_activity_httpasync" >
-        </activity>
-        <activity
-            android:name=".ceshi.RxJavaActivity"
-            android:label="@string/title_activity_rx_java" >
-        </activity>
+            android:name=".TiZhuActivity"
+            android:label="@string/title_activity_maintianzhu"
+            android:launchMode="singleTask" />
 
         <!-- 二维码扫描操作界面 -->
         <activity
             android:name=".zxing.android.CaptureActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".zxing.ZxingActivity"
-            android:label="@string/title_activity_zxing" >
-        </activity>
+            android:label="@string/title_activity_zxing" />
         <activity
             android:name=".TianZhuMainActivity"
-            android:label="@string/title_activity_tian_zhu_main" >
-        </activity>
+            android:label="@string/title_activity_tian_zhu_main" />
         <activity
-            android:name=".home.DangJianYuanDiActivity"
-            android:label="@string/title_activity_dang_jian_yuan_di" >
+            android:name=".xiangqing.XiangQingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_xiang_qing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".my.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".my.ForgetActivity"
+            android:label="@string/title_activity_forget" />
+        <activity
+            android:name=".my.YanZhengPhoneActivity"
+            android:label="@string/title_activity_yan_zheng_phone" />
+        <activity
+            android:name=".my.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".my.SetUpActivity"
+            android:label="@string/title_activity_set_up" />
+        <activity
+            android:name=".my.UserMessActivity"
+            android:label="@string/title_activity_user_mess" />
+        <activity
+            android:name=".my.UploadHeadActivity"
+            android:label="@string/title_activity_upload_head" />
+        <activity
+            android:name=".my.NickNameActivity"
+            android:label="@string/title_activity_nick_name" />
+        <activity
+            android:name=".my.XiuGaiMiMaActivity"
+            android:label="@string/title_activity_yan_zheng_shou_ji" />
+        <activity
+            android:name=".my.DiSanFangActivity"
+            android:label="@string/title_activity_di_san_fang" />
+        <activity
+            android:name=".my.XiuGaiPhoneActivity"
+            android:label="@string/title_activity_xiu_gai_phone" />
+        <activity
+            android:name=".home.DangJianYuansActivity"
+            android:label="@string/title_activity_dang_jian_yuans" />
+        <activity
+            android:name=".xiangqing.BanShiXQActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/banshi_xiangqing_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.DaiBanActivity"
+            android:label="@string/title_activity_dai_ban" />
+        <activity
+            android:name=".home.HuanJingActivity"
+            android:label="@string/title_activity_huan_jing" />
+        <activity
+            android:name=".home.HuanJingDZActivity"
+            android:label="@string/title_activity_huan_jing_dz" />
+        <activity
+            android:name=".home.HuanJingNRActivity"
+            android:label="@string/title_activity_huan_jing_nr" />
+        <activity
+            android:name=".home.SelectPicActivity"
+            android:label="@string/title_activity_huan_jing_nr"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name=".PushDemoReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 分享功能的添加 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1104646053" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".home.KeShiZhiChuangActivity"
+            android:label="@string/title_activity_ke_shi_zhi_chuang"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".home.KeShiXQActivity" />
+        <activity android:name=".home.HyydActivity" />
+        <activity android:name=".home.HyydbActivity" />
+        <activity android:name=".home.HymsActivity" />
+        <activity android:name=".home.HymcActivity" />
+        <activity android:name=".home.FwyqActivity" />
+        <activity android:name=".home.TxlActivity" />
+        <activity android:name=".home.HyapcxActivity" />
+        <activity android:name=".home.KsgxcxActivity" />
+        <activity android:name=".xiangqing.HyapXQActivity" />
+        <activity
+            android:name=".xiangqing.TzGgXqActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_tz_gg_xq"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.ZiLiaoZhongXinActivity" />
+        <activity
+            android:name=".TianZhuOATivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.TongZhigonggao" />
+        <activity android:name=".my.UserDAActivity" />
+        <activity android:name=".home.GongZiActivity" />
+        <activity android:name=".xiangqing.DZXQActivity" />
+        <activity android:name=".home.SQActivity" />
+        <activity android:name=".utilss.HelpActivity" />
+        <activity android:name=".xiangqing.ShouYouJianXQActivity" />
+        <activity android:name=".home.ShouziliaoActivity" />
+        <activity android:name=".home.XieZiLiaoActivity" />
+        <activity android:name=".xiangqing.XieYouJianActivity" />
+        <activity android:name=".xiangqing.ZhuanFaActivity" />
+        <activity android:name=".home.DzZfActivity" />
+        <activity android:name=".xiangqing.DzZfXqActivity" />
+        <activity android:name=".home.ShiXiangActivity" />
+        <activity android:name=".xiangqing.ShiXiangXqActivity" />
+        <activity android:name=".SDCARD123Activity" />
+        <activity android:name=".home.BanZiHuiYiActivity" />
+        <activity android:name=".home.BanZiCaoZuoActivity" />
+        <activity
+            android:name=".xiangqing.BanZiXqActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified|stateHidden" />
+        <activity android:name=".xiangqing.ShangChuanActivity" />
+        <activity android:name=".home.ChuanZiLiaoActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".home.LeadAgendaActivity" />
+        <!-- 添加了一个editext自动弹出键盘解决方法 -->
+        <activity
+            android:name=".home.ScheduleActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".home.NewScheduleActivity" />
+        <activity android:name=".home.XiaoXiZhongXinActivity" />
+        <activity android:name=".home.HYZLActivity" />
+        <activity android:name=".xiangqing.HYCLXQActivity"></activity>
+        <activity android:name=".home.SyisActivity" />
     </application>
 
 </manifest>

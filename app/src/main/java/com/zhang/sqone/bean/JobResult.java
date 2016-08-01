@@ -2,7 +2,11 @@ package com.zhang.sqone.bean;
 
 	
 import java.util.List;
-
+/**
+*在这个程序的数据传输格式没有什么用
+*@author ZJP
+*created at 2016/3/14 13:51
+*/
 public class JobResult {
 
 	public Integer Stu;

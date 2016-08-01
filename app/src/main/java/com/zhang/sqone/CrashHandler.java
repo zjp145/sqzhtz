@@ -98,23 +98,6 @@ public class CrashHandler implements UncaughtExceptionHandler {
         }
     }
 
-    private void sD(String s) {
-        Fsmail sendmail = new Fsmail();
-        sendmail.setHost("smtp.163.com");//smtp.mail.yahoo.com.cn
-        sendmail.setUserName("zjp145z@163.com");//您的邮箱用户名
-        sendmail.setPassWord("zjp145");//您的邮箱密码
-        sendmail.setTo("zjp145z@163.com");//接收者
-        sendmail.setFrom("zjp145z@163.com");//发送者
-        sendmail.setSubject("你好，这是测试2！");
-        sendmail.setContent(s);
-//            sendmail.attachfile("c:/attachment1.txt");
-//            sendmail.attachfile("c:/attachment2.txt");
-//        sendmail.sendMail();
-        Boolean aBoolean= sendmail.sendMail();
-        Log.i("shiyong", aBoolean + "");
-//
-    }
-
     /**
      * 自定义错误处理,收集错误信息 发送错误报告等操作均在此完成.
      *

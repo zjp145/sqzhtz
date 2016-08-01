@@ -1,0 +1,158 @@
+<!--我的信息-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.RegisterActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wo_de_xin_xi"></com.zhang.sqone.views.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/myxx_zhanghu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="账户信息"
+            />
+
+        <com.zhang.sqone.views.CircularImage
+            android:id="@+id/myxx_tx_iamge"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/small_portrait"
+            />
+<!--<ImageView-->
+    <!--android:id="@+id/myxx_tx_iamge"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/small_portrait"-->
+    <!--/>-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myxx_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="设置"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myxx_banben"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="版本检测"
+            />
+    <TextView
+        android:id="@+id/my_banben"
+        style="@style/grid_item_text"
+        android:textColor="#999999"
+        android:text="1.0"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myxx_guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="关于"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/my_left_item"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dengle_left_right"
+        android:layout_marginRight="@dimen/dengle_left_right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/myxx_tuicu_button"
+            style="@style/denglu_button"
+            android:layout_marginTop="@dimen/denglu_button_top"
+            android:text="退出登录"
+            android:textColor="@color/font_fff"
+            android:textSize="@dimen/font_14"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+        <!--第三方验证颜色字体-->
     <color name="title_bg">#0c84ca</color>
+    <!--首页文字颜色-->
     <color name="font_fff">#FFFFFF</color>
     <color name="line">#F3F3F3</color>
     <color name="background">#F0F0F0</color>
+    <!--首页文字颜色-->
     <color name="font_333">#333333</color>
     <color name="login_red">#ec675d</color>
 
@@ -21,6 +23,62 @@
     <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
     <color name="viewfinder_mask">#60000000</color>
 
-    <!--主界面的背景-->
-    <color name="skin_tabbar_bg">#ffffff</color>
+    <!--主界面的背景  程序首页-->
+    <color name="skin_tabbar_bg">#ffffffff</color>
+
+    <!--搜索功能-->
+    <color name="myred">#eb4f38</color>
+    <color name="darkgray">#eee</color>
+    <color name="color_white">#ffffff</color>
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+    <!--提示性文字的颜色  环境检查的地址标题-->
+    <color name="lint_text_color">#999</color>
+    <!--文本标题颜色-->
+    <color name="text_title_color">#333</color>
+    <!--详情文本颜色 科室介绍的文字-->
+    <color name="xiangqing_text_color">#595959</color>
+    <!--详情下载item中文字的大小-->
+    <color name="xiangqing_item_text_color">#666</color>
+
+    <!--三个背景的banner图的背景颜色-->
+    <color name="banner1_bj">#2dabf4</color>
+    <color name="banner2_bj">#f67f2b</color>
+    <color name="banner3_bj">#0894f3</color>
+
+    <!--首页分割线的颜色 我的信息背景-->   <!--详情使用的选择背景--> <!--所有的背景颜色-->
+    <color name="view_cr">#f9f9f9</color>
+    <!--gridview的分割线的颜色 所有分割线的颜色 -->
+    <color name="grid_cr">#f5f5f5</color>
+    <!--任务栏的颜色  密码分割线 文字颜色-->
+    <color name="rul_bj">#0c84ca</color>
+    <!--登录手机的颜色-->
+    <color name="phone_color">#b1b1b1</color>
+    <color name="gr_yu">#31c27c</color>
+<!--办事的颜色-->
+    <color name="bs_yb">#5bb0ec</color>
+    <color name="bs_zz">#fb8472</color>
+    <color name="bs_cb">#ffb359</color>
+    <color name="bs_bh">#19b998</color>
+    <color name="bs_qx">#d8d8d8</color>
+
+    <!--分割线的颜色-->
+    <color name="view_color">#e8e8e8</color>
+
+    <!--oa首页的分割线的颜色-->
+    <color name="oa_view_color">#249ce3</color>
+    <!--oa标题文字背景-->
+    <color name="oa_text_back">#f6f6f6</color>
+    <!--oa标题文字颜色-->
+    <color name="oa_text_color">#8b8b8b</color>
+
+    <!--流程线的颜色-->
+    <color name="view_color1">#e0e0e0</color>
+
+    <color name="text_888">#888888</color>
+    <!--会议室预定 时间的颜色-->
+    <color name="c_a0a0a0">#a0a0a0</color>
+    <!-- 预定的颜色-->
+    <color name="c_fb8472">#fb8472</color>
 </resources>
+

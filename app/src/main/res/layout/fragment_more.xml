@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--通讯录布局-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" android:background="@mipmap/mm3" >
-    
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/view_cr"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
 
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftButtonEnable="false"
+        android:text="@string/tongxunlu"></com.zhang.sqone.views.TitleBarView>
+
+    <EditText
+        android:id="@+id/search_et_tz"
+        android:drawableLeft="@mipmap/sousuo"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width"
+        android:layout_marginTop="@dimen/ss_layout_top"
+        android:layout_marginLeft="@dimen/ss_layout_mar"
+        android:layout_marginRight="@dimen/ss_layout_mar"
+        android:layout_marginBottom="@dimen/ss_layout_top"
+        android:drawablePadding="6dp"
+        android:background="@drawable/search_edittext_shape"
+        style="@style/ss_lint_text"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="输入姓名或部门搜索"/>
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:background="@color/view_cr"
+        android:id="@+id/txl_list"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="64dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:src="@mipmap/tztishi"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--style="@style/mk_tishi_text"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="攻城狮正在努力中..."-->
+        <!--/>-->
 </LinearLayout>

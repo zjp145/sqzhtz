@@ -1,0 +1,89 @@
+<!--长传头像-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.UploadHeadActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shang_chuan_touxiang"></com.zhang.sqone.views.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/shangchuan_xiangce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:src="@mipmap/photo"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/tu_wenleft"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="从相册中选取"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/tx_left"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shangchuan_paizhao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:src="@mipmap/camera"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/tu_wenleft"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="拍一张图片"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_jiant_left"
+            android:layout_marginRight="@dimen/tx_left"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

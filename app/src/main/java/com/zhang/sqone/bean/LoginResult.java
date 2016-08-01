@@ -11,6 +11,8 @@ package com.zhang.sqone.bean;
 //		Sh: "1"
 //		}
 //		}
+
+/**这个数据传输方式不使用这个方式*/
 public class LoginResult {
 
     public Integer Stu;

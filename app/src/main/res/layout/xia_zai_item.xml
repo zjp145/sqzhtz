@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/linearlayout_br"
+    >
+
+    <ImageView
+        android:id="@+id/xiazai_item_tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_left"
+        android:layout_marginTop="@dimen/xiazai_item_top"
+        android:src="@mipmap/png" />
+
+    <TextView
+        android:id="@+id/xiazai_item_dx"
+        style="@style/xiangqing_item_text"
+        android:maxEms="13"
+        android:minLines="2"
+        android:layout_alignTop="@id/xiazai_item_tp"
+        android:layout_marginLeft="@dimen/xiazai_tp_totext"
+        android:layout_toRightOf="@id/xiazai_item_tp"
+        />
+
+    <TextView
+        android:id="@+id/wenjian_dx"
+        style="@style/ss_lint_text"
+        android:layout_alignLeft="@id/xiazai_item_dx"
+        android:layout_below="@id/xiazai_item_dx"
+        android:layout_marginTop="@dimen/xiazai_dx_totext"
+
+
+        />
+
+    <com.zhang.sqone.views.MasterLayout
+        android:id="@+id/xiazai_zx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/xiazai_xz_right"></com.zhang.sqone.views.MasterLayout>
+    <ImageButton
+        android:id="@+id/xiazai_iamge_button"
+        android:src="@mipmap/dakai"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/xiazai_xz_right"></ImageButton>
+    <TextView
+        android:id="@+id/xiazai_sudu"
+        style="@style/ss_lint_text"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/xiazai_zx"
+        android:layout_toStartOf="@+id/xiazai_zx" />
+</RelativeLayout>

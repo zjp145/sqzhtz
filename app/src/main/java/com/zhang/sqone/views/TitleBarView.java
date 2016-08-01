@@ -37,7 +37,7 @@ public class TitleBarView extends RelativeLayout {
 	private ImageButtonTouchListener EventInstance;
 	private TextView txvTitle;
 	private ImageButton imbBack;
-	private ImageButton imbEnter;
+	public ImageButton imbEnter;
 	private OnClickBackButtonListener _Back_Handler_;
 	private OnClickEnterButtonListener _Enter_Handler_;
 	private static Drawable BackImage;
@@ -119,12 +119,12 @@ public class TitleBarView extends RelativeLayout {
 		}
 		
 		if(array.getBoolean(R.styleable.TitleBarView_rightButtonEnable, Signed)){
-			RightImage = context.getResources().getDrawable(array.getResourceId(R.styleable.TitleBarView_rightButtonBgImg, R.mipmap.nav));
-			RightImagePress = context.getResources().getDrawable(array.getResourceId(R.styleable.TitleBarView_rightButtonBgImgPress, R.mipmap.nav));
+			RightImage = context.getResources().getDrawable(array.getResourceId(R.styleable.TitleBarView_rightButtonBgImg, R.mipmap.tongxunlu_xuanzhong));
+			RightImagePress = context.getResources().getDrawable(array.getResourceId(R.styleable.TitleBarView_rightButtonBgImgPress, R.mipmap.tongxunlu_xuanzhong));
 			imbEnter.setVisibility(View.VISIBLE);
 			imbEnter.setImageDrawable(
 					context.getResources().getDrawable(
-							array.getResourceId(R.styleable.TitleBarView_rightButtonBgImg, R.mipmap.nav
+							array.getResourceId(R.styleable.TitleBarView_rightButtonBgImg, R.mipmap.tongxunlu_xuanzhong
 									)));
 			imbEnter.getBackground().setAlpha(0);
 			imbEnter.setPadding(0, 0, 0, 0);
@@ -153,7 +153,7 @@ public class TitleBarView extends RelativeLayout {
 				if(v.getTag().toString().equals(BACK)){
 					((ImageButton)v).setImageDrawable(BackPressImage);
 				}else{
-					((ImageButton)v).setImageDrawable(RightImagePress);
+//					((ImageButton)v).setImageDrawable(RightImagePress);
 				}
 	        }else if(event.getAction() == MotionEvent.ACTION_UP){
 	        	//再修改为抬起时的正常图片
@@ -165,7 +165,7 @@ public class TitleBarView extends RelativeLayout {
 						_Back_Handler_.onClickBackButton(v);
 					}
 				}else{
-					((ImageButton)v).setImageDrawable(RightImage);
+//					((ImageButton)v).setImageDrawable(RightImage);
 					if(_Enter_Handler_ == null){
 //						((Activity) TitleBarView.this.getContext()).startActivity(new Intent(
 //								TitleBarView.this.getContext(),

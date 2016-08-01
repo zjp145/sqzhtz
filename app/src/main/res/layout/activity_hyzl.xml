@@ -1,0 +1,28 @@
+<!--会议材料管理-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.home.HYZLActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/huiyianp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会议材料管理"></com.zhang.sqone.views.TitleBarView>
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:divider="@color/view_cr"
+        android:id="@+id/hyclgl_list"
+        android:dividerHeight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+
+</LinearLayout>

@@ -22,7 +22,7 @@ public class AlertUtil {
         try {
             if (context != null) {
                 dialog.show();
-                dialog.getWindow().setContentView(R.layout.dialog);
+                dialog.getWindow().setContentView(R.layout.loading);
             }
         } catch (Exception e) {
         }

@@ -1,0 +1,67 @@
+<!--修改昵称-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.NickNameActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xiu_gai_nice"></com.zhang.sqone.views.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/my_left_item"
+            android:layout_marginRight="22dp"
+            android:textSize="13dp"
+            android:text="昵称"
+            />
+
+        <EditText
+            android:id="@+id/xiugainc_nc"
+            style="@style/denglu_phone_text"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="不要超过10个字符"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dengle_left_right"
+        android:layout_marginRight="@dimen/dengle_left_right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/xiugainc_button"
+            style="@style/denglu_button"
+            android:layout_marginTop="@dimen/denglu_button_top"
+            android:text="确定"
+            android:textColor="@color/font_fff"
+            android:textSize="@dimen/font_14"
+            />
+    </LinearLayout>
+
+</LinearLayout>

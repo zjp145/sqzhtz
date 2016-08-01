@@ -40,6 +40,7 @@
                     android:src="@drawable/skin_tabbar_icon_auth_select" />
 
                 <TextView
+                    android:id="@+id/oa_shouye_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -66,6 +67,7 @@
                     android:src="@drawable/skin_tabbar_icon_at_select" />
 
                 <TextView
+                    android:id="@+id/oa_tongzhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -100,6 +102,7 @@
                     android:src="@drawable/skin_tabbar_icon_space_select" />
 
                 <TextView
+                    android:id="@+id/oa_txl_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -126,6 +129,7 @@
                     android:src="@drawable/skin_tabbar_icon_more_select" />
 
                 <TextView
+                    android:id="@+id/oa_wode_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

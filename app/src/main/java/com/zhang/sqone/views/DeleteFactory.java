@@ -12,7 +12,7 @@ import com.zhang.sqone.R;
 
 
 /**
- * ] 自定义的Dialog工厂类
+ * ] 自定义的Dialog工厂类（下载提示）
  * 
  * @author Administrator
  */
@@ -44,6 +44,7 @@ public abstract class DeleteFactory {
 				.findViewById(R.id.bt_dg_ecaluation_cancel);
 
 		if (!"".equals(btDetermine) && "".equals(btDismiss)) {
+
 			bt_dg_ecaluation_confirm.setText(btDetermine);
 			bt_dg_ecaluation_cancel.setText(btDismiss);
 		}

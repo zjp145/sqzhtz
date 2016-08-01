@@ -1,0 +1,173 @@
+<!--改版后oa首页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/font_fff"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.home.FragmentAt">
+    <WebView
+        android:id="@+id/gome_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        ></WebView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/font_fff"
+            android:orientation="vertical"
+
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dengle_action_height"
+                android:background="@color/rul_bj" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/rul_bj"
+                >
+                <ImageView
+                    android:id="@+id/oa_home_fanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:src="@mipmap/headarrow"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/shouye_xiaoxitp_marginright"
+                    />
+                <TextView
+                    android:id="@+id/oa_shouye"
+                    style="@style/shouye_title_text"
+                    android:layout_gravity="center"
+                    android:text="首页" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/shouye_xiaoxitp_marginright"
+                    android:src="@mipmap/info" />
+
+
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal"
+                android:background="@color/rul_bj"
+
+                >
+                <LinearLayout
+                    android:id="@+id/oa_home_lianghongdeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/oa_home_top"
+                    >
+                    <ImageView
+                        android:id="@+id/tzgg_tzgg"
+                        android:layout_width="69dp"
+                        android:layout_height="69dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/oa_home_hongdeng"
+                        />
+                    <TextView
+                        style="@style/shouye_dl_text"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/oa_wenz_tp"
+                        android:text="消息中心"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="@dimen/oa_home_top"
+                    android:background="@color/oa_view_color"
+                    />
+                <LinearLayout
+                    android:id="@+id/oa_home_saoyisao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/oa_home_top"
+                    >
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="69dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/oa_home_saoyisao"
+                        />
+                    <TextView
+                        style="@style/shouye_dl_text"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/oa_wenz_tp"
+                        android:text="  扫一扫  "/>
+                    <!--<com.zhang.sqone.views.RoundProgressBar-->
+                    <!--android:id="@+id/jindu"-->
+                    <!--android:layout_width="69dp"-->
+                    <!--android:layout_height="69dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android_custom:roundColor="#32a4e6"-->
+                    <!--android_custom:roundProgressColor="#00d5b9"-->
+                    <!--android_custom:textColor="#fff"-->
+                    <!--android_custom:textIsDisplayable="true"-->
+                    <!--android_custom:roundWidth="2dp"-->
+                    <!--android_custom:textSize="20dp"-->
+
+                    <!--/>-->
+                    <!--<TextView-->
+                    <!--style="@style/shouye_dl_text"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="@dimen/oa_wenz_tp"-->
+                    <!--android:text="当前工作完成度"/>-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/grid_cr"
+                />
+            <!--创建一个gridView 显示应用的状态-->
+            <com.zhang.sqone.views.GridViewForScrollView
+                android:id="@+id/shouye_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grid_cr"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"></com.zhang.sqone.views.GridViewForScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/grid_cr"
+                />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

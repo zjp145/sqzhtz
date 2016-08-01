@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.xiangqing.XiangQingActivity">
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/xq_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightButtonEnable="true"
+        android:text="@string/title_xiangqiang"></com.zhang.sqone.views.TitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+          <LinearLayout
+              android:id="@+id/zguz_mc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="18dp"
+              android:layout_marginBottom="18dp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginRight="14dp"
+              android:gravity="center"
+
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:textSize="13dp"
+                  android:textColor="#333"
+                  android:text="主管副职"
+                  />
+              <TextView
+                  android:id="@+id/zhuguan_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:textColor="#333"
+
+                  />
+              <ImageView
+                  android:id="@+id/iamge_tianjia"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone"
+                  android:layout_marginLeft="4dp"
+                  android:src="@mipmap/zhuan_tianjia"
+                  />
+          </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkgray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:textSize="13dp"
+                android:textColor="#333"
+                android:text="议题名称"
+                />
+<TextView
+    android:id="@+id/yiti_mc1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginBottom="17dp"
+    android:visibility="gone"
+    />
+
+
+            <EditText
+                android:id="@+id/yiti_mc"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:gravity="top"
+                android:textSize="11dp"
+                android:background="@drawable/linearlayout_br"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="17dp"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/bianji1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="13dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:layout_marginRight="74dp"
+                    android:text="状态"
+                    />
+                <RadioGroup
+                    android:id="@+id/sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:text="确认"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:button="@drawable/button_br"
+                        android:layout_marginRight="64dp"/>
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:button="@drawable/button_br"
+                        android:text="不确认"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bianji2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:background="@drawable/linearlayout_br"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="原因"
+                    />
+
+                <EditText
+                    android:id="@+id/yuangyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:gravity="top"
+                    android:textSize="11dp"
+                    android:background="@drawable/linearlayout_br"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="17dp"
+                    />
+                <TextView
+                    android:id="@+id/yuangyi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:gravity="top"
+                    android:textSize="11dp"
+                    android:background="@drawable/linearlayout_br"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="17dp"
+                    android:visibility="gone"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkgray" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/shangchuan_button"
+                style="@style/denglu_button"
+                android:text="上传附件"
+                android:textColor="@color/font_fff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:textSize="@dimen/font_14"
+
+                />
+
+            <com.zhang.sqone.views.ListViewForScrollView
+                android:id="@+id/q_xiangqing_list"
+                android:background="@drawable/linearlayout_br"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.zhang.sqone.views.ListViewForScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

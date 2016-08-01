@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--会议室预定的列表页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_cr"
+    android:focusableInTouchMode="true"
+    tools:context="com.zhang.sqone.home.HyydbActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/huiyi_yuding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情"></com.zhang.sqone.views.TitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="申请部门"
+                    />
+                <TextView
+                    android:id="@+id/cc_sqbm"
+                    style="@style/keshi_liebiao_text2"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:text="会议室申请人"
+                    />
+                <TextView
+                    android:id="@+id/cc_hyssqr"
+                    style="@style/keshi_liebiao_text2"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="申请时间"
+                    />
+                <TextView
+                    android:id="@+id/cc_sqsj"
+                    style="@style/keshi_liebiao_text2"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="会议日期"
+                    />
+                <TextView
+                    android:id="@+id/cc_hyrq"
+                    style="@style/keshi_liebiao_text2"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="会议名称"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_hymc"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="会议描述"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_hymm"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="邀请领导"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_yqld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="出席人员"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_cxry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="设备"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+
+
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    style="@style/keshi_liebiao_text1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="14dp"
+                    android:text="其他需求"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/font_fff"
+                >
+                <TextView
+                    android:id="@+id/cc_qtxq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <com.zhang.sqone.views.ListViewForScrollView
+                android:id="@+id/cc_xiangqing_list"
+                android:background="@drawable/linearlayout_br"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.zhang.sqone.views.ListViewForScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

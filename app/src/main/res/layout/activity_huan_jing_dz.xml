@@ -1,0 +1,142 @@
+<!--环境检查的地址-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+
+    <!--tools:context="com.zhang.sqone.home.HuanJingDZActivity">-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dengle_action_height"-->
+        <!--android:background="@color/rul_bj" />-->
+
+    <!--<com.zhang.sqone.views.TitleBarView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/jianchadizhi"></com.zhang.sqone.views.TitleBarView>-->
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/view_cr"-->
+        <!--android:orientation="vertical"-->
+        <!-->-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/font_fff"-->
+            <!--android:orientation="horizontal"-->
+
+            <!-->-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="@dimen/tx_left"-->
+                <!--android:layout_marginRight="11dp"-->
+                <!--android:layout_marginBottom="13dp"-->
+                <!--android:src="@mipmap/address_w"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--style="@style/huangjing_dizhi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="23dp"-->
+                <!--android:layout_marginBottom="13dp"-->
+                <!--android:text="无限科技"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/linearlayout_br"-->
+            <!--android:orientation="horizontal"-->
+            <!-->-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="21.7dp"-->
+                <!--android:layout_marginTop="23dp"-->
+                <!--android:src="@mipmap/address_icon"-->
+                <!--android:layout_marginRight="18dp"-->
+                <!--android:layout_marginBottom="23dp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--style="@style/huangjing_dizhi_text"-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:layout_marginBottom="22dp"-->
+                <!--android:text="二十里堡"-->
+
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/linearlayout_br"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:orientation="horizontal"-->
+            <!-->-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="21.7dp"-->
+                <!--android:layout_marginTop="23dp"-->
+                <!--android:src="@mipmap/address_icon"-->
+                <!--android:layout_marginRight="18dp"-->
+                <!--android:layout_marginBottom="23dp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--style="@style/huangjing_dizhi_text"-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:layout_marginBottom="22dp"-->
+                <!--android:text="二十里堡"-->
+
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+<!--</ScrollView>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:context="com.zhang.sqone.home.HuanJingDZActivity" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jianchadizhi"></com.zhang.sqone.views.TitleBarView>
+
+        <!-- cacheColorHint：系统默认拖动过程中列表背景是黑的,设置为透明 -->
+        <ExpandableListView
+            android:id="@+id/expendlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/view_cr"
+            android:dividerHeight="4dp"
+            >
+        </ExpandableListView>
+
+    </LinearLayout>
+
+
+<!--</LinearLayout>-->

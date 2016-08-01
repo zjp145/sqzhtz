@@ -2,8 +2,6 @@ package com.zhang.sqone.utils;
 
 import android.util.Base64;
 
-import org.apache.http.NameValuePair;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -11,6 +9,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
+
+import cz.msebera.android.httpclient.NameValuePair;
 
 public class RestUtil {
 	

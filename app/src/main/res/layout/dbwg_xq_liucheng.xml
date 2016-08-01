@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--办事公文的详情中的流程跟踪-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.zhang.sqone.views.ListViewForScrollView
+    android:id="@+id/liucheng_genzhong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+   >
+</com.zhang.sqone.views.ListViewForScrollView>
+</LinearLayout>

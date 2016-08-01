@@ -4,7 +4,9 @@
     <dimen name="title_height">51dp</dimen>
     <dimen name="font19">19sp</dimen>
     <dimen name="font_14">14sp</dimen>
-    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_12">12dp</dimen>
+    <dimen name="font_13">13dp</dimen>
+    <dimen name="font_16">16dp</dimen>
     <dimen name="line">1dp</dimen>
     <dimen name="map_text_margin_top">2dp</dimen>
     <dimen name="sex_pop_hei">49dp</dimen>
@@ -18,4 +20,180 @@
     <dimen name="main_p_marr">5dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!--搜索布局使用的-->
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+    <dimen name="layout_width">29dp</dimen>
+    <!--提示文字大小-->
+    <dimen name="lint_text_size">11dp</dimen>
+    <!--搜索框的界面top高度-->
+    <dimen name="ss_layout_top">7dp</dimen>
+    <!--搜索的边界范围-->
+    <dimen name="ss_layout_mar">16dp</dimen>
+
+
+    <!--文本的标题文字大小-->
+    <dimen name="text_title_size">14dp</dimen>
+    <!--item top marginTop-->
+    <dimen name="item_title_top">14dp</dimen>
+    <!--item Bottom marginBottom-->
+    <dimen name="item_title_bottom">14dp</dimen>
+    <!--item 图片的和时间的距离-->
+    <dimen name="item_title_right2">7dp</dimen>
+    <!--姓名和头像之间的距离 附件图片和附件的个数-->
+    <dimen name="item_title_left2">7dp</dimen>
+    <!--附件和姓名之间的距离-->
+    <dimen name="item_title_left3">22dp</dimen>
+    <!--布局之间的距离-->
+    <dimen name="item_title_top2">9dp</dimen>
+    <!--收藏按钮和边界的距离-->
+    <dimen name="item_title_right3">12dp</dimen>
+    <!--item  边界值 下载边界值-->
+    <dimen name="item_left">16dp</dimen>
+    <dimen name="item_right">16dp</dimen>
+    <!--办事公文的边界值-->
+    <dimen name="dbgw_item_left">15dp</dimen>
+    <dimen name="dbgw_item_right">15dp</dimen>
+    <!--办事公文的边界值的数值-->
+    <dimen name="top_1">16dp</dimen>
+    <dimen name="top_2">18dp</dimen>
+    <dimen name="top_3">21dp</dimen>
+    <dimen name="top_4">19dp</dimen>
+    <!--办事公文的提示文字到标题的距离-->
+    <dimen name="wz_ts_top">1dp</dimen>
+    <!--办事公文使递 发使用的距离-->
+    <dimen name="d_dbgw_item_left">63dp</dimen>
+
+    <!--详情使用的文字大小-->
+    <dimen name="xiangqing_text_size">13dp</dimen>
+    <!--文字到item的高度-->
+    <dimen name="xiangqing_top_margin">23dp</dimen>
+    <!--文字段落的间距-->
+    <dimen name="xiangqing_top_wenzi">30dp</dimen>
+    <!--文字距底部的距离-->
+    <dimen name="xiangqing_bottom_margin">23dp</dimen>
+
+
+    <!--详情item下载top-->
+    <dimen name="xiangqing_item_margintop">10dp</dimen>
+    <!--详情item图片和文字的距离-->
+    <dimen name="xiangqing_item_marimright">15dp</dimen>
+    <!--详情item下载大小top-->
+    <dimen name="xiangqing_item_top">5dp</dimen>
+    <!--详情item下载大小left-->
+    <dimen name="xiangqing_item_left">26dp</dimen>
+    <!--详情item下载right-->
+    <dimen name="xiangqing_item_right">24dp</dimen>
+    <!--详情item下载bottom-->
+    <dimen name="xiangqing_item_bottom">10dp</dimen>
+    <!--详情item下载速度right-->
+    <dimen name="xiangqing_item_suduright">10dp</dimen>
+
+
+    <!--下载item-->
+    <!--图片距顶部的距离-->
+    <dimen name="xiazai_item_top">13dp</dimen>
+    <!--图片和文字的距离-->
+    <dimen name="xiazai_tp_totext">15dp</dimen>
+    <!--文件大小到和文字的距离-->
+    <dimen name="xiazai_dx_totext">5dp</dimen>
+    <!--下载到右边界的距离-->
+    <dimen name="xiazai_xz_right">24dp</dimen>
+
+
+    <!--天竺社区首页布局登录的高度-->
+    <!--登录界面的使用的布局高度-->
+    <!--<dimen name="shoueye_layout_height">187dp</dimen>-->
+    <!--登录首页的文字大小-->
+    <dimen name="shoueye_yout_title_text">18dp</dimen>
+    <!--登录的文字大小-->
+    <dimen name="shoueye_yout_dl_text">14dp</dimen>
+    <!--简介的文字大小-->
+    <dimen name="shoueye_yout_jj_text">12dp</dimen>
+    <!--首页的使用的消息图标的margin-->
+    <dimen name="shouye_xiaoxitp_marginright">15dp</dimen>
+    <!--首页文字到布局顶端的距离-->
+    <dimen name="shouye_wz_top">40dp</dimen>
+    <!--头像到首页文字的距离-->
+    <dimen name="shouye_tx_wz_margin">33dp</dimen>
+    <!--头像到左边布局的距离-->
+    <dimen name="shouye_tx_layout_margin">33dp</dimen>
+    <!--头像到右边文字的距离-->
+    <dimen name="shouye_tx_right_margin">15dp</dimen>
+    <!--登录到小图片的距离-->
+    <dimen name="shouye_dl_xtp">9dp</dimen>
+    <!--登录到简介的距离-->
+    <dimen name="shouye_dl_jj">11dp</dimen>
+    <!--首页分割线的高度-->
+    <dimen name="shouye_view">5dp</dimen>
+
+    <!--首页gridview 的item高度-->
+    <dimen name="shouye_item_height">104dp</dimen>
+    <!--首页使用的girdview item的图片top-->
+    <dimen name="shouye_item_top">19dp</dimen>
+    <!--首页的gridview item 图片和文字的距离-->
+    <dimen name="shouye_item_twtop">7dp</dimen>
+    <!--首页girdview 文字的item底部的距离-->
+    <dimen name="shouye_item_wb">21dp</dimen>
+    <!--首页的文字的大小-->
+    <dimen name="shouye_item_wsize">12dp</dimen>
+
+
+    <!--登录界面的任务栏样式高度-->
+    <dimen name="dengle_action_height">25dp</dimen>
+    <!--登录界面中手机top-->
+    <dimen name="dengle_wz_top">45dp</dimen>
+    <!--登录界面左右边距-->
+    <dimen name="dengle_left_right">21dp</dimen>
+    <!--手机文字大小-->
+    <dimen name="denglu_phone">12dp</dimen>
+    <!--登录界面手机文字top-->
+    <dimen name="denglu_phone_top">19dp</dimen>
+    <!--手机文字到view的距离-->
+    <dimen name="denglu_phone_view">9dp</dimen>
+    <!--密码到分割线的距离-->
+    <dimen name="denglu_mima_top">25dp</dimen>
+    <!--忘记密码的top-->
+    <dimen name="denglu_wuji_top">21dp</dimen>
+    <!--忘记密码和新用户注册距离-->
+    <dimen name="denglu_wuji_x">13dp</dimen>
+    <!--登录按钮的高度-->
+    <dimen name="denglu_button">42dp</dimen>
+    <!--登录按钮top-->
+    <dimen name="denglu_button_top">31dp</dimen>
+
+    <!--我的界面中的item的高度-->
+    <dimen name="my_height_item">40dp</dimen>
+    <!--我的界面上的item的left  图片在右边的距离-->
+    <dimen name="my_left_item">18dp</dimen>
+    <!--我的界面的箭头的位置-->
+    <dimen name="my_jiant_left">12dp</dimen>
+    <!--调整我的信息界面的item-->
+    <dimen name="my_item_top">3dp</dimen>
+
+    <!--头像上传中的left  环境监测的距离 地址的边界值-->
+    <dimen name="tx_left">16dp</dimen>
+    <!--头像上传的图片和文字的距离-->
+    <dimen name="tu_wenleft">11dp</dimen>
+    <!--第三方绑定边界距离-->
+    <dimen name="disan_text_mar">7dp</dimen>
+
+    <!--oa首页使用的图片home和扫一扫的图片top-->
+    <dimen name="oa_home_top">10dp</dimen>
+    <!--oa首页文字和图片的距离-->
+    <dimen name="oa_wenz_tp">9dp</dimen>
+
+    <dimen name="oa_title_text_top">11dp</dimen>
+    <dimen name="oa_title_text_left">13dp</dimen>
+
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="item_bottom">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--科室之窗列表图片mar距离-->
+    <dimen name="keshi_t_mar">14dp</dimen>
+    <!-- 科室之窗和科室介绍的图片高度-->
+    <dimen name="keshi_zc_h">140dp</dimen>
 </resources>
+

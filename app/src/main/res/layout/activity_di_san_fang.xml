@@ -1,0 +1,144 @@
+<!--长传头像-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.UploadHeadActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disanfang"></com.zhang.sqone.views.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:src="@mipmap/third_weixin"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/tu_wenleft"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="微信"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/title_bg"
+                android:textSize="12dp"
+                android:text="未验证"
+                />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/disan_text_mar"
+            android:layout_marginRight="@dimen/tx_left"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:src="@mipmap/third_qq"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/tu_wenleft"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="QQ"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/title_bg"
+            android:textSize="12dp"
+            android:text="未验证"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/disan_text_mar"
+            android:layout_marginRight="@dimen/tx_left"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height_item"
+        android:background="@drawable/linearlayout_strok"
+        android:layout_marginTop="@dimen/my_item_top"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:src="@mipmap/third_xinlang"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginLeft="@dimen/tu_wenleft"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="新浪"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/title_bg"
+            android:textSize="12dp"
+            android:text="未验证"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/disan_text_mar"
+            android:layout_marginRight="@dimen/tx_left"
+            android:src="@mipmap/arrow"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

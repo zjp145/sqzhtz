@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/qj_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftButtonEnable="true"
+        android:text="事假申请"></com.zhang.sqone.views.TitleBarView>
+    <WebView
+        android:id="@+id/qingjia_h5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></WebView>
+    <ScrollView
+        android:id="@+id/zhang_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/shenqing_fj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/linearlayout_br"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加附件"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="14dp"
+                    android:textColor="#333"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/ceshi_button"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@mipmap/tianjia"
+                    />
+            </LinearLayout>
+            <com.zhang.sqone.views.ListViewForScrollView
+                android:id="@+id/sq_list"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.zhang.sqone.views.ListViewForScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

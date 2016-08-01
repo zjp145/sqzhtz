@@ -8,18 +8,25 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.provider.MediaStore;
+import android.telephony.PhoneNumberUtils;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import android.util.Log;
 
 import com.zhang.sqone.Globals;
 
 import java.io.File;
 import java.lang.reflect.Field;
+import java.util.Calendar;
 import java.util.List;
 import java.util.UUID;
 import java.util.regex.Matcher;
@@ -68,6 +75,16 @@ public class AppUtil {
 
 
 	/**
+	 * 判断当前设备是手机还是平板，代码来自 Google I/O App for Android
+	 * @param context
+	 * @return 平板返回 True，手机返回 False
+	 */
+	public static boolean isTablet(Context context) {
+		return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE;
+	}
+
+
+	/**
 	 * 获取应用程序的版本号
 	 * 
 	 * @return
@@ -80,6 +97,18 @@ public class AppUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "";
+		}
+	}
+	/**
+	 * 调起系统发短信功能
+	 * @param phoneNumber
+	 * @param message
+	 */
+	public void doSendSMSTo(String phoneNumber,String message){
+		if(PhoneNumberUtils.isGlobalPhoneNumber(phoneNumber)){
+			Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:" + phoneNumber));
+			intent.putExtra("sms_body", message);
+//			startActivity(intent);
 		}
 	}
 
@@ -147,12 +176,61 @@ public class AppUtil {
 							android.provider.Settings.Secure.ANDROID_ID);
 			UUID deviceUuid = new UUID(androidId.hashCode(),
 					((long) tmDevice.hashCode() << 32) | tmSerial.hashCode());
-			DeviceId = deviceUuid.toString();
+			//获得是手机uuid
+//			DeviceId = deviceUuid.toString();
+			//获得是手机的imei码
+			DeviceId ="" + tm.getDeviceId();
 		}
 		return DeviceId;
 	}
 
 
+	/**
+	 * 获取手机设备号（uuid）
+	 *
+	 * @return 手机设备号
+	 */
+
+	public static String getDeviceId2() {
+		if (DeviceId == null) {
+			final TelephonyManager tm = (TelephonyManager) Globals.context
+					.getSystemService(Context.TELEPHONY_SERVICE);
+			final String tmDevice, tmSerial, androidId;
+			tmDevice = "" + tm.getDeviceId();
+			tmSerial = "" + tm.getSimSerialNumber();
+			androidId = ""
+					+ android.provider.Settings.Secure.getString(
+					Globals.context.getContentResolver(),
+					android.provider.Settings.Secure.ANDROID_ID);
+			UUID deviceUuid = new UUID(androidId.hashCode(),
+					((long) tmDevice.hashCode() << 32) | tmSerial.hashCode());
+			//获得是手机uuid
+			DeviceId = deviceUuid.toString();
+		}
+		return DeviceId;
+	}
+
+	public static String getMacAddress(Context context) {
+		// 获取mac地址：
+		String macAddress = "000000000000";
+		try {
+			WifiManager wifiMgr = (WifiManager) context
+					.getSystemService(Context.WIFI_SERVICE);
+			WifiInfo info = (null == wifiMgr ? null : wifiMgr
+					.getConnectionInfo());
+			if (null != info) {
+				if (!TextUtils.isEmpty(info.getMacAddress()))
+					macAddress = info.getMacAddress().replace(":", "");
+				else
+					return macAddress;
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return macAddress;
+		}
+		return macAddress;
+	}
 	public static boolean isTopActivty(String packageNameFlg) {
 		ActivityManager activityManager = (ActivityManager) Globals.context
 				.getSystemService(Context.ACTIVITY_SERVICE);
@@ -382,7 +460,8 @@ public class AppUtil {
 	 * */
 	public static boolean isMobileNO(String mobiles) {
 		Pattern p = Pattern
-				.compile("^((13[0-9])|(15[^4,//D])|(18[0,5-9]))//d{8}$");
+				.compile("^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$"
+				);
 		Matcher m = p.matcher(mobiles);
 		System.out.println(m.matches() + "---");
 		return m.matches();
@@ -410,4 +489,86 @@ public class AppUtil {
 		Matcher m = p.matcher(s);
 		return m.matches();
 	}
+
+	//判断文件是否存在
+	public static  boolean fileIsExists(String strFile)
+	{
+		try
+		{
+			File f=new File(strFile);
+			if(!f.exists())
+			{
+				return false;
+			}
+
+		}
+		catch (Exception e)
+		{
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * <pre>
+	 * 根据指定的日期字符串获取星期几
+	 * </pre>
+	 *
+	 * @param strDate 指定的日期字符串(yyyy-MM-dd 或 yyyy/MM/dd)
+	 * @return week
+	 *         星期几(MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY)
+	 */
+	public static String getWeek(String strDate)
+	{
+		int year = Integer.parseInt(strDate.substring(0, 4));
+		int month = Integer.parseInt(strDate.substring(5, 7));
+		int day = Integer.parseInt(strDate.substring(8, 10));
+
+		Calendar c = Calendar.getInstance();
+		Log.i("zhang", year+"-"+month+"-"+day);
+		c.set(Calendar.YEAR, year);
+		c.set(Calendar.MONTH, month - 1);
+		c.set(Calendar.DAY_OF_MONTH, day);
+
+		String week = "";
+		int weekIndex = c.get(Calendar.DAY_OF_WEEK);
+
+		switch (weekIndex)
+		{
+			case 1:
+				week = "日";
+				break;
+			case 2:
+				week = "一";
+				break;
+			case 3:
+				week = "二";
+				break;
+			case 4:
+				week = "三";
+				break;
+			case 5:
+				week = "四";
+				break;
+			case 6:
+				week = "五";
+				break;
+			case 7:
+				week = "六";
+				break;
+		}
+		return week;
+	}
+	/**
+	 * 是不是网址：
+	 * */
+	public static boolean isWeb(String s) {
+		String strPattern = "(http|ftp|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?";
+		Pattern p = Pattern.compile(strPattern);
+		Matcher m = p.matcher(s);
+		return m.matches();
+	}
+
+
 }

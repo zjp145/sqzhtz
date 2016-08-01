@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--天竺社区首页布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_tabbar_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/headbg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/shouye_wz_top">
+
+                    <TextView
+
+                        android:id="@+id/shouye_title_t"
+                        style="@style/shouye_title_text"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:text="首页" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/shouye_xiaoxitp_marginright"
+                        android:src="@mipmap/info" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/shouye_tx_wz_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/shouye_tx_layout_margin"
+                        android:layout_marginRight="@dimen/shouye_tx_right_margin"
+                        >
+                        <com.zhang.sqone.views.CircularImage
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/edit_portrait_bg" />
+                        <com.zhang.sqone.views.CircularImage
+                            android:id="@+id/shouye_tuxiang"
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:layout_gravity="center"
+
+                            android:src="@mipmap/portrait" />
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/shouye_dl_zc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/shouye_nc"
+                                style="@style/shouye_dl_text"
+                                android:text="@string/denglu_zhuce" />
+
+                            <ImageView
+                                android:id="@+id/shouye_nc_iamge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/shouye_dl_xtp"
+                                android:src="@mipmap/whitearrow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/shouye_phone"
+                            style="@style/shouye_jj_text"
+                            android:layout_marginTop="@dimen/shouye_dl_jj"
+                            android:text="@string/zhuhuitianzhu" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--创建一个分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shouye_view"
+                android:background="@color/view_cr"></View>
+            <!--创建gridView 上面的线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_cr"></View>
+            <!--创建一个gridView 显示应用的状态-->
+            <com.zhang.sqone.views.GridViewForScrollView
+                android:id="@+id/shouye_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grid_cr"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"></com.zhang.sqone.views.GridViewForScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

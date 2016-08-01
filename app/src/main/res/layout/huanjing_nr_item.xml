@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--环境检查内容-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/linearlayout_br"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/check_fraction"/>
+        <TextView
+            android:id="@+id/nr_fenshu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/font_fff"
+            android:textSize="11dp"
+
+            />
+
+
+    </FrameLayout>
+
+<TextView
+    android:id="@+id/neirong_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:layout_marginLeft="12.7dp"
+    android:layout_marginBottom="18dp"
+
+    />
+</LinearLayout>

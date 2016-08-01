@@ -1,0 +1,337 @@
+<!--我的工资详情-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_cr"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.my.UserDAActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的工资"></com.zhang.sqone.views.TitleBarView>
+<ListView
+    android:id="@+id/gz_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#00000000"
+    android:dividerHeight="3dp"
+    ></ListView>
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_lygxm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="员工姓名"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_ygxm"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="胡博"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/zhanghu_phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="时间"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_sj"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="2015-01"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/zhanghu_xgmm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="挂职补助"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_gzbz"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="500元"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/zhanghu_dsf"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="扣住房公积金"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_kzzgjj"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="1000元"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/zhanghu_nianxian"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="养老保险扣款"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_ylbxkk"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="300元"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_lshfgz"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="实发工资"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_shfgg"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="6666元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_ljbgz"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="基本工资"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_jbgz"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="1000元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_lsy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="失业"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_sy"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="300元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_lxj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="小计"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_xj"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="6666元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+        <!--android:id="@+id/gz_lbfygz"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/my_height_item"-->
+        <!--android:background="@drawable/linearlayout_strok"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginTop="@dimen/my_item_top"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--style="@style/title_text"-->
+            <!--android:layout_marginLeft="@dimen/my_left_item"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="13dp"-->
+            <!--android:text="补发月工资"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/gz_bfygz"-->
+            <!--style="@style/grid_item_text"-->
+            <!--android:textColor="#999999"-->
+            <!--android:layout_marginRight="@dimen/my_left_item"-->
+            <!--android:text="1000元"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_ljsgz"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="计税工资"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_jsgz"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="300元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/gz_lbz"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/my_height_item"-->
+            <!--android:background="@drawable/linearlayout_strok"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="@dimen/my_item_top"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/title_text"-->
+                <!--android:layout_marginLeft="@dimen/my_left_item"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="备注"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/gz_bz"-->
+                <!--style="@style/grid_item_text"-->
+                <!--android:textColor="#999999"-->
+                <!--android:layout_marginRight="@dimen/my_left_item"-->
+                <!--android:text="6666元"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+<!--</ScrollView>-->
+
+
+
+</LinearLayout>

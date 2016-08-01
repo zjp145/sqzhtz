@@ -16,8 +16,6 @@ import com.zhang.sqone.Globals;
 
 import java.util.Map;
 
-//import me.huixin.tryst.ui.LoginActivity;
-
 /**
  * 2015年5月5日17:03:46
  */
@@ -39,7 +37,7 @@ public abstract class VolleyUtil {
         }
 
         StringRequest sr = new StringRequest(Request.Method.POST,
-                Globals.WS_URI, new Response.Listener<String>() {
+                Globals.WS_URI_WJ, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.i("asd123456", response);
@@ -55,10 +53,7 @@ public abstract class VolleyUtil {
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (response != null) {
-                    Log.i(Globals.LOG_TAG, "res:" + response);
-                    analysisData(response);
-                }
+
             }
         }, new Response.ErrorListener() {
             @Override

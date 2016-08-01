@@ -4,7 +4,9 @@ import android.app.Application;
 import android.app.Service;
 import android.graphics.Bitmap;
 import android.os.Vibrator;
+import android.support.multidex.MultiDex;
 
+import com.igexin.sdk.PushManager;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -14,6 +16,8 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 
 import java.io.File;
+
+import cn.sharesdk.framework.ShareSDK;
 
 /**
  * 首次启动初始化数据类 等等程序启动的时候将会首先创建实例化的对象
@@ -31,6 +35,12 @@ public class GuideApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        MultiDex.install(this);
+        /**使用的sharedsdk*/
+        ShareSDK.initSDK(this);
+
+        PushManager.getInstance().initialize(this.getApplicationContext());
+
 //        SDKInitializer.initialize(getApplicationContext());
 //        RequestManager.init(getApplicationContext());
         // 百度地图初始化
@@ -74,11 +84,11 @@ public class GuideApplication extends Application {
      */
     public static ImageLoaderConfiguration getImageLoaderConfiguration() {
         DisplayImageOptions options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.mipmap.ic_launcher) // resource or
+                .showImageOnLoading(R.mipmap.tongxunlu) // resource or
                         // drawable
-//				.showImageForEmptyUri(R.drawable.logo_c) // resource or
+				.showImageForEmptyUri(R.mipmap.tongxunlu) // resource or
                         // drawable
-                .showImageOnFail(R.mipmap.ic_launcher) // resource or drawable
+                .showImageOnFail(R.mipmap.tongxunlu) // resource or drawable
                 .cacheInMemory(true) // default
                 .cacheOnDisk(true) // default
                 .imageScaleType(ImageScaleType.EXACTLY)

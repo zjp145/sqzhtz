@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.xiangqing.XiangQingActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/djyl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_xiangqiang"></com.zhang.sqone.views.TitleBarView>
+
+    <include layout="@layout/lie_biao_item"
+        ></include>
+
+    <WebView
+        android:id="@+id/xiangqing_con2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_left"
+        android:layout_marginRight="@dimen/item_right"
+        android:layout_marginTop="@dimen/xiangqing_top_margin"
+        android:layout_marginBottom="@dimen/xiangqing_bottom_margin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/darkgray" />
+
+    <ListView
+        android:id="@+id/xiangqing_list"
+        android:background="@drawable/linearlayout_br"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

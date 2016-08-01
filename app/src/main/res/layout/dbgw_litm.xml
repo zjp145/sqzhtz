@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--代办公文使用过的litm使用的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_br"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dbgw_item_left"
+        android:layout_marginRight="@dimen/dbgw_item_right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/iamge_bsf"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:orientation="vertical"
+            android:background="@drawable/gz_br"
+            android:layout_marginTop="@dimen/top_1"
+            android:layout_marginRight="@dimen/item_title_right2"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/bs_cy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/font_fff"
+
+                />
+
+            <TextView
+                android:id="@+id/bs_tianshus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:textColor="@color/font_fff"
+
+                />
+
+        </LinearLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/banshi_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/top_1"-->
+            <!--android:layout_marginRight="@dimen/item_title_right2"-->
+            <!--android:src="@mipmap/round_b" />-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/banshi_title"
+                style="@style/title_text"
+                android:layout_marginTop="@dimen/top_2"
+               />
+
+            <TextView
+                android:id="@+id/banshi_tishi"
+                style="@style/ss_lint_text"
+                android:layout_marginTop="@dimen/wz_ts_top"
+                android:textSize="12dp"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_3"
+                    android:layout_marginRight="@dimen/item_title_right2"
+                    android:src="@mipmap/time" />
+
+                <TextView
+                    android:id="@+id/banshi_time"
+                    style="@style/ss_lint_text"
+                    android:layout_marginTop="@dimen/top_4"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/hyap_cx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wz_ts_top"
+                android:gravity="center_vertical"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_title_right2"
+                    android:src="@mipmap/fujin" />
+
+                <TextView
+                    android:id="@+id/banshi_fj"
+                    style="@style/ss_lint_text"
+                    android:text="3个附件" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/zhu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+    <ImageView
+        android:id="@+id/banshi_zhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/zhu"
+        android:layout_marginTop="@dimen/item_title_top2"
+
+        />
+    <TextView
+        android:id="@+id/banshi_name_zhu"
+        style="@style/ss_lint_text"
+        android:layout_marginRight="@dimen/dbgw_item_right"
+        android:layout_marginLeft="@dimen/item_title_left2"
+        android:layout_marginTop="@dimen/item_title_top2"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banshi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/item_title_top2"
+        android:layout_marginLeft="@dimen/d_dbgw_item_left"
+        android:layout_marginRight="@dimen/dbgw_item_right"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/banshi_moren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/green_f"
+            />
+        <TextView
+            android:id="@+id/banshi_name_f"
+
+            style="@style/ss_lint_text"
+            android:layout_marginLeft="@dimen/item_title_left2"
+            />
+        <ImageView
+            android:id="@+id/banshi_iamge12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/green_d"
+            android:layout_marginLeft="@dimen/item_title_left3"
+            />
+        <TextView
+            android:id="@+id/banshi_name_d"
+            style="@style/ss_lint_text"
+
+            android:layout_marginLeft="@dimen/item_title_left2"
+
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/shoucang_iamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@mipmap/triangle"
+        />
+
+</LinearLayout>

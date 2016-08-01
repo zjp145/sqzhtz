@@ -1,0 +1,15 @@
+<!--天竺期刊-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.home.TzqkFragment">
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:id="@+id/qikan_list"
+        android:divider="@color/view_cr"
+        android:dividerHeight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+</LinearLayout>

@@ -2,175 +2,305 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e0000000"
-    android:gravity="bottom"
+    android:background="@mipmap/bg"
     android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
 
-    <LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <!--创建一个gridView 显示应用的状态-->
+    <com.zhang.sqone.views.GridViewForScrollView
+        android:id="@+id/jia_gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@null"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"></com.zhang.sqone.views.GridViewForScrollView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="38dp"-->
+        <!--android:orientation="horizontal" >-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_shijia"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_shijia" />-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_talk" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="事假申请"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="说说"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_bingjia"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_bingjia" />-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_transferphotos" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="病假申请"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="照片"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_nianjia"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical" >-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_nianjia" />-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_watermarkcamera" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="年假申请"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash; 第二行 &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="38dp"-->
+        <!--android:orientation="horizontal" >-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_bangwei"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="水印相机"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:id="@+id/jia_dangweizheng_iamge"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/dangchaxun" />-->
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            <!--<TextView-->
+                <!--android:id="@+id/jia_dangweizheng_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="党委章"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_video" />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_zhengfu"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="短视频"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
-    </LinearLayout>
-    <!-- 第二行 -->
+            <!--<ImageView-->
+                <!--android:id="@+id/jia_zhengfuzhang_iamge"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_chaxun" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
+            <!--<TextView-->
+                <!--android:id="@+id/jia_zhengfuzhang_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="党委章"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_huiyi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:orientation="vertical" >-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/huiyishi" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="会议室预定"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash; 第二行 &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal" >-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_bangfw"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_dangfw" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="党委发文"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_zhangfufw"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/jia_zhengfw" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="政府发文"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/jia_zhengwei"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="invisible"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="14dp"-->
+                <!--android:src="@mipmap/huiyishi" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="会议室预定"-->
+                <!--android:textColor="#666"-->
+                <!--android:textSize="12dp" />-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/jia_guan"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:background="#fff"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:src="@mipmap/guan"
+        />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_registration" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="签到"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_journal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="便签"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@mipmap/skin_tabbar_btn_popup_addmore" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="添点应用"
-                android:textColor="#ffffffff"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
-        </LinearLayout>
-    </LinearLayout>
-
+</LinearLayout>
 </LinearLayout>

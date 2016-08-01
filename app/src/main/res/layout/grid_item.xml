@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--适配Gridview的是item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:gravity="center_horizontal"
+    android:background="@color/font_fff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/grid_item"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/shouye_item_top"/>
+        <ImageView
+            android:id="@+id/grid_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gridscanicon"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/grid_text"
+        style="@style/grid_item_text"
+        android:layout_marginTop="@dimen/shouye_item_twtop"
+        android:gravity="center_horizontal"
+        android:maxEms="6"
+        android:text="扫一扫"/>
+
+</LinearLayout>

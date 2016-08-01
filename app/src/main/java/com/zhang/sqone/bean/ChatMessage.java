@@ -1,5 +1,5 @@
 package com.zhang.sqone.bean;
-//万能适配的适配对话布局的实体类
+//cv锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆伙拷锟斤拷锟街碉拷实锟斤拷锟斤拷
 public class ChatMessage
 {
 	private int icon;

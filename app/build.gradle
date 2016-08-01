@@ -1,27 +1,30 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
-
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
     defaultConfig {
         applicationId "com.zhang.sqone"
-        minSdkVersion 10
-        targetSdkVersion 22
-        versionCode 1
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 22
         versionName "1.0"
         //友盟设置
         // dex突破65535的限制
+
         multiDexEnabled true
         // 默认是umeng的渠道
         manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
         //个推
-//        manifestPlaceholders = [
-//                GETUI_APP_ID    : "Ty2mJU93GL6EbJc2zABIg5",
-//                GETUI_APP_KEY   : "98V2vE9oIn8KGQHo34deBA",
-//                GETUI_APP_SECRET: "wC4VGaV1Us8Mzxno9RAZOA",
-//                PACKAGE_NAME    : applicationId
-//        ]
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "kvOxnTwy7V8fZmNrd0XKS8",
+                GETUI_APP_KEY   : "wBRJ9YjoLz5OCcPkANPdT2",
+                GETUI_APP_SECRET: "JvqrPyk1WN7KmmUhzjT4o2",
+                PACKAGE_NAME    : applicationId
+        ]
     }
     //这个是解决lint报错的代码
     lintOptions {
@@ -35,14 +38,14 @@ android {
             //storeFile file("F:\\cegradlekey/jzqkey")
         }
         relealse {
-            //签名文件的路径
-            storeFile file("F:\\cegradlekey/jzqkey")
-            //签名文件的密码
-            storePassword "1234qwer"
-            //签名文件的别名
-            keyAlias "jzq"
-            //确认密码
-            keyPassword "1234qwer"
+//            //签名文件的路径
+//            storeFile file("F:\\cegradlekey/jzqkey")
+//            //签名文件的密码
+//            storePassword "1234qwer"
+//            //签名文件的别名
+//            keyAlias "jzq"
+//            //确认密码
+//            keyPassword "1234qwer"
         }
     }
 
@@ -77,10 +80,10 @@ android {
             // 移除无用的resource文件
             shrinkResources true
             //加载默认混淆配置文件 progudard-android.txt在sdk目录里面，不用管，proguard.cfg是我们自己配<span></span>的混淆文件
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
             //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             //签名
-            signingConfig signingConfigs.relealse
+//            signingConfig signingConfigs.relealse
         }
     }
 
@@ -113,25 +116,29 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
-
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.+'
     compile files('libs/gson-2.2.1.jar')
     compile files('libs/json-lib-2.4-jdk15.jar')
-    compile files('libs/libammsdk.jar')
     compile files('libs/universal-image-loader-1.9.3-with-sources.jar')
     compile files('libs/Volley.jar')
     compile project(':library')
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile project(':onekeyshare')
+    compile files('libs/protobuf-java-2.5.0.jar')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.zhy:percent-support-extends:1.0.4'
     compile 'cz.msebera.android:httpclient:4.4.1.1'
-    compile files('libs/android-async-http-1.4.9.jar')
-    compile 'io.reactivex:rxjava:1.0.14'
-    compile 'io.reactivex:rxandroid:1.0.1'
-
-
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.getui:sdk:2.8.1.0'
+    compile 'com.getui:ext:2.0.3'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
 }

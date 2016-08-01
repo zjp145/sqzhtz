@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.zhang.sqone.xiangqing.XiangQingActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/title_xinzeng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightButtonEnable="true"
+        android:text="新增日程"></com.zhang.sqone.views.TitleBarView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:textSize="13dp"
+        android:textColor="#333"
+        android:text="日期"
+        />
+
+<LinearLayout
+    android:id="@+id/xinzeng_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginBottom="17dp"
+    android:background="@drawable/linearlayout_br"
+    >
+<TextView
+    android:id="@+id/text_riqi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rili"
+        />
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:textSize="13dp"
+        android:textColor="#333"
+        android:text="时间"
+        />
+
+    <LinearLayout
+        android:id="@+id/xinzeng_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/linearlayout_br"
+        >
+        <TextView
+            android:id="@+id/text_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rili"
+            />
+    </LinearLayout>
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:textSize="13dp"
+                android:textColor="#333"
+                android:text="事项"
+                />
+
+            <EditText
+                android:id="@+id/xinzeng_shixiang"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:gravity="top"
+                android:textSize="11dp"
+                android:background="@drawable/linearlayout_br"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="17dp"
+                />
+
+
+
+</LinearLayout>

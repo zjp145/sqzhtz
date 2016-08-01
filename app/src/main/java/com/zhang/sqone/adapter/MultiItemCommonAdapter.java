@@ -6,7 +6,11 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-
+/**
+*android 对话形式的ListView 适配器
+*@author ZJP
+*created at 2016/3/14 15:00
+*/
 public abstract class MultiItemCommonAdapter<T> extends CommonAdapter<T>
 {
 

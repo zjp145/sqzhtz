@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--科员风采使用的list展示item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_br"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/keshi_fc_iamge"
+        android:layout_width="75dp"
+        android:layout_height="101dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/zhnwei2"
+        android:layout_marginLeft="@dimen/keshi_t_mar"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/linearlayout_br"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="11dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/keshi_t_mar"
+        android:orientation="vertical" android:layout_marginBottom="11dp"
+        android:layout_marginTop="11dp"
+
+        >
+        <TextView
+            android:id="@+id/keshi_fc_title"
+            style="@style/keshi_liebiao_text1"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/font_14"
+            android:maxEms="13"
+            android:layout_marginBottom="12dp"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/keshi_fc_zhiwei"
+                style="@style/keshi_liebiao_text2"
+
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/keshi_fc_keshi"
+                style="@style/keshi_liebiao_text2"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/shengri" />
+
+            <TextView
+                android:id="@+id/keshi_fc_shengri"
+                style="@style/ss_lint_text"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/dianhua" />
+
+            <TextView
+                android:id="@+id/keshi_fc_dihua"
+                style="@style/ss_lint_text"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

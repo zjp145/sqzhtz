@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/view_cr"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftButtonEnable="true"
+        android:text="已发送"></com.zhang.sqone.views.TitleBarView>
+
+
+    <com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView
+        android:id="@+id/xieyoujian_list"
+        android:dividerHeight="6dp"
+        android:divider="@color/view_cr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhang.sqone.pullswipe.PullToRefreshSwipeMenuListView>
+
+</LinearLayout>

@@ -7,7 +7,11 @@ import com.zhang.sqone.bean.ChatMessage;
 
 import java.util.List;
 
-
+/**
+*android （万能适配器）对话形式的适配器
+*@author ZJP
+*created at 2016/3/14 15:02
+*/
 
 public class ChatAdapter extends MultiItemCommonAdapter<ChatMessage>
 {

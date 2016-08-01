@@ -1,0 +1,123 @@
+<!--验证手机号码-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/font_fff"
+    tools:context="com.zhang.sqone.my.YanZhengPhoneActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj"
+        />
+    <com.zhang.sqone.views.TitleBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yan_zheng_phone"
+        ></com.zhang.sqone.views.TitleBarView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dengle_wz_top"
+        android:layout_marginLeft="@dimen/dengle_left_right"
+        android:layout_marginRight="@dimen/dengle_left_right"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/yanzheng_phone"
+            style="@style/title_text"
+            android:text="原手机号"
+            />
+        <EditText
+            android:id="@+id/yanzheng_phone_e"
+            style="@style/denglu_phone_text"
+            android:layout_marginTop="@dimen/denglu_phone_top"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:numeric="integer"
+            android:layout_marginBottom="@dimen/denglu_phone_view"
+            android:hint="请输入手机号"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_color"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:layout_marginTop="@dimen/denglu_mima_top"
+            android:text="验证码"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/denglu_phone_top"
+            android:layout_marginBottom="@dimen/denglu_phone_view"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/yanzheng_yzm"
+                style="@style/denglu_phone_text"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:numeric="integer"
+                android:hint="请输入验证码"
+                />
+            <Button
+                android:id="@+id/yanzheng_yzm_button"
+                android:layout_width="72dp"
+                android:layout_height="22dp"
+                android:background="@drawable/yan_zheng_ma_button"
+                android:text="获取验证码"
+                android:textColor="#b0b0b0"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_color"
+            />
+
+        <LinearLayout
+            android:id="@+id/di_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="21dp"
+
+            >
+         <TextView
+             style="@style/denglu_phone_text"
+             android:text="如果原手机无法使用，请点击"
+             />
+            <TextView
+                android:id="@+id/lianxi_kefu"
+                style="@style/denglu_phone_text"
+                android:textColor="@color/rul_bj"
+                android:text="联系客服"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/yanzheng_button"
+            style="@style/denglu_button"
+            android:text="@string/xia_yi_bu"
+            android:textColor="@color/font_fff"
+            android:layout_marginTop="@dimen/denglu_button_top"
+            android:textSize="@dimen/font_14"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

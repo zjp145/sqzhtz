@@ -2,16 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/font_fff"
-    android:gravity="center_horizontal"
+    android:background="#fff"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.sq.jzq.SplashScreenActivity">
+    tools:context="com.zhang.sqone.SplashScreenActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@mipmap/mm0" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/qidongye" />
 
 </LinearLayout>

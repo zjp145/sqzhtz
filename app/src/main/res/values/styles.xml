@@ -4,7 +4,12 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-
+    <!-- 分割线 -->
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line</item>
+        <item name="android:background">@color/line</item>
+    </style>
     <!--底部导航栏 begin-->
     <style name="main_bottom_bar_linear">
         <item name="android:layout_width">0dp</item>
@@ -33,6 +38,176 @@
         <item name="android:layout_height">@dimen/line</item>
         <item name="android:background">@color/line</item>
     </style>
+
+    <!--EditText的提示文字样式  下载文件的大小显示（item） 下载的速度   办事公文提示文字-->
+    <style name="ss_lint_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lint_text_size</item>
+        <item name="android:textColor">@color/lint_text_color</item>
+    </style>
+
+    <!--标题文本格式  登录页面的文字  我的信息文字  会议预定的item标题文字-->
+    <style name="title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <!--<item name="android:ellipsize">end</item>-->
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColor">@color/text_title_color</item>
+    </style>
+    <!--详情用的文字-->
+    <style name="xiangqing_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/xiangqing_text_size</item>
+        <item name="android:textColor">@color/xiangqing_text_color</item>
+
+    </style>
+    <!--详情使用的item文字的大小 下载文字大小 -->
+    <style name="xiangqing_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lint_text_size</item>
+        <item name="android:textColor">@color/xiangqing_item_text_color</item>
+
+    </style>
+    <!--首页文字-->
+    <style name="shouye_title_text">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/shoueye_yout_title_text</item>
+        <item name="android:textColor">@color/font_fff</item>
+
+    </style>
+    <!--oa首页文字-->
+    <style name="shouye_dl_text">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/shoueye_yout_dl_text</item>
+        <item name="android:textColor">@color/font_fff</item>
+
+    </style>
+
+    <style name="shouye_jj_text">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/shoueye_yout_jj_text</item>
+        <item name="android:textColor">@color/font_fff</item>
+
+    </style>
+
+    <!--首页的gridview item 的文字样式  版本文字使用 oa标题文字-->
+    <style name="grid_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/shouye_item_wsize</item>
+        <item name="android:textColor">@color/font_333</item>
+    </style>
+
+    <!--登录手机的输入文字样式-->
+    <style name="denglu_phone_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/denglu_phone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/phone_color</item>
+
+    </style>
+
+    <style name="denglu_wjma">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/shoueye_yout_dl_text</item>
+        <item name="android:textColor">@color/rul_bj</item>
+    </style>
+
+    <style name="denglu_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/denglu_button</item>
+        <item name="android:background">@drawable/denglu_bj</item>
+    </style>
+    <!--环境检查的地址的标题-->
+    <style name="huangjing_dizhi">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:textColor">@color/lint_text_color</item>
+
+    </style>
+    <!--环境检查的地址的详情-->
+    <style name="huangjing_dizhi_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:textColor">@color/font_333</item>
+
+    </style>
+
+    <!--提示文字-->
+    <style name="mk_tishi_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/lint_text_color</item>
+
+    </style>
+    <!--科室之窗的列表的标题文字-->
+    <style name="keshi_liebiao_text1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:textColor">@color/font_333</item>
+
+    </style>
+    <!--科室之窗使用的内容文字-->
+    <style name="keshi_liebiao_text2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <!-- 999-->
+        <item name="android:textColor">@color/lint_text_color</item>
+
+    </style>
+    <!--科室介绍的标题文字-->
+    <style name="keshi_biaoti_text1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <!-- 595959-->
+        <item name="android:textColor">@color/xiangqing_text_color</item>
+
+    </style>
+    <!--会议室预定使用的文字-->
+    <style name="huiyi_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <!-- 595959-->
+        <item name="android:textColor">@color/c_a0a0a0</item>
+
+    </style>
+    <!--会议描述的使用的文字个数-->
+    <style name="huiyi_miaosu_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11dp</item>
+        <!-- 595959-->
+        <item name="android:textColor">@color/c_fb8472</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
 

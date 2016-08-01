@@ -5,9 +5,6 @@ import android.util.Log;
 
 import com.zhang.sqone.Globals;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpResponseException;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
@@ -24,6 +21,9 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
 import java.util.List;
+
+import cz.msebera.android.httpclient.NameValuePair;
+import cz.msebera.android.httpclient.client.HttpResponseException;
 
 public class RestTask extends AsyncTask<Void, Integer, Object> {
     private static final String TAG = "RestTask";

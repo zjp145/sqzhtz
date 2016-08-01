@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
+import android.webkit.WebView;
 import android.widget.Checkable;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -102,6 +103,13 @@ public class ViewHolder
 		tv.setText(text);
 		return this;
 	}
+
+	public ViewHolder loadData(int viewId, String text)
+	{
+		WebView wv = getView(viewId);
+		wv.loadData(text, "text/html", "UTF-8");
+		return this;
+	}
 	//给image添加图片资源 id
 	public ViewHolder setImageResource(int viewId, int resId)
 	{
@@ -170,6 +178,13 @@ public class ViewHolder
 	}
 	//设view的显示还是隐藏
 	public ViewHolder setVisible(int viewId, boolean visible)
+	{
+		View view = getView(viewId);
+		view.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+		return this;
+	}
+
+	public ViewHolder setVisible1(int viewId, boolean visible)
 	{
 		View view = getView(viewId);
 		view.setVisibility(visible ? View.VISIBLE : View.GONE);

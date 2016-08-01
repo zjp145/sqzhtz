@@ -3,4 +3,5 @@
 
     <item android:drawable="@mipmap/home2" android:state_selected="true"/>
     <item android:drawable="@mipmap/home1"/>
+
 </selector>

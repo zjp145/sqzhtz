@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_cr"
+    tools:context="com.zhang.sqone.home.KeShiXQActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dengle_action_height"
+        android:background="@color/rul_bj" />
+
+    <com.zhang.sqone.views.TitleBarView
+        android:id="@+id/keshi_zc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科室之窗"></com.zhang.sqone.views.TitleBarView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/view_cr"
+            >
+            <LinearLayout
+                android:id="@+id/keshi_xuanze"
+                android:layout_width="332dp"
+                android:layout_height="29dp"
+                android:padding="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/banshi_xiangqiang_br"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/keshi_zc_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/font_fff"
+                    android:textSize="12dp"
+                    android:background="@color/rul_bj"
+                    android:text="科室介绍"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+
+                    android:background="@color/rul_bj"
+                    android:layout_height="match_parent"></View>
+
+
+                <TextView
+                    android:id="@+id/keshi_zc_qk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/rul_bj"
+                    android:textSize="12dp"
+                    android:text="天竺期刊"
+                    />
+                <View
+                    android:layout_width="1dp"
+
+                    android:background="@color/rul_bj"
+                    android:layout_height="match_parent"></View>
+
+
+                <TextView
+                    android:id="@+id/keshi_zc_fc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/rul_bj"
+                    android:textSize="12dp"
+                    android:text="科员风采"
+                    />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/keshi_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_cr"
+                android:layout_below="@id/keshi_xuanze"
+                >
+
+
+            </View>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/keshi_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

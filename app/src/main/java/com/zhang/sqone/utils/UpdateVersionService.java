@@ -19,15 +19,19 @@ import android.widget.Toast;
 
 import com.zhang.sqone.Globals;
 import com.zhang.sqone.R;
+import com.zhang.sqone.bean.Test1;
+import com.zhang.sqone.views.GengXinD2;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * 检测安装更新文件的助手类
@@ -67,6 +71,7 @@ public class UpdateVersionService {
 		}
 
 	};
+	private List<Test1.ReqTest11.Test11Map> t1;
 
 	/**
 	 * 构造方法
@@ -89,7 +94,41 @@ public class UpdateVersionService {
 	 */
 	public void checkUpdate() {
 		if (isUpdate()) {
-			showUpdateVersionDialog();// 显示提示对话框
+			final Test1.ReqTest11 index = Test1.ReqTest11.newBuilder().setAc("TEST11").build();
+			new TextUtilHttp() {
+				@Override
+				public <T> void analysisInputStreamData(Test1.ReqTest11 index) throws IOException {
+					t1 = index.getTest11ListList();
+					Log.i("zhang", "_______"+t1.get(1).getTs());
+					GengXinD2 d2 = new GengXinD2() {
+						@Override
+						public void determineButton() {
+							showUpdateVersionDialog();// 显示提示对话框
+						}
+					}.deleteDialog(context,t1);
+				}
+
+				@Override
+				public <T> void test(OutputStream outputStream) throws IOException {
+					index.writeTo(outputStream);
+				}
+
+				@Override
+				public <T> void test2(InputStream inputStream) throws IOException {
+//                Test1.ReqTest11 jhon1 = Test1.ReqTest11.parseFrom(inputStream);
+//               t1 = jhon1.getTest11ListList();
+//                Log.i("zhang", "_______"+t1.get(1).getTs());
+
+				}
+			}.protocolBuffer(context, Globals.GX, index, null);
+
+//			GengxinD d3 = new GengxinD() {
+//				@Override
+//				public void determineButton() {
+//					showUpdateVersionDialog();// 显示提示对话框
+//				}
+//			}.deleteDialog(context, "当前是最新版本v1.5.1", "", "");
+
 		} else {
 //			Toast.makeText(context, "已经是新版本", Toast.LENGTH_SHORT).show();
 		}
@@ -110,7 +149,8 @@ public class UpdateVersionService {
 		// 构造对话框
 		Builder builder = new Builder(context);
 		builder.setTitle("软件更新");
-		builder.setMessage("检测到新版本,是否下载更新");
+		builder.setMessage("检测到新版本,旧版本无法使用");
+		builder.setCancelable(false);
 		// 更新
 		builder.setPositiveButton("更新", new OnClickListener() {
 			@Override
@@ -121,10 +161,11 @@ public class UpdateVersionService {
 			}
 		});
 		// 稍后更新
-		builder.setNegativeButton("稍后更新", new OnClickListener() {
+		builder.setNegativeButton("关闭程序", new OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.dismiss();
+				System.exit(0);
 			}
 		});
 		Dialog noticeDialog = builder.create();
@@ -139,6 +180,7 @@ public class UpdateVersionService {
 			// 构造软件下载对话框
 			Builder builder = new Builder(context);
 			builder.setTitle("正在更新");
+			builder.setCancelable(false);
 			// 给下载对话框增加进度条
 			final LayoutInflater inflater = LayoutInflater.from(context);
 			View v = inflater.inflate(R.layout.downloaddialog, null);
@@ -149,6 +191,7 @@ public class UpdateVersionService {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					dialog.dismiss();
+					System.exit(0);
 					// 设置取消状态
 					cancelUpdate = true;
 				}

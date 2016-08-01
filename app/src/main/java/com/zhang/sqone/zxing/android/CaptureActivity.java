@@ -19,6 +19,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
 import com.zhang.sqone.R;
+import com.zhang.sqone.home.SyisActivity;
 import com.zhang.sqone.zxing.camera.CameraManager;
 import com.zhang.sqone.zxing.view.ViewfinderView;
 
@@ -185,11 +186,15 @@ public final class CaptureActivity extends Activity implements
 			beepManager.playBeepSoundAndVibrate();
 
 			Toast.makeText(this, "扫描成功", Toast.LENGTH_SHORT).show();
-
-			Intent intent = getIntent();
+			//源码操作
+//			Intent intent = getIntent();
+			Intent intent = new Intent(CaptureActivity.this,
+					SyisActivity.class);
 			intent.putExtra("codedContent", rawResult.getText());
 			intent.putExtra("codedBitmap", barcode);
-			setResult(RESULT_OK, intent);
+			//源码中的返回
+//			setResult(RESULT_OK, intent);
+			startActivity(intent);
 			finish();
 		}
 
