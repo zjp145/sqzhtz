@@ -83,45 +83,45 @@ public class Globals {
 //    public static final String JBD_BS = "161";
 
 /*开发环境*/
-//    /**环境上传图片*/
-//    public static final String BM_URL = "http://192.168.1.50:8280/MonitorPhoto";
-//    /**头像上传图片*/
-//    public static final String WS_URI_POTO = "http://192.168.1.50:8280/UserPhoto";
-//    /**文件上传文件*/
-//    public static final String WS_URI_WJ = "http://192.168.1.50:8280/sickleave";
-//    /**文件上传文件(传资料)*/
-//    public static final String WS_CZL_WJ = "http://192.168.1.50:8280/email";
-//    /**服务器网络请求地址*/
-//    public static final String WS_URI = "http://192.168.1.50:8280/Index";
-//    /**网络请求公文的地址*/
-//    public static  final String GW_URI ="http://192.168.1.50:8280/Document";
-//    /**网络请求环境的地址*/
-//    public static final String HJ_URI="http://192.168.1.50:8280/Monitor";
-//    /**领导日程  和 日程安排*/
-//    public static final  String LD_RUI = "http://192.168.1.50:8280/schedulemk";
-//    /**网络请求OA的地址*/
-//    public static final String OA_QQ="http://192.168.1.50:8280/login.cmd";
-//
-//    /**科室工作的地址接口*/
-//    public static  final String KS_URI ="http://192.168.1.50:8280/DepartmentWork";
-//
-//    /**科室工作查询接口*/
-//    public static  final String KSCX_URI ="http://192.168.1.50:8280/DepartmentWorkDoc";
-//    /**会议查询接口*/
-//    public static final String HYAP_URI = "http://192.168.1.50:8280/MeetingRoom";
-//    /**班子会议接口*/
-//    public static final String BZHY_URI = "http://192.168.1.50:8280/meetingDiscuss";
-//    /**通知公告  和 通信录的接口*/
-//    public static final String TZTX_URI="http://192.168.1.50:8280/NoticeContacts";
-//    /**资料接口*/
-//    public static final String ZL_URI="http://192.168.1.50:8280/outbox";
-//    /**h5中使用的连接地址*/
-//    public static final String MY_URI="http://192.168.1.50:8280/";
-//    /**值班安排  ，我的档案*/
-//    public static final String ZB_URI="http://192.168.1.50:8280/myself";
-//    public static final String VERSION_XML = "http://192.168.1.50:8280/SoftUpdate/Update.xml";
-//    public static final String GX = "http://192.168.1.50:8280/test11";
-//    public static final String JBD_BS = "50";
+    /**环境上传图片*/
+    public static final String BM_URL = "http://192.168.1.50:8280/MonitorPhoto";
+    /**头像上传图片*/
+    public static final String WS_URI_POTO = "http://192.168.1.50:8280/UserPhoto";
+    /**文件上传文件*/
+    public static final String WS_URI_WJ = "http://192.168.1.50:8280/sickleave";
+    /**文件上传文件(传资料)*/
+    public static final String WS_CZL_WJ = "http://192.168.1.50:8280/email";
+    /**服务器网络请求地址*/
+    public static final String WS_URI = "http://192.168.1.50:8280/Index";
+    /**网络请求公文的地址*/
+    public static  final String GW_URI ="http://192.168.1.50:8280/Document";
+    /**网络请求环境的地址*/
+    public static final String HJ_URI="http://192.168.1.50:8280/Monitor";
+    /**领导日程  和 日程安排*/
+    public static final  String LD_RUI = "http://192.168.1.50:8280/schedulemk";
+    /**网络请求OA的地址*/
+    public static final String OA_QQ="http://192.168.1.50:8280/login.cmd";
+
+    /**科室工作的地址接口*/
+    public static  final String KS_URI ="http://192.168.1.50:8280/DepartmentWork";
+
+    /**科室工作查询接口*/
+    public static  final String KSCX_URI ="http://192.168.1.50:8280/DepartmentWorkDoc";
+    /**会议查询接口*/
+    public static final String HYAP_URI = "http://192.168.1.50:8280/MeetingRoom";
+    /**班子会议接口*/
+    public static final String BZHY_URI = "http://192.168.1.50:8280/meetingDiscuss";
+    /**通知公告  和 通信录的接口*/
+    public static final String TZTX_URI="http://192.168.1.50:8280/NoticeContacts";
+    /**资料接口*/
+    public static final String ZL_URI="http://192.168.1.50:8280/outbox";
+    /**h5中使用的连接地址*/
+    public static final String MY_URI="http://192.168.1.50:8280/";
+    /**值班安排  ，我的档案*/
+    public static final String ZB_URI="http://192.168.1.50:8280/myself";
+    public static final String VERSION_XML = "http://192.168.1.50:8280/SoftUpdate/Update.xml";
+    public static final String GX = "http://192.168.1.50:8280/test11";
+    public static final String JBD_BS = "50";
 
 
       /*开发环境*/
@@ -248,44 +248,44 @@ public class Globals {
 //    public static final String GX = "http://test.zhihuitianzhu.com/test11";
 
  /*公司测试环境*/
-    /**环境上传图片*/
-    public static final String BM_URL = "http://192.168.1.234:8280/MonitorPhoto";
-    /**头像上传图片*/
-    public static final String WS_URI_POTO = "http://192.168.1.234:8280/UserPhoto";
-    /**服务器网络请求地址*/
-    public static final String WS_URI = "http://192.168.1.234:8280/Index";
-    /**网络请求公文的地址*/
-    public static  final String GW_URI ="http://192.168.1.234:8280/Document";
-    /**网络请求环境的地址*/
-    public static final String HJ_URI="http://192.168.1.234:8280/Monitor";
-    /**文件上传文件(传资料)*/
-    public static final String WS_CZL_WJ = "http://192.168.1.234:8280/email";
-    /**领导日程  和 日程安排*/
-    public static final  String LD_RUI = "http://192.168.1.234:8280/schedulemk";
-    /**网络请求OA的地址*/
-    public static final String OA_QQ="http://192.168.1.234:8280/login.cmd";
-    /**科室工作的地址接口*/
-    public static  final String KS_URI ="http://192.168.1.234:8280/DepartmentWork";
-
-    /**科室工作查询接口*/
-    public static  final String KSCX_URI ="http://192.168.1.234:8280/DepartmentWorkDoc";
-    /**会议查询接口*/
-    public static final String HYAP_URI = "http://192.168.1.234:8280/MeetingRoom";
-    /**通知公告  和 通信录的接口*/
-    public static final String TZTX_URI="http://192.168.1.234:8280/NoticeContacts";
-    /**h5中使用的连接地址*/
-    public static final String MY_URI="http://192.168.1.234:8280/";
-    /**值班安排  ， 我的档案*/
-    public static final String ZB_URI="http://192.168.1.234:8280/myself";
-    /**文件上传文件*/
-    /**班子会议接口*/
-    public static final String BZHY_URI = "http://192.168.1.234:8280/meetingDiscuss";
-    public static final String WS_URI_WJ = "http://192.168.1.234:8280/sickleave";
-    /**资料接口*/
-    public static final String ZL_URI="http://192.168.1.234:8280/outbox";
-    public static final String VERSION_XML = "http://192.168.1.234:8280/SoftUpdate/Update.xml";
- public static final String GX = "http://192.168.1.234:8280/test11";
-    public static final String JBD_BS = "234";
+//    /**环境上传图片*/
+//    public static final String BM_URL = "http://192.168.1.234:8280/MonitorPhoto";
+//    /**头像上传图片*/
+//    public static final String WS_URI_POTO = "http://192.168.1.234:8280/UserPhoto";
+//    /**服务器网络请求地址*/
+//    public static final String WS_URI = "http://192.168.1.234:8280/Index";
+//    /**网络请求公文的地址*/
+//    public static  final String GW_URI ="http://192.168.1.234:8280/Document";
+//    /**网络请求环境的地址*/
+//    public static final String HJ_URI="http://192.168.1.234:8280/Monitor";
+//    /**文件上传文件(传资料)*/
+//    public static final String WS_CZL_WJ = "http://192.168.1.234:8280/email";
+//    /**领导日程  和 日程安排*/
+//    public static final  String LD_RUI = "http://192.168.1.234:8280/schedulemk";
+//    /**网络请求OA的地址*/
+//    public static final String OA_QQ="http://192.168.1.234:8280/login.cmd";
+//    /**科室工作的地址接口*/
+//    public static  final String KS_URI ="http://192.168.1.234:8280/DepartmentWork";
+//
+//    /**科室工作查询接口*/
+//    public static  final String KSCX_URI ="http://192.168.1.234:8280/DepartmentWorkDoc";
+//    /**会议查询接口*/
+//    public static final String HYAP_URI = "http://192.168.1.234:8280/MeetingRoom";
+//    /**通知公告  和 通信录的接口*/
+//    public static final String TZTX_URI="http://192.168.1.234:8280/NoticeContacts";
+//    /**h5中使用的连接地址*/
+//    public static final String MY_URI="http://192.168.1.234:8280/";
+//    /**值班安排  ， 我的档案*/
+//    public static final String ZB_URI="http://192.168.1.234:8280/myself";
+//    /**文件上传文件*/
+//    /**班子会议接口*/
+//    public static final String BZHY_URI = "http://192.168.1.234:8280/meetingDiscuss";
+//    public static final String WS_URI_WJ = "http://192.168.1.234:8280/sickleave";
+//    /**资料接口*/
+//    public static final String ZL_URI="http://192.168.1.234:8280/outbox";
+//    public static final String VERSION_XML = "http://192.168.1.234:8280/SoftUpdate/Update.xml";
+// public static final String GX = "http://192.168.1.234:8280/test11";
+//    public static final String JBD_BS = "234";
     /**activity的tab判断界面*/
     public static final String TAB ="tab";
     /**判定是第三方验证还是修改密码的使用*/

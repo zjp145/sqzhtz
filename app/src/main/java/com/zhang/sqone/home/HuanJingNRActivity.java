@@ -38,9 +38,9 @@ public class HuanJingNRActivity extends BaseActivity implements AdapterView.OnIt
     ListView huanjingNrList;
     private String hjdzid;
     /**网络请求的数据集合*/
-    private List<Monitor.MonIndex.detailMap> deta;
+    private List<Monitor.MonIndex.contentMap> deta;
     /**万能适配器*/
-    private CommonAdapter<Monitor.MonIndex.detailMap> resultAdapter;
+    private CommonAdapter<Monitor.MonIndex.contentMap> resultAdapter;
     private Intent intent;
 
     @Override
@@ -60,18 +60,17 @@ public class HuanJingNRActivity extends BaseActivity implements AdapterView.OnIt
     /**网络请求数据*/
     public void regRequest() {
 
-        Monitor.MonIndex.contentMap.Builder companyMap =  Monitor.MonIndex.contentMap.newBuilder();
-        companyMap.setAddressid(hjdzid);
-        Monitor.MonIndex index = Monitor.MonIndex.newBuilder().setAc("JCNRL").setContent(companyMap).build();
+
+        Monitor.MonIndex index = Monitor.MonIndex.newBuilder().setAc("JCNRL").build();
 
         new HttpUtilMonitor() {
             @Override
             public <T> void analysisInputStreamData(Monitor.MonIndex index) throws IOException {
-              deta =index.getContent().getDetaillistList();
-                resultAdapter = new CommonAdapter<Monitor.MonIndex.detailMap>(HuanJingNRActivity.this,deta,R.layout.huanjing_nr_item) {
+              deta =index.getContentlistList();
+                resultAdapter = new CommonAdapter<Monitor.MonIndex.contentMap>(HuanJingNRActivity.this,deta,R.layout.huanjing_nr_item) {
                     @Override
-                    public void convert(ViewHolder holder, Monitor.MonIndex.detailMap detailMap) {
-                                holder.setText(R.id.neirong_text,detailMap.getContent());
+                    public void convert(ViewHolder holder, Monitor.MonIndex.contentMap detailMap) {
+                                holder.setText(R.id.neirong_text,detailMap.getContentname());
                                 holder.setText(R.id.nr_fenshu_text,detailMap.getScore()+"分");
                     }
                 };
@@ -83,7 +82,7 @@ public class HuanJingNRActivity extends BaseActivity implements AdapterView.OnIt
     /*点击的数据添加到主页面上*/
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        intent.putExtra(Globals.HJ_NR,deta.get(position).getContent());
+        intent.putExtra(Globals.HJ_NR,deta.get(position).getContentname());
         intent.putExtra(Globals.HJ_FS,deta.get(position).getScore());
          setResult(Activity.RESULT_OK, intent);//返回页面1
         finish();

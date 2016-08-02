@@ -16,6 +16,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -65,17 +68,33 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
     /**提交*/
             Button huanjingTijing;
     @Bind(R.id.huanjing_add1)
-            /**地址添加按钮*/
-    ImageView huanjingAdd1;
+    /**地址添加按钮*/
+            ImageView huanjingAdd1;
     @Bind(R.id.huanjing_add2)
-            /**内容添加按钮*/
-    ImageView huanjingAdd2;
+    /**内容添加按钮*/
+            ImageView huanjingAdd2;
     @Bind(R.id.huanjing_dizhitext)
-            /**地址回调添加数据*/
-    TextView huanjingDizhitext;
+    /**地址回调添加数据*/
+            TextView huanjingDizhitext;
     @Bind(R.id.huanjing_neirongtext)
-            /**内容回调添加数据*/
-    TextView huanjingNeirongtext;
+    /**内容回调添加数据*/
+            TextView huanjingNeirongtext;
+    @Bind(R.id.huanjing_dizhixqtext)
+    EditText huanjingDizhixqtext;
+    @Bind(R.id.zr_zhhj)
+    CheckBox zrZhhj;
+    @Bind(R.id.zr_zhhjtext)
+    TextView zrZhhjtext;
+    @Bind(R.id.zr_jdhj)
+    CheckBox zrJdhj;
+    @Bind(R.id.zr_jdhjtext)
+    TextView zrJdhjtext;
+    @Bind(R.id.zr_ljzyz)
+    CheckBox zrLjzyz;
+    @Bind(R.id.zr_ljzyztext)
+    TextView zrLjzyztext;
+    @Bind(R.id.huanjing_zr)
+    LinearLayout huanjingZr;
     /**
      * 当添加了一张图片 的图片路径
      */
@@ -85,13 +104,15 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
     /**
      * 回调数据中的环境地址的单位
      */
-    private String hjdzdw="";
+    private String hjdzdw = "";
     /**
      * 回调数据中的环境地址id
      */
-    private String hjdzid="";
-    /**环境内容*/
-    private String hjnr="";
+    private String hjdzid = "";
+    /**
+     * 环境内容
+     */
+    private String hjnr = "";
     /**
      * 地址的名字
      */
@@ -100,8 +121,11 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
      * 环境分数
      */
     private String fjfs;
-    /**图片id*/
+    /**
+     * 图片id
+     */
     private String tpid;
+    private String zrdw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,8 +133,37 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         setTranslucentStatus();
         setContentView(R.layout.activity_huan_jing);
         ButterKnife.bind(this);
-        GuideApplication.initLocation();
-        GuideApplication.mLocationClient.start();
+        huanjingDizhitext.setText(User.addr);
+        zrZhhj.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    zrJdhj.setChecked(false);
+                    zrLjzyz.setChecked(false);
+                    zrdw=zrZhhjtext.getText().toString().trim();
+                }
+            }
+        });
+        zrJdhj.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    zrZhhj.setChecked(false);
+                    zrLjzyz.setChecked(false);
+                    zrdw=zrJdhjtext.getText().toString().trim();
+                }
+            }
+        });
+        zrLjzyz.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    zrJdhj.setChecked(false);
+                    zrZhhj.setChecked(false);
+                    zrdw=zrLjzyztext.getText().toString().trim();
+                }
+            }
+        });
         onClicks();
 
     }
@@ -125,17 +178,23 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         huanjingTijing.setOnClickListener(this);
         huanjingAdd1.setOnClickListener(this);
         huanjingAdd2.setOnClickListener(this);
+        huanjingDizhitext.setOnClickListener(this);
     }
-    /**请求网络数据*/
+
+    /**
+     * 请求网络数据
+     */
     public void regRequest() {
-        Monitor.MonIndex.submit.Builder submit =  Monitor.MonIndex.submit.newBuilder();
-        submit.setAdress(hjdzna);
-        Log.i("zhang", hjdzna);
+        Monitor.MonIndex.submit.Builder submit = Monitor.MonIndex.submit.newBuilder();
+        submit.setExaminesite(huanjingDizhitext.getText().toString().trim());
+        submit.setImportsite(huanjingDizhixqtext.getText().toString().trim());
+//        Log.i("zhang", hjdzna);
         submit.setContent(hjnr);
         submit.setPhoto(tpid);
-        submit.setCompany(hjdzdw);
-        submit.setScore(fjfs);
-        Monitor.MonIndex index = Monitor.MonIndex.newBuilder().setSub(submit).setAc("TIJIAO").build();
+        submit.setCompany(zrdw);
+
+//        submit.setScore(fjfs);
+        Monitor.MonIndex index = Monitor.MonIndex.newBuilder().setSid(User.sid).setSub(submit).setAc("TIJIAO").build();
         new HttpUtilMonitor() {
             @Override
             public <T> void analysisInputStreamData(Monitor.MonIndex index) throws IOException {
@@ -156,23 +215,23 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
                 break;
             //内容
             case R.id.huanjing_add2:
-                if (hjdzid.equals("")||hjdzid==null){
-                    Toast.makeText(HuanJingActivity.this, "请先添加地址", Toast.LENGTH_SHORT).show();
-                }else{
+//                if (hjdzid.equals("") || hjdzid == null) {
+//                    Toast.makeText(HuanJingActivity.this, "请先添加地址", Toast.LENGTH_SHORT).show();
+//                } else {
                     Intent intent2 = new Intent(this, HuanJingNRActivity.class);
-                    if (!TextUtils.isEmpty(hjdzid)){
-                        intent2.putExtra(Globals.HJ_DZ_ID,hjdzid);
+                    if (!TextUtils.isEmpty(hjdzid)) {
+                        intent2.putExtra(Globals.HJ_DZ_ID, hjdzid);
                     }
                     startActivityForResult(intent2, 3);
-                }
+//                }
 
                 break;
             //图片
             case R.id.huanjing_tupian:
-                if(hjnr.equals("")||hjnr==null){
-
-                    Toast.makeText(HuanJingActivity.this, "请先添加地址和内容", Toast.LENGTH_SHORT).show();
-                }else{
+//                if (hjnr.equals("") || hjnr == null) {
+//
+//                    Toast.makeText(HuanJingActivity.this, "请先添加地址和内容", Toast.LENGTH_SHORT).show();
+//                } else {
 //                    Toast.makeText(HuanJingActivity.this, "添加图片", Toast.LENGTH_SHORT).show();
                     //选择图片
                     Intent intent1 = new Intent();
@@ -180,25 +239,26 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
                     intent1.putExtra("type", "picture");
                     intent1.putExtra("type2", "picture2");
                     startActivityForResult(intent1, 2);
-                }
+//                }
 
                 break;
             //提交
             case R.id.huanjing_tijing:
-                if(hjdzdw.equals("")){
-                    Toast.makeText(HuanJingActivity.this, "请先添加地址再提交", Toast.LENGTH_SHORT).show();
-                }
-                else if(hjnr.equals("")){
-                    Toast.makeText(HuanJingActivity.this, "请先添加内容再提交", Toast.LENGTH_SHORT).show();
-                }else if(TextUtils.isEmpty(pathImage)){
-                    Toast.makeText(HuanJingActivity.this, "请先添加图片再提交", Toast.LENGTH_SHORT).show();
+                Log.i("zhang", "_________"+zrdw);
+                if (huanjingDizhitext.getText().toString().trim().equals("")||hjnr.equals("")||TextUtils.isEmpty(pathImage)||zrdw.equals("")) {
+                    Toast.makeText(HuanJingActivity.this, "请完整添加信息", Toast.LENGTH_SHORT).show();
                 }else{
                     regRequest();
                 }
                 break;
+            //地址
+            case R.id.huanjing_dizhitext:
+
+                break;
         }
 
     }
+
     //返回的时候获得界面的返回值
     @Override
     protected void onResume() {
@@ -209,15 +269,18 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
             imageTj();
         }
         if (!TextUtils.isEmpty(hjdzdw) && !TextUtils.isEmpty(hjdzid)) {
-            huanjingDizhitext.setText(hjdzdw + hjdzna);
+            huanjingDizhitext.setText(hjdzna);
         }
-        if (!TextUtils.isEmpty(hjnr) ) {
+        if (!TextUtils.isEmpty(hjnr)) {
             huanjingNeirongtext.setText(hjnr);
         }
 
 
     }
-    /**上传图的使用网络请求*/
+
+    /**
+     * 上传图的使用网络请求
+     */
     private void imageTj() {
         au = new AlertUtil(this);
         AsyncHttpClient client = new AsyncHttpClient();
@@ -242,7 +305,7 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 String s = new String(bytes);
 
-                Log.i("swww1", s+"数据的长度"+s.length());
+                Log.i("swww1", s + "数据的长度" + s.length());
                 tpid = s;
                 au.closeDialog();
             }
@@ -255,8 +318,9 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         });
 
     }
+
     //跳转一会的数据返回
-     @Override
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case 1:
@@ -285,17 +349,19 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
                     }
                 }
                 break;
-            case  3:
+            case 3:
                 if (resultCode == Activity.RESULT_OK) {
                     hjnr = data.getStringExtra(Globals.HJ_NR);
-                    fjfs =data.getStringExtra(Globals.HJ_FS);
+                    fjfs = data.getStringExtra(Globals.HJ_FS);
                 }
                 break;
         }
 
     }
 
-    /**将uri转换成String形式*/
+    /**
+     * 将uri转换成String形式
+     */
     public static String getRealFilePath(final Context context, final Uri uri) {
         if (null == uri) return null;
         final String scheme = uri.getScheme();
@@ -318,6 +384,7 @@ public class HuanJingActivity extends BaseActivity implements View.OnClickListen
         }
         return data;
     }
+
     /**
      * 设置状态栏背景状态
      */

@@ -5,6 +5,7 @@ import android.util.Log;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.Poi;
+import com.zhang.sqone.bean.User;
 
 import java.util.List;
 
@@ -38,6 +39,7 @@ public class MyLocationListener implements BDLocationListener {
             sb.append(location.getDirection());// 单位度
             sb.append("\naddr : ");
             sb.append(location.getAddrStr());
+
             sb.append("\ndescribe : ");
             sb.append("gps定位成功");
 
@@ -74,5 +76,11 @@ public class MyLocationListener implements BDLocationListener {
             }
         }
         Log.i("BaiduLocationApiDem", sb.toString());
+        if (location.getAddrStr().equals("")||location.getAddrStr()==null){
+            User.addr="获取失败";
+        }else{
+            User.addr = location.getAddrStr();
+        }
+
     }
 }

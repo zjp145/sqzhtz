@@ -31,6 +31,8 @@ public class User {
 //    手机唯一标示符
     public static String mis_id="";
 
+//    用户地址
+    public static String addr="";
     /**用户设置的自动登录*/
     public static  boolean isAuto=true;
     /**消息推送*/
@@ -117,6 +119,7 @@ public class User {
     public static  String zfzcx_27 = "0";
 //    班子会议上报(显示不显示的判断)
     public static String bzhysb_28="0";
+
     /**是不是显示流程*/
     /**事假申请*/
     public static  String sjsq_28 = "0";

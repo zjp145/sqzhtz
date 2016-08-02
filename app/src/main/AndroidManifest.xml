@@ -127,7 +127,8 @@
             android:label="@string/title_activity_dai_ban" />
         <activity
             android:name=".home.HuanJingActivity"
-            android:label="@string/title_activity_huan_jing" />
+            android:label="@string/title_activity_huan_jing"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name=".home.HuanJingDZActivity"
             android:label="@string/title_activity_huan_jing_dz" />
@@ -234,13 +235,19 @@
         <activity android:name=".home.NewScheduleActivity" />
         <activity android:name=".home.XiaoXiZhongXinActivity" />
         <activity android:name=".home.HYZLActivity" />
-        <activity android:name=".xiangqing.HYCLXQActivity"></activity>
+        <activity android:name=".xiangqing.HYCLXQActivity" />
         <activity android:name=".home.SyisActivity" />
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
-        </service>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="2OeZLBrsxMmtWEqXuqPh7qzCEIWEYwcv" />
+
+        <activity android:name=".home.HjjclbActivity"></activity>
     </application>
 
 </manifest>

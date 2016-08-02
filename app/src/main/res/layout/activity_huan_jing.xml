@@ -16,93 +16,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/huanjing"></com.zhang.sqone.views.TitleBarView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-     <LinearLayout
-         android:id="@+id/huanjing_dizhi"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:background="@drawable/linearlayout_br"
-         android:layout_marginTop="4dp"
-         android:orientation="horizontal"
-         >
-         <LinearLayout
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_weight="1"
-             android:orientation="vertical"
-             >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/tx_left"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="11dp"
-                android:src="@mipmap/checking_address"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/title_text"
-                android:layout_marginTop="13dp"
-                android:layout_marginLeft="9dp"
-                android:text="检查地址"
-                />
-
-        </LinearLayout>
-        <TextView
-            android:id="@+id/huanjing_dizhitext"
-            style="@style/ss_lint_text"
-            android:textSize="12dp"
-            android:layout_marginLeft="43dp"
-            android:layout_marginTop="14dp"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="还未添加地址"
-            android:layout_marginBottom="11dp"
-            />
-
-
-         </LinearLayout>
-         <ImageView
-             android:id="@+id/huanjing_add1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_gravity="center_vertical"
-             android:layout_marginRight="17dp"
-             android:src="@mipmap/add"
-             />
-
-
-     </LinearLayout>
     <LinearLayout
-        android:id="@+id/huanjing_neirong"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/linearlayout_br"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         >
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:background="@drawable/linearlayout_br"
+            android:layout_marginTop="4dp"
             android:orientation="vertical"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/tx_left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="12dp"
                 android:orientation="horizontal"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="11dp"
-                    android:src="@mipmap/checking_content"
+                    android:src="@mipmap/checking_photo"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -110,64 +51,9 @@
                     style="@style/title_text"
                     android:layout_marginTop="13dp"
                     android:layout_marginLeft="9dp"
-                    android:text="检查内容"
+                    android:text="上传图片"
                     />
-
             </LinearLayout>
-            <TextView
-                android:id="@+id/huanjing_neirongtext"
-                style="@style/ss_lint_text"
-                android:textSize="12dp"
-                android:layout_marginLeft="43dp"
-                android:layout_marginTop="14dp"
-                android:text="还未添加内容"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:layout_marginBottom="11dp"
-                />
-
-
-        </LinearLayout>
-        <ImageView
-            android:id="@+id/huanjing_add2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="17dp"
-            android:src="@mipmap/add"
-            />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/linearlayout_br"
-        android:layout_marginTop="4dp"
-        android:orientation="vertical"
-        >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="12dp"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="11dp"
-                android:src="@mipmap/checking_photo"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/title_text"
-                android:layout_marginTop="13dp"
-                android:layout_marginLeft="9dp"
-                android:text="上传图片"
-                />
-        </LinearLayout>
 
 
             <ImageView
@@ -180,16 +66,273 @@
                 />
 
         </LinearLayout>
-    <Button
-        android:id="@+id/huanjing_tijing"
-        style="@style/denglu_button"
-        android:text="提交"
-        android:textColor="@color/font_fff"
-        android:layout_marginLeft="@dimen/tx_left"
-        android:layout_marginRight="@dimen/tx_left"
-        android:layout_marginTop="30dp"
-        android:textSize="@dimen/font_14"
-        />
+        <LinearLayout
+            android:id="@+id/huanjing_dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_br"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tx_left"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:src="@mipmap/checking_address"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/title_text"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="9dp"
+                        android:text="检查地址"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="43dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@mipmap/jiance_dizhi"
+                        />
+                    <TextView
+                        android:id="@+id/huanjing_dizhitext"
+                        style="@style/ss_lint_text"
+                        android:textSize="12dp"
+
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="还未添加地址"
+
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/huanjing_dizhixqtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="43dp"
+                    android:maxLength="100"
+                    android:layout_weight="1"
+                    android:textColor="@color/lint_text_color"
+                    android:gravity="top"
+                    android:layout_marginBottom="11dp"
+                    android:textSize="11dp"
+                    android:background="@drawable/linearlayout_br"
+                    android:hint="请输入..."
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/huanjing_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="17dp"
+                android:src="@mipmap/add"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/huanjing_neirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_br"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tx_left"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:src="@mipmap/checking_content"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/title_text"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="9dp"
+                        android:text="检查内容"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/huanjing_neirongtext"
+                    style="@style/ss_lint_text"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="14dp"
+                    android:text="还未添加内容"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginBottom="11dp"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/huanjing_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="17dp"
+                android:src="@mipmap/add"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/huanjing_zr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_br"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tx_left"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:src="@mipmap/huanjing_danwei"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/title_text"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="9dp"
+                        android:text="责任单位"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="43dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/zr_zhhj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:button="@drawable/zc_xzq"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/zr_zhhjtext"
+                        style="@style/denglu_wjma"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/denglu_wuji_x"
+                        android:text="村庄环境"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/zr_jdhj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:button="@drawable/zc_xzq"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/zr_jdhjtext"
+                        style="@style/denglu_wjma"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/denglu_wuji_x"
+                        android:text="街道环境"
+                        />
+                    <CheckBox
+                        android:id="@+id/zr_ljzyz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:button="@drawable/zc_xzq"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/zr_ljzyztext"
+                        style="@style/denglu_wjma"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/denglu_wuji_x"
+                        android:text="垃圾转运站"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/huanjing_tijing"
+            style="@style/denglu_button"
+            android:text="提交"
+            android:textColor="@color/font_fff"
+            android:layout_marginLeft="@dimen/tx_left"
+            android:layout_marginRight="@dimen/tx_left"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/font_14"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
 
 
 </LinearLayout>

@@ -119,60 +119,131 @@ public final class Monitor {
     com.google.protobuf.ByteString
         getMsgBytes();
 
-    // repeated .MonIndex.companyMap companylist = 5;
+    // optional string sid = 5;
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    boolean hasSid();
+    /**
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    java.lang.String getSid();
+    /**
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getSidBytes();
+
+    // repeated .MonIndex.companyMap companylist = 6;
+    /**
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap> 
         getCompanylistList();
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     com.zhang.sqone.bean.Monitor.MonIndex.companyMap getCompanylist(int index);
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     int getCompanylistCount();
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder> 
         getCompanylistOrBuilderList();
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder getCompanylistOrBuilder(
         int index);
 
-    // optional .MonIndex.contentMap content = 6;
+    // repeated .MonIndex.adressMap adresslist = 7;
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    boolean hasContent();
+    java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap> 
+        getAdresslistList();
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContent();
+    com.zhang.sqone.bean.Monitor.MonIndex.adressMap getAdresslist(int index);
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentOrBuilder();
+    int getAdresslistCount();
+    /**
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+     */
+    java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder> 
+        getAdresslistOrBuilderList();
+    /**
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder getAdresslistOrBuilder(
+        int index);
 
-    // optional .MonIndex.submit sub = 7;
+    // repeated .MonIndex.contentMap contentlist = 8;
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap> 
+        getContentlistList();
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContentlist(int index);
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    int getContentlistCount();
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> 
+        getContentlistOrBuilderList();
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentlistOrBuilder(
+        int index);
+
+    // optional .MonIndex.submit sub = 9;
+    /**
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
@@ -180,7 +251,7 @@ public final class Monitor {
      */
     boolean hasSub();
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
@@ -188,13 +259,122 @@ public final class Monitor {
      */
     com.zhang.sqone.bean.Monitor.MonIndex.submit getSub();
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
      * </pre>
      */
     com.zhang.sqone.bean.Monitor.MonIndex.submitOrBuilder getSubOrBuilder();
+
+    // repeated .MonIndex.monitorissueMap monilist = 10;
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> 
+        getMonilistList();
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonilist(int index);
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    int getMonilistCount();
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> 
+        getMonilistOrBuilderList();
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonilistOrBuilder(
+        int index);
+
+    // optional .MonIndex.monitorissueMap monimap = 11;
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    boolean hasMonimap();
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonimap();
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonimapOrBuilder();
+
+    // repeated .MonIndex.problempictureList problempicturelist = 12;
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> 
+        getProblempicturelistList();
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index);
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    int getProblempicturelistCount();
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+        getProblempicturelistOrBuilderList();
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+        int index);
+
+    // repeated .MonIndex.disposeictureList disposeicturelist = 13;
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> 
+        getDisposeicturelistList();
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index);
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    int getDisposeicturelistCount();
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+        getDisposeicturelistOrBuilderList();
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code MonIndex}
@@ -272,27 +452,35 @@ public final class Monitor {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+              bitField0_ |= 0x00000010;
+              sid_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
                 companylist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.companyMap>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000020;
               }
               companylist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.companyMap.PARSER, extensionRegistry));
               break;
             }
-            case 50: {
-              com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000010) == 0x00000010)) {
-                subBuilder = content_.toBuilder();
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+                adresslist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.adressMap>();
+                mutable_bitField0_ |= 0x00000040;
               }
-              content_ = input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.contentMap.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(content_);
-                content_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000010;
+              adresslist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.adressMap.PARSER, extensionRegistry));
               break;
             }
-            case 58: {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                contentlist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.contentMap>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              contentlist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.contentMap.PARSER, extensionRegistry));
+              break;
+            }
+            case 74: {
               com.zhang.sqone.bean.Monitor.MonIndex.submit.Builder subBuilder = null;
               if (((bitField0_ & 0x00000020) == 0x00000020)) {
                 subBuilder = sub_.toBuilder();
@@ -305,6 +493,43 @@ public final class Monitor {
               bitField0_ |= 0x00000020;
               break;
             }
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+                monilist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap>();
+                mutable_bitField0_ |= 0x00000200;
+              }
+              monilist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.PARSER, extensionRegistry));
+              break;
+            }
+            case 90: {
+              com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000040) == 0x00000040)) {
+                subBuilder = monimap_.toBuilder();
+              }
+              monimap_ = input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(monimap_);
+                monimap_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000040;
+              break;
+            }
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000800) == 0x00000800)) {
+                problempicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList>();
+                mutable_bitField0_ |= 0x00000800;
+              }
+              problempicturelist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.PARSER, extensionRegistry));
+              break;
+            }
+            case 106: {
+              if (!((mutable_bitField0_ & 0x00001000) == 0x00001000)) {
+                disposeicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList>();
+                mutable_bitField0_ |= 0x00001000;
+              }
+              disposeicturelist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.PARSER, extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -313,8 +538,23 @@ public final class Monitor {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
           companylist_ = java.util.Collections.unmodifiableList(companylist_);
+        }
+        if (((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+          adresslist_ = java.util.Collections.unmodifiableList(adresslist_);
+        }
+        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+          contentlist_ = java.util.Collections.unmodifiableList(contentlist_);
+        }
+        if (((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+          monilist_ = java.util.Collections.unmodifiableList(monilist_);
+        }
+        if (((mutable_bitField0_ & 0x00000800) == 0x00000800)) {
+          problempicturelist_ = java.util.Collections.unmodifiableList(problempicturelist_);
+        }
+        if (((mutable_bitField0_ & 0x00001000) == 0x00001000)) {
+          disposeicturelist_ = java.util.Collections.unmodifiableList(disposeicturelist_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -433,7 +673,7 @@ public final class Monitor {
      * Protobuf type {@code MonIndex.companyMap}
      *
      * <pre>
-     *地址列表
+     *责任单位列表
      * </pre>
      */
     public static final class companyMap extends
@@ -820,7 +1060,7 @@ public final class Monitor {
        * Protobuf type {@code MonIndex.companyMap}
        *
        * <pre>
-       *地址列表
+       *责任单位列表
        * </pre>
        */
       public static final class Builder extends
@@ -2174,57 +2414,86 @@ public final class Monitor {
     public interface contentMapOrBuilder
         extends com.google.protobuf.MessageOrBuilder {
 
-      // optional string addressid = 1;
+      // optional string contentid = 1;
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
-      boolean hasAddressid();
+      boolean hasContentid();
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
-      java.lang.String getAddressid();
+      java.lang.String getContentid();
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
       com.google.protobuf.ByteString
-          getAddressidBytes();
+          getContentidBytes();
 
-      // repeated .MonIndex.detailMap detaillist = 2;
+      // optional string contentname = 2;
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap> 
-          getDetaillistList();
+      boolean hasContentname();
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      com.zhang.sqone.bean.Monitor.MonIndex.detailMap getDetaillist(int index);
+      java.lang.String getContentname();
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      int getDetaillistCount();
+      com.google.protobuf.ByteString
+          getContentnameBytes();
+
+      // optional string score = 3;
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
        */
-      java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder> 
-          getDetaillistOrBuilderList();
+      boolean hasScore();
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
        */
-      com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder getDetaillistOrBuilder(
-          int index);
+      java.lang.String getScore();
+      /**
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getScoreBytes();
     }
     /**
      * Protobuf type {@code MonIndex.contentMap}
@@ -2279,15 +2548,17 @@ public final class Monitor {
               }
               case 10: {
                 bitField0_ |= 0x00000001;
-                addressid_ = input.readBytes();
+                contentid_ = input.readBytes();
                 break;
               }
               case 18: {
-                if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                  detaillist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.detailMap>();
-                  mutable_bitField0_ |= 0x00000002;
-                }
-                detaillist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.detailMap.PARSER, extensionRegistry));
+                bitField0_ |= 0x00000002;
+                contentname_ = input.readBytes();
+                break;
+              }
+              case 26: {
+                bitField0_ |= 0x00000004;
+                score_ = input.readBytes();
                 break;
               }
             }
@@ -2298,9 +2569,6 @@ public final class Monitor {
           throw new com.google.protobuf.InvalidProtocolBufferException(
               e.getMessage()).setUnfinishedMessage(this);
         } finally {
-          if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-            detaillist_ = java.util.Collections.unmodifiableList(detaillist_);
-          }
           this.unknownFields = unknownFields.build();
           makeExtensionsImmutable();
         }
@@ -2333,28 +2601,28 @@ public final class Monitor {
       }
 
       private int bitField0_;
-      // optional string addressid = 1;
-      public static final int ADDRESSID_FIELD_NUMBER = 1;
-      private java.lang.Object addressid_;
+      // optional string contentid = 1;
+      public static final int CONTENTID_FIELD_NUMBER = 1;
+      private java.lang.Object contentid_;
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
-      public boolean hasAddressid() {
+      public boolean hasContentid() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
-      public java.lang.String getAddressid() {
-        java.lang.Object ref = addressid_;
+      public java.lang.String getContentid() {
+        java.lang.Object ref = contentid_;
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
@@ -2362,71 +2630,146 @@ public final class Monitor {
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
-            addressid_ = s;
+            contentid_ = s;
           }
           return s;
         }
       }
       /**
-       * <code>optional string addressid = 1;</code>
+       * <code>optional string contentid = 1;</code>
        *
        * <pre>
-       * 地址id
+       * 内容id
        * </pre>
        */
       public com.google.protobuf.ByteString
-          getAddressidBytes() {
-        java.lang.Object ref = addressid_;
+          getContentidBytes() {
+        java.lang.Object ref = contentid_;
         if (ref instanceof java.lang.String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          addressid_ = b;
+          contentid_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
 
-      // repeated .MonIndex.detailMap detaillist = 2;
-      public static final int DETAILLIST_FIELD_NUMBER = 2;
-      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap> detaillist_;
+      // optional string contentname = 2;
+      public static final int CONTENTNAME_FIELD_NUMBER = 2;
+      private java.lang.Object contentname_;
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap> getDetaillistList() {
-        return detaillist_;
+      public boolean hasContentname() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder> 
-          getDetaillistOrBuilderList() {
-        return detaillist_;
+      public java.lang.String getContentname() {
+        java.lang.Object ref = contentname_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            contentname_ = s;
+          }
+          return s;
+        }
       }
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string contentname = 2;</code>
+       *
+       * <pre>
+       *内容名称
+       * </pre>
        */
-      public int getDetaillistCount() {
-        return detaillist_.size();
+      public com.google.protobuf.ByteString
+          getContentnameBytes() {
+        java.lang.Object ref = contentname_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          contentname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string score = 3;
+      public static final int SCORE_FIELD_NUMBER = 3;
+      private java.lang.Object score_;
+      /**
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
+       */
+      public boolean hasScore() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
        */
-      public com.zhang.sqone.bean.Monitor.MonIndex.detailMap getDetaillist(int index) {
-        return detaillist_.get(index);
+      public java.lang.String getScore() {
+        java.lang.Object ref = score_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            score_ = s;
+          }
+          return s;
+        }
       }
       /**
-       * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
+       * <code>optional string score = 3;</code>
+       *
+       * <pre>
+       * 分数
+       * </pre>
        */
-      public com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder getDetaillistOrBuilder(
-          int index) {
-        return detaillist_.get(index);
+      public com.google.protobuf.ByteString
+          getScoreBytes() {
+        java.lang.Object ref = score_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          score_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
       }
 
       private void initFields() {
-        addressid_ = "";
-        detaillist_ = java.util.Collections.emptyList();
+        contentid_ = "";
+        contentname_ = "";
+        score_ = "";
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -2441,10 +2784,13 @@ public final class Monitor {
                           throws java.io.IOException {
         getSerializedSize();
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeBytes(1, getAddressidBytes());
+          output.writeBytes(1, getContentidBytes());
         }
-        for (int i = 0; i < detaillist_.size(); i++) {
-          output.writeMessage(2, detaillist_.get(i));
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getContentnameBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeBytes(3, getScoreBytes());
         }
         getUnknownFields().writeTo(output);
       }
@@ -2457,11 +2803,15 @@ public final class Monitor {
         size = 0;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(1, getAddressidBytes());
+            .computeBytesSize(1, getContentidBytes());
         }
-        for (int i = 0; i < detaillist_.size(); i++) {
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, detaillist_.get(i));
+            .computeBytesSize(2, getContentnameBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(3, getScoreBytes());
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -2571,7 +2921,6 @@ public final class Monitor {
         }
         private void maybeForceBuilderInitialization() {
           if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-            getDetaillistFieldBuilder();
           }
         }
         private static Builder create() {
@@ -2580,14 +2929,12 @@ public final class Monitor {
 
         public Builder clear() {
           super.clear();
-          addressid_ = "";
+          contentid_ = "";
           bitField0_ = (bitField0_ & ~0x00000001);
-          if (detaillistBuilder_ == null) {
-            detaillist_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            detaillistBuilder_.clear();
-          }
+          contentname_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          score_ = "";
+          bitField0_ = (bitField0_ & ~0x00000004);
           return this;
         }
 
@@ -2619,16 +2966,15 @@ public final class Monitor {
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
             to_bitField0_ |= 0x00000001;
           }
-          result.addressid_ = addressid_;
-          if (detaillistBuilder_ == null) {
-            if (((bitField0_ & 0x00000002) == 0x00000002)) {
-              detaillist_ = java.util.Collections.unmodifiableList(detaillist_);
-              bitField0_ = (bitField0_ & ~0x00000002);
-            }
-            result.detaillist_ = detaillist_;
-          } else {
-            result.detaillist_ = detaillistBuilder_.build();
+          result.contentid_ = contentid_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
           }
+          result.contentname_ = contentname_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
+          result.score_ = score_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -2645,36 +2991,20 @@ public final class Monitor {
 
         public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.contentMap other) {
           if (other == com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance()) return this;
-          if (other.hasAddressid()) {
+          if (other.hasContentid()) {
             bitField0_ |= 0x00000001;
-            addressid_ = other.addressid_;
+            contentid_ = other.contentid_;
             onChanged();
           }
-          if (detaillistBuilder_ == null) {
-            if (!other.detaillist_.isEmpty()) {
-              if (detaillist_.isEmpty()) {
-                detaillist_ = other.detaillist_;
-                bitField0_ = (bitField0_ & ~0x00000002);
-              } else {
-                ensureDetaillistIsMutable();
-                detaillist_.addAll(other.detaillist_);
-              }
-              onChanged();
-            }
-          } else {
-            if (!other.detaillist_.isEmpty()) {
-              if (detaillistBuilder_.isEmpty()) {
-                detaillistBuilder_.dispose();
-                detaillistBuilder_ = null;
-                detaillist_ = other.detaillist_;
-                bitField0_ = (bitField0_ & ~0x00000002);
-                detaillistBuilder_ = 
-                  com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                     getDetaillistFieldBuilder() : null;
-              } else {
-                detaillistBuilder_.addAllMessages(other.detaillist_);
-              }
-            }
+          if (other.hasContentname()) {
+            bitField0_ |= 0x00000002;
+            contentname_ = other.contentname_;
+            onChanged();
+          }
+          if (other.hasScore()) {
+            bitField0_ |= 0x00000004;
+            score_ = other.score_;
+            onChanged();
           }
           this.mergeUnknownFields(other.getUnknownFields());
           return this;
@@ -2703,992 +3033,13 @@ public final class Monitor {
         }
         private int bitField0_;
 
-        // optional string addressid = 1;
-        private java.lang.Object addressid_ = "";
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public boolean hasAddressid() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
-        }
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public java.lang.String getAddressid() {
-          java.lang.Object ref = addressid_;
-          if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            addressid_ = s;
-            return s;
-          } else {
-            return (java.lang.String) ref;
-          }
-        }
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public com.google.protobuf.ByteString
-            getAddressidBytes() {
-          java.lang.Object ref = addressid_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
-            addressid_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
-        }
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public Builder setAddressid(
-            java.lang.String value) {
-          if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-          addressid_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public Builder clearAddressid() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          addressid_ = getDefaultInstance().getAddressid();
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string addressid = 1;</code>
-         *
-         * <pre>
-         * 地址id
-         * </pre>
-         */
-        public Builder setAddressidBytes(
-            com.google.protobuf.ByteString value) {
-          if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-          addressid_ = value;
-          onChanged();
-          return this;
-        }
-
-        // repeated .MonIndex.detailMap detaillist = 2;
-        private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap> detaillist_ =
-          java.util.Collections.emptyList();
-        private void ensureDetaillistIsMutable() {
-          if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-            detaillist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.detailMap>(detaillist_);
-            bitField0_ |= 0x00000002;
-           }
-        }
-
-        private com.google.protobuf.RepeatedFieldBuilder<
-            com.zhang.sqone.bean.Monitor.MonIndex.detailMap, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder> detaillistBuilder_;
-
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap> getDetaillistList() {
-          if (detaillistBuilder_ == null) {
-            return java.util.Collections.unmodifiableList(detaillist_);
-          } else {
-            return detaillistBuilder_.getMessageList();
-          }
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public int getDetaillistCount() {
-          if (detaillistBuilder_ == null) {
-            return detaillist_.size();
-          } else {
-            return detaillistBuilder_.getCount();
-          }
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap getDetaillist(int index) {
-          if (detaillistBuilder_ == null) {
-            return detaillist_.get(index);
-          } else {
-            return detaillistBuilder_.getMessage(index);
-          }
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder setDetaillist(
-            int index, com.zhang.sqone.bean.Monitor.MonIndex.detailMap value) {
-          if (detaillistBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            ensureDetaillistIsMutable();
-            detaillist_.set(index, value);
-            onChanged();
-          } else {
-            detaillistBuilder_.setMessage(index, value);
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder setDetaillist(
-            int index, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder builderForValue) {
-          if (detaillistBuilder_ == null) {
-            ensureDetaillistIsMutable();
-            detaillist_.set(index, builderForValue.build());
-            onChanged();
-          } else {
-            detaillistBuilder_.setMessage(index, builderForValue.build());
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder addDetaillist(com.zhang.sqone.bean.Monitor.MonIndex.detailMap value) {
-          if (detaillistBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            ensureDetaillistIsMutable();
-            detaillist_.add(value);
-            onChanged();
-          } else {
-            detaillistBuilder_.addMessage(value);
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder addDetaillist(
-            int index, com.zhang.sqone.bean.Monitor.MonIndex.detailMap value) {
-          if (detaillistBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            ensureDetaillistIsMutable();
-            detaillist_.add(index, value);
-            onChanged();
-          } else {
-            detaillistBuilder_.addMessage(index, value);
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder addDetaillist(
-            com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder builderForValue) {
-          if (detaillistBuilder_ == null) {
-            ensureDetaillistIsMutable();
-            detaillist_.add(builderForValue.build());
-            onChanged();
-          } else {
-            detaillistBuilder_.addMessage(builderForValue.build());
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder addDetaillist(
-            int index, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder builderForValue) {
-          if (detaillistBuilder_ == null) {
-            ensureDetaillistIsMutable();
-            detaillist_.add(index, builderForValue.build());
-            onChanged();
-          } else {
-            detaillistBuilder_.addMessage(index, builderForValue.build());
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder addAllDetaillist(
-            java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.detailMap> values) {
-          if (detaillistBuilder_ == null) {
-            ensureDetaillistIsMutable();
-            super.addAll(values, detaillist_);
-            onChanged();
-          } else {
-            detaillistBuilder_.addAllMessages(values);
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder clearDetaillist() {
-          if (detaillistBuilder_ == null) {
-            detaillist_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000002);
-            onChanged();
-          } else {
-            detaillistBuilder_.clear();
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public Builder removeDetaillist(int index) {
-          if (detaillistBuilder_ == null) {
-            ensureDetaillistIsMutable();
-            detaillist_.remove(index);
-            onChanged();
-          } else {
-            detaillistBuilder_.remove(index);
-          }
-          return this;
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder getDetaillistBuilder(
-            int index) {
-          return getDetaillistFieldBuilder().getBuilder(index);
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder getDetaillistOrBuilder(
-            int index) {
-          if (detaillistBuilder_ == null) {
-            return detaillist_.get(index);  } else {
-            return detaillistBuilder_.getMessageOrBuilder(index);
-          }
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder> 
-             getDetaillistOrBuilderList() {
-          if (detaillistBuilder_ != null) {
-            return detaillistBuilder_.getMessageOrBuilderList();
-          } else {
-            return java.util.Collections.unmodifiableList(detaillist_);
-          }
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder addDetaillistBuilder() {
-          return getDetaillistFieldBuilder().addBuilder(
-              com.zhang.sqone.bean.Monitor.MonIndex.detailMap.getDefaultInstance());
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder addDetaillistBuilder(
-            int index) {
-          return getDetaillistFieldBuilder().addBuilder(
-              index, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.getDefaultInstance());
-        }
-        /**
-         * <code>repeated .MonIndex.detailMap detaillist = 2;</code>
-         */
-        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder> 
-             getDetaillistBuilderList() {
-          return getDetaillistFieldBuilder().getBuilderList();
-        }
-        private com.google.protobuf.RepeatedFieldBuilder<
-            com.zhang.sqone.bean.Monitor.MonIndex.detailMap, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder> 
-            getDetaillistFieldBuilder() {
-          if (detaillistBuilder_ == null) {
-            detaillistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-                com.zhang.sqone.bean.Monitor.MonIndex.detailMap, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder>(
-                    detaillist_,
-                    ((bitField0_ & 0x00000002) == 0x00000002),
-                    getParentForChildren(),
-                    isClean());
-            detaillist_ = null;
-          }
-          return detaillistBuilder_;
-        }
-
-        // @@protoc_insertion_point(builder_scope:MonIndex.contentMap)
-      }
-
-      static {
-        defaultInstance = new contentMap(true);
-        defaultInstance.initFields();
-      }
-
-      // @@protoc_insertion_point(class_scope:MonIndex.contentMap)
-    }
-
-    public interface detailMapOrBuilder
-        extends com.google.protobuf.MessageOrBuilder {
-
-      // optional string contentid = 1;
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      boolean hasContentid();
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      java.lang.String getContentid();
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      com.google.protobuf.ByteString
-          getContentidBytes();
-
-      // optional string content = 2;
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      boolean hasContent();
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      java.lang.String getContent();
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      com.google.protobuf.ByteString
-          getContentBytes();
-
-      // optional string score = 3;
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      boolean hasScore();
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      java.lang.String getScore();
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      com.google.protobuf.ByteString
-          getScoreBytes();
-    }
-    /**
-     * Protobuf type {@code MonIndex.detailMap}
-     *
-     * <pre>
-     *内容详情
-     * </pre>
-     */
-    public static final class detailMap extends
-        com.google.protobuf.GeneratedMessage
-        implements detailMapOrBuilder {
-      // Use detailMap.newBuilder() to construct.
-      private detailMap(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-        super(builder);
-        this.unknownFields = builder.getUnknownFields();
-      }
-      private detailMap(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-      private static final detailMap defaultInstance;
-      public static detailMap getDefaultInstance() {
-        return defaultInstance;
-      }
-
-      public detailMap getDefaultInstanceForType() {
-        return defaultInstance;
-      }
-
-      private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-          getUnknownFields() {
-        return this.unknownFields;
-      }
-      private detailMap(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        initFields();
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              default: {
-                if (!parseUnknownField(input, unknownFields,
-                                       extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-              case 10: {
-                bitField0_ |= 0x00000001;
-                contentid_ = input.readBytes();
-                break;
-              }
-              case 18: {
-                bitField0_ |= 0x00000002;
-                content_ = input.readBytes();
-                break;
-              }
-              case 26: {
-                bitField0_ |= 0x00000004;
-                score_ = input.readBytes();
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e.getMessage()).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_detailMap_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_detailMap_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.zhang.sqone.bean.Monitor.MonIndex.detailMap.class, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder.class);
-      }
-
-      public static com.google.protobuf.Parser<detailMap> PARSER =
-          new com.google.protobuf.AbstractParser<detailMap>() {
-        public detailMap parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new detailMap(input, extensionRegistry);
-        }
-      };
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<detailMap> getParserForType() {
-        return PARSER;
-      }
-
-      private int bitField0_;
-      // optional string contentid = 1;
-      public static final int CONTENTID_FIELD_NUMBER = 1;
-      private java.lang.Object contentid_;
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      public boolean hasContentid() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      public java.lang.String getContentid() {
-        java.lang.Object ref = contentid_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            contentid_ = s;
-          }
-          return s;
-        }
-      }
-      /**
-       * <code>optional string contentid = 1;</code>
-       *
-       * <pre>
-       * 内容id  
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getContentidBytes() {
-        java.lang.Object ref = contentid_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          contentid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-
-      // optional string content = 2;
-      public static final int CONTENT_FIELD_NUMBER = 2;
-      private java.lang.Object content_;
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      public boolean hasContent() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      public java.lang.String getContent() {
-        java.lang.Object ref = content_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            content_ = s;
-          }
-          return s;
-        }
-      }
-      /**
-       * <code>optional string content = 2;</code>
-       *
-       * <pre>
-       * 内容  
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getContentBytes() {
-        java.lang.Object ref = content_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          content_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-
-      // optional string score = 3;
-      public static final int SCORE_FIELD_NUMBER = 3;
-      private java.lang.Object score_;
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public boolean hasScore() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public java.lang.String getScore() {
-        java.lang.Object ref = score_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            score_ = s;
-          }
-          return s;
-        }
-      }
-      /**
-       * <code>optional string score = 3;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getScoreBytes() {
-        java.lang.Object ref = score_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          score_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-
-      private void initFields() {
-        contentid_ = "";
-        content_ = "";
-        score_ = "";
-      }
-      private byte memoizedIsInitialized = -1;
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized != -1) return isInitialized == 1;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        getSerializedSize();
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeBytes(1, getContentidBytes());
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeBytes(2, getContentBytes());
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          output.writeBytes(3, getScoreBytes());
-        }
-        getUnknownFields().writeTo(output);
-      }
-
-      private int memoizedSerializedSize = -1;
-      public int getSerializedSize() {
-        int size = memoizedSerializedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(1, getContentidBytes());
-        }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(2, getContentBytes());
-        }
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(3, getScoreBytes());
-        }
-        size += getUnknownFields().getSerializedSize();
-        memoizedSerializedSize = size;
-        return size;
-      }
-
-      private static final long serialVersionUID = 0L;
-      @java.lang.Override
-      protected java.lang.Object writeReplace()
-          throws java.io.ObjectStreamException {
-        return super.writeReplace();
-      }
-
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input, extensionRegistry);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-      public static com.zhang.sqone.bean.Monitor.MonIndex.detailMap parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Builder newBuilder() { return Builder.create(); }
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(com.zhang.sqone.bean.Monitor.MonIndex.detailMap prototype) {
-        return newBuilder().mergeFrom(prototype);
-      }
-      public Builder toBuilder() { return newBuilder(this); }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code MonIndex.detailMap}
-       *
-       * <pre>
-       *内容详情
-       * </pre>
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessage.Builder<Builder>
-         implements com.zhang.sqone.bean.Monitor.MonIndex.detailMapOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_detailMap_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_detailMap_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  com.zhang.sqone.bean.Monitor.MonIndex.detailMap.class, com.zhang.sqone.bean.Monitor.MonIndex.detailMap.Builder.class);
-        }
-
-        // Construct using com.zhang.sqone.bean.Monitor.MonIndex.detailMap.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          }
-        }
-        private static Builder create() {
-          return new Builder();
-        }
-
-        public Builder clear() {
-          super.clear();
-          contentid_ = "";
-          bitField0_ = (bitField0_ & ~0x00000001);
-          content_ = "";
-          bitField0_ = (bitField0_ & ~0x00000002);
-          score_ = "";
-          bitField0_ = (bitField0_ & ~0x00000004);
-          return this;
-        }
-
-        public Builder clone() {
-          return create().mergeFrom(buildPartial());
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_detailMap_descriptor;
-        }
-
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap getDefaultInstanceForType() {
-          return com.zhang.sqone.bean.Monitor.MonIndex.detailMap.getDefaultInstance();
-        }
-
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap build() {
-          com.zhang.sqone.bean.Monitor.MonIndex.detailMap result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        public com.zhang.sqone.bean.Monitor.MonIndex.detailMap buildPartial() {
-          com.zhang.sqone.bean.Monitor.MonIndex.detailMap result = new com.zhang.sqone.bean.Monitor.MonIndex.detailMap(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-            to_bitField0_ |= 0x00000001;
-          }
-          result.contentid_ = contentid_;
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
-          }
-          result.content_ = content_;
-          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-            to_bitField0_ |= 0x00000004;
-          }
-          result.score_ = score_;
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.zhang.sqone.bean.Monitor.MonIndex.detailMap) {
-            return mergeFrom((com.zhang.sqone.bean.Monitor.MonIndex.detailMap)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.detailMap other) {
-          if (other == com.zhang.sqone.bean.Monitor.MonIndex.detailMap.getDefaultInstance()) return this;
-          if (other.hasContentid()) {
-            bitField0_ |= 0x00000001;
-            contentid_ = other.contentid_;
-            onChanged();
-          }
-          if (other.hasContent()) {
-            bitField0_ |= 0x00000002;
-            content_ = other.content_;
-            onChanged();
-          }
-          if (other.hasScore()) {
-            bitField0_ |= 0x00000004;
-            score_ = other.score_;
-            onChanged();
-          }
-          this.mergeUnknownFields(other.getUnknownFields());
-          return this;
-        }
-
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          com.zhang.sqone.bean.Monitor.MonIndex.detailMap parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.zhang.sqone.bean.Monitor.MonIndex.detailMap) e.getUnfinishedMessage();
-            throw e;
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
-          return this;
-        }
-        private int bitField0_;
-
         // optional string contentid = 1;
         private java.lang.Object contentid_ = "";
         /**
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public boolean hasContentid() {
@@ -3698,7 +3049,7 @@ public final class Monitor {
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public java.lang.String getContentid() {
@@ -3716,7 +3067,7 @@ public final class Monitor {
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -3736,7 +3087,7 @@ public final class Monitor {
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public Builder setContentid(
@@ -3753,7 +3104,7 @@ public final class Monitor {
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public Builder clearContentid() {
@@ -3766,7 +3117,7 @@ public final class Monitor {
          * <code>optional string contentid = 1;</code>
          *
          * <pre>
-         * 内容id  
+         * 内容id
          * </pre>
          */
         public Builder setContentidBytes(
@@ -3780,100 +3131,100 @@ public final class Monitor {
           return this;
         }
 
-        // optional string content = 2;
-        private java.lang.Object content_ = "";
+        // optional string contentname = 2;
+        private java.lang.Object contentname_ = "";
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
-        public boolean hasContent() {
+        public boolean hasContentname() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
-        public java.lang.String getContent() {
-          java.lang.Object ref = content_;
+        public java.lang.String getContentname() {
+          java.lang.Object ref = contentname_;
           if (!(ref instanceof java.lang.String)) {
             java.lang.String s = ((com.google.protobuf.ByteString) ref)
                 .toStringUtf8();
-            content_ = s;
+            contentname_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
         public com.google.protobuf.ByteString
-            getContentBytes() {
-          java.lang.Object ref = content_;
+            getContentnameBytes() {
+          java.lang.Object ref = contentname_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
-            content_ = b;
+            contentname_ = b;
             return b;
           } else {
             return (com.google.protobuf.ByteString) ref;
           }
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
-        public Builder setContent(
+        public Builder setContentname(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-          content_ = value;
+          contentname_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
-        public Builder clearContent() {
+        public Builder clearContentname() {
           bitField0_ = (bitField0_ & ~0x00000002);
-          content_ = getDefaultInstance().getContent();
+          contentname_ = getDefaultInstance().getContentname();
           onChanged();
           return this;
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string contentname = 2;</code>
          *
          * <pre>
-         * 内容  
+         *内容名称
          * </pre>
          */
-        public Builder setContentBytes(
+        public Builder setContentnameBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-          content_ = value;
+          contentname_ = value;
           onChanged();
           return this;
         }
@@ -3884,7 +3235,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public boolean hasScore() {
@@ -3894,7 +3245,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public java.lang.String getScore() {
@@ -3912,7 +3263,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -3932,7 +3283,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public Builder setScore(
@@ -3949,7 +3300,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public Builder clearScore() {
@@ -3962,7 +3313,7 @@ public final class Monitor {
          * <code>optional string score = 3;</code>
          *
          * <pre>
-         * 分数  
+         * 分数
          * </pre>
          */
         public Builder setScoreBytes(
@@ -3976,77 +3327,104 @@ public final class Monitor {
           return this;
         }
 
-        // @@protoc_insertion_point(builder_scope:MonIndex.detailMap)
+        // @@protoc_insertion_point(builder_scope:MonIndex.contentMap)
       }
 
       static {
-        defaultInstance = new detailMap(true);
+        defaultInstance = new contentMap(true);
         defaultInstance.initFields();
       }
 
-      // @@protoc_insertion_point(class_scope:MonIndex.detailMap)
+      // @@protoc_insertion_point(class_scope:MonIndex.contentMap)
     }
 
     public interface submitOrBuilder
         extends com.google.protobuf.MessageOrBuilder {
 
-      // optional string adress = 1;
+      // optional string examinesite = 1;
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
-      boolean hasAdress();
+      boolean hasExaminesite();
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
-      java.lang.String getAdress();
+      java.lang.String getExaminesite();
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
       com.google.protobuf.ByteString
-          getAdressBytes();
+          getExaminesiteBytes();
 
-      // optional string content = 2;
+      // optional string importsite = 2;
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string importsite = 2;</code>
        *
        * <pre>
-       * 内容  
+       *输入地点
+       * </pre>
+       */
+      boolean hasImportsite();
+      /**
+       * <code>optional string importsite = 2;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      java.lang.String getImportsite();
+      /**
+       * <code>optional string importsite = 2;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getImportsiteBytes();
+
+      // optional string content = 3;
+      /**
+       * <code>optional string content = 3;</code>
+       *
+       * <pre>
+       * 检查内容  /扣分项
        * </pre>
        */
       boolean hasContent();
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string content = 3;</code>
        *
        * <pre>
-       * 内容  
+       * 检查内容  /扣分项
        * </pre>
        */
       java.lang.String getContent();
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string content = 3;</code>
        *
        * <pre>
-       * 内容  
+       * 检查内容  /扣分项
        * </pre>
        */
       com.google.protobuf.ByteString
           getContentBytes();
 
-      // optional string photo = 3;
+      // optional string photo = 4;
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
@@ -4054,7 +3432,7 @@ public final class Monitor {
        */
       boolean hasPhoto();
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
@@ -4062,7 +3440,7 @@ public final class Monitor {
        */
       java.lang.String getPhoto();
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
@@ -4071,9 +3449,9 @@ public final class Monitor {
       com.google.protobuf.ByteString
           getPhotoBytes();
 
-      // optional string company = 4;
+      // optional string company = 5;
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
@@ -4081,7 +3459,7 @@ public final class Monitor {
        */
       boolean hasCompany();
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
@@ -4089,7 +3467,7 @@ public final class Monitor {
        */
       java.lang.String getCompany();
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
@@ -4097,33 +3475,6 @@ public final class Monitor {
        */
       com.google.protobuf.ByteString
           getCompanyBytes();
-
-      // optional string score = 5;
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      boolean hasScore();
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      java.lang.String getScore();
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      com.google.protobuf.ByteString
-          getScoreBytes();
     }
     /**
      * Protobuf type {@code MonIndex.submit}
@@ -4178,27 +3529,27 @@ public final class Monitor {
               }
               case 10: {
                 bitField0_ |= 0x00000001;
-                adress_ = input.readBytes();
+                examinesite_ = input.readBytes();
                 break;
               }
               case 18: {
                 bitField0_ |= 0x00000002;
-                content_ = input.readBytes();
+                importsite_ = input.readBytes();
                 break;
               }
               case 26: {
                 bitField0_ |= 0x00000004;
-                photo_ = input.readBytes();
+                content_ = input.readBytes();
                 break;
               }
               case 34: {
                 bitField0_ |= 0x00000008;
-                company_ = input.readBytes();
+                photo_ = input.readBytes();
                 break;
               }
               case 42: {
                 bitField0_ |= 0x00000010;
-                score_ = input.readBytes();
+                company_ = input.readBytes();
                 break;
               }
             }
@@ -4241,28 +3592,28 @@ public final class Monitor {
       }
 
       private int bitField0_;
-      // optional string adress = 1;
-      public static final int ADRESS_FIELD_NUMBER = 1;
-      private java.lang.Object adress_;
+      // optional string examinesite = 1;
+      public static final int EXAMINESITE_FIELD_NUMBER = 1;
+      private java.lang.Object examinesite_;
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
-      public boolean hasAdress() {
+      public boolean hasExaminesite() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
-      public java.lang.String getAdress() {
-        java.lang.Object ref = adress_;
+      public java.lang.String getExaminesite() {
+        java.lang.Object ref = examinesite_;
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
@@ -4270,50 +3621,105 @@ public final class Monitor {
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
-            adress_ = s;
+            examinesite_ = s;
           }
           return s;
         }
       }
       /**
-       * <code>optional string adress = 1;</code>
+       * <code>optional string examinesite = 1;</code>
        *
        * <pre>
-       * 地址  
+       *检查地点
        * </pre>
        */
       public com.google.protobuf.ByteString
-          getAdressBytes() {
-        java.lang.Object ref = adress_;
+          getExaminesiteBytes() {
+        java.lang.Object ref = examinesite_;
         if (ref instanceof java.lang.String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          adress_ = b;
+          examinesite_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
 
-      // optional string content = 2;
-      public static final int CONTENT_FIELD_NUMBER = 2;
-      private java.lang.Object content_;
+      // optional string importsite = 2;
+      public static final int IMPORTSITE_FIELD_NUMBER = 2;
+      private java.lang.Object importsite_;
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string importsite = 2;</code>
        *
        * <pre>
-       * 内容  
+       *输入地点
        * </pre>
        */
-      public boolean hasContent() {
+      public boolean hasImportsite() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string importsite = 2;</code>
        *
        * <pre>
-       * 内容  
+       *输入地点
+       * </pre>
+       */
+      public java.lang.String getImportsite() {
+        java.lang.Object ref = importsite_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            importsite_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string importsite = 2;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getImportsiteBytes() {
+        java.lang.Object ref = importsite_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          importsite_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string content = 3;
+      public static final int CONTENT_FIELD_NUMBER = 3;
+      private java.lang.Object content_;
+      /**
+       * <code>optional string content = 3;</code>
+       *
+       * <pre>
+       * 检查内容  /扣分项
+       * </pre>
+       */
+      public boolean hasContent() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string content = 3;</code>
+       *
+       * <pre>
+       * 检查内容  /扣分项
        * </pre>
        */
       public java.lang.String getContent() {
@@ -4331,10 +3737,10 @@ public final class Monitor {
         }
       }
       /**
-       * <code>optional string content = 2;</code>
+       * <code>optional string content = 3;</code>
        *
        * <pre>
-       * 内容  
+       * 检查内容  /扣分项
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -4351,21 +3757,21 @@ public final class Monitor {
         }
       }
 
-      // optional string photo = 3;
-      public static final int PHOTO_FIELD_NUMBER = 3;
+      // optional string photo = 4;
+      public static final int PHOTO_FIELD_NUMBER = 4;
       private java.lang.Object photo_;
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
        * </pre>
        */
       public boolean hasPhoto() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
@@ -4386,7 +3792,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>optional string photo = 3;</code>
+       * <code>optional string photo = 4;</code>
        *
        * <pre>
        * 附件id
@@ -4406,21 +3812,21 @@ public final class Monitor {
         }
       }
 
-      // optional string company = 4;
-      public static final int COMPANY_FIELD_NUMBER = 4;
+      // optional string company = 5;
+      public static final int COMPANY_FIELD_NUMBER = 5;
       private java.lang.Object company_;
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
        * </pre>
        */
       public boolean hasCompany() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
@@ -4441,7 +3847,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>optional string company = 4;</code>
+       * <code>optional string company = 5;</code>
        *
        * <pre>
        * 单位名称
@@ -4461,67 +3867,12 @@ public final class Monitor {
         }
       }
 
-      // optional string score = 5;
-      public static final int SCORE_FIELD_NUMBER = 5;
-      private java.lang.Object score_;
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public boolean hasScore() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public java.lang.String getScore() {
-        java.lang.Object ref = score_;
-        if (ref instanceof java.lang.String) {
-          return (java.lang.String) ref;
-        } else {
-          com.google.protobuf.ByteString bs = 
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            score_ = s;
-          }
-          return s;
-        }
-      }
-      /**
-       * <code>optional string score = 5;</code>
-       *
-       * <pre>
-       * 分数  
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getScoreBytes() {
-        java.lang.Object ref = score_;
-        if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          score_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-
       private void initFields() {
-        adress_ = "";
+        examinesite_ = "";
+        importsite_ = "";
         content_ = "";
         photo_ = "";
         company_ = "";
-        score_ = "";
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -4536,19 +3887,19 @@ public final class Monitor {
                           throws java.io.IOException {
         getSerializedSize();
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          output.writeBytes(1, getAdressBytes());
+          output.writeBytes(1, getExaminesiteBytes());
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          output.writeBytes(2, getContentBytes());
+          output.writeBytes(2, getImportsiteBytes());
         }
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          output.writeBytes(3, getPhotoBytes());
+          output.writeBytes(3, getContentBytes());
         }
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
-          output.writeBytes(4, getCompanyBytes());
+          output.writeBytes(4, getPhotoBytes());
         }
         if (((bitField0_ & 0x00000010) == 0x00000010)) {
-          output.writeBytes(5, getScoreBytes());
+          output.writeBytes(5, getCompanyBytes());
         }
         getUnknownFields().writeTo(output);
       }
@@ -4561,23 +3912,23 @@ public final class Monitor {
         size = 0;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(1, getAdressBytes());
+            .computeBytesSize(1, getExaminesiteBytes());
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(2, getContentBytes());
+            .computeBytesSize(2, getImportsiteBytes());
         }
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(3, getPhotoBytes());
+            .computeBytesSize(3, getContentBytes());
         }
         if (((bitField0_ & 0x00000008) == 0x00000008)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(4, getCompanyBytes());
+            .computeBytesSize(4, getPhotoBytes());
         }
         if (((bitField0_ & 0x00000010) == 0x00000010)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeBytesSize(5, getScoreBytes());
+            .computeBytesSize(5, getCompanyBytes());
         }
         size += getUnknownFields().getSerializedSize();
         memoizedSerializedSize = size;
@@ -4695,15 +4046,15 @@ public final class Monitor {
 
         public Builder clear() {
           super.clear();
-          adress_ = "";
+          examinesite_ = "";
           bitField0_ = (bitField0_ & ~0x00000001);
-          content_ = "";
+          importsite_ = "";
           bitField0_ = (bitField0_ & ~0x00000002);
-          photo_ = "";
+          content_ = "";
           bitField0_ = (bitField0_ & ~0x00000004);
-          company_ = "";
+          photo_ = "";
           bitField0_ = (bitField0_ & ~0x00000008);
-          score_ = "";
+          company_ = "";
           bitField0_ = (bitField0_ & ~0x00000010);
           return this;
         }
@@ -4736,23 +4087,23 @@ public final class Monitor {
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
             to_bitField0_ |= 0x00000001;
           }
-          result.adress_ = adress_;
+          result.examinesite_ = examinesite_;
           if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
             to_bitField0_ |= 0x00000002;
           }
-          result.content_ = content_;
+          result.importsite_ = importsite_;
           if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
             to_bitField0_ |= 0x00000004;
           }
-          result.photo_ = photo_;
+          result.content_ = content_;
           if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
             to_bitField0_ |= 0x00000008;
           }
-          result.company_ = company_;
+          result.photo_ = photo_;
           if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
             to_bitField0_ |= 0x00000010;
           }
-          result.score_ = score_;
+          result.company_ = company_;
           result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
@@ -4769,29 +4120,29 @@ public final class Monitor {
 
         public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.submit other) {
           if (other == com.zhang.sqone.bean.Monitor.MonIndex.submit.getDefaultInstance()) return this;
-          if (other.hasAdress()) {
+          if (other.hasExaminesite()) {
             bitField0_ |= 0x00000001;
-            adress_ = other.adress_;
+            examinesite_ = other.examinesite_;
+            onChanged();
+          }
+          if (other.hasImportsite()) {
+            bitField0_ |= 0x00000002;
+            importsite_ = other.importsite_;
             onChanged();
           }
           if (other.hasContent()) {
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             content_ = other.content_;
             onChanged();
           }
           if (other.hasPhoto()) {
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             photo_ = other.photo_;
             onChanged();
           }
           if (other.hasCompany()) {
-            bitField0_ |= 0x00000008;
-            company_ = other.company_;
-            onChanged();
-          }
-          if (other.hasScore()) {
             bitField0_ |= 0x00000010;
-            score_ = other.score_;
+            company_ = other.company_;
             onChanged();
           }
           this.mergeUnknownFields(other.getUnknownFields());
@@ -4821,121 +4172,219 @@ public final class Monitor {
         }
         private int bitField0_;
 
-        // optional string adress = 1;
-        private java.lang.Object adress_ = "";
+        // optional string examinesite = 1;
+        private java.lang.Object examinesite_ = "";
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
-        public boolean hasAdress() {
+        public boolean hasExaminesite() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
-        public java.lang.String getAdress() {
-          java.lang.Object ref = adress_;
+        public java.lang.String getExaminesite() {
+          java.lang.Object ref = examinesite_;
           if (!(ref instanceof java.lang.String)) {
             java.lang.String s = ((com.google.protobuf.ByteString) ref)
                 .toStringUtf8();
-            adress_ = s;
+            examinesite_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
         public com.google.protobuf.ByteString
-            getAdressBytes() {
-          java.lang.Object ref = adress_;
+            getExaminesiteBytes() {
+          java.lang.Object ref = examinesite_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
-            adress_ = b;
+            examinesite_ = b;
             return b;
           } else {
             return (com.google.protobuf.ByteString) ref;
           }
         }
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
-        public Builder setAdress(
+        public Builder setExaminesite(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-          adress_ = value;
+          examinesite_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
-        public Builder clearAdress() {
+        public Builder clearExaminesite() {
           bitField0_ = (bitField0_ & ~0x00000001);
-          adress_ = getDefaultInstance().getAdress();
+          examinesite_ = getDefaultInstance().getExaminesite();
           onChanged();
           return this;
         }
         /**
-         * <code>optional string adress = 1;</code>
+         * <code>optional string examinesite = 1;</code>
          *
          * <pre>
-         * 地址  
+         *检查地点
          * </pre>
          */
-        public Builder setAdressBytes(
+        public Builder setExaminesiteBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-          adress_ = value;
+          examinesite_ = value;
           onChanged();
           return this;
         }
 
-        // optional string content = 2;
-        private java.lang.Object content_ = "";
+        // optional string importsite = 2;
+        private java.lang.Object importsite_ = "";
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string importsite = 2;</code>
          *
          * <pre>
-         * 内容  
+         *输入地点
          * </pre>
          */
-        public boolean hasContent() {
+        public boolean hasImportsite() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string importsite = 2;</code>
          *
          * <pre>
-         * 内容  
+         *输入地点
+         * </pre>
+         */
+        public java.lang.String getImportsite() {
+          java.lang.Object ref = importsite_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            importsite_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string importsite = 2;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getImportsiteBytes() {
+          java.lang.Object ref = importsite_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            importsite_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string importsite = 2;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder setImportsite(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          importsite_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string importsite = 2;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder clearImportsite() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          importsite_ = getDefaultInstance().getImportsite();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string importsite = 2;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder setImportsiteBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          importsite_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string content = 3;
+        private java.lang.Object content_ = "";
+        /**
+         * <code>optional string content = 3;</code>
+         *
+         * <pre>
+         * 检查内容  /扣分项
+         * </pre>
+         */
+        public boolean hasContent() {
+          return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+        /**
+         * <code>optional string content = 3;</code>
+         *
+         * <pre>
+         * 检查内容  /扣分项
          * </pre>
          */
         public java.lang.String getContent() {
@@ -4950,10 +4399,10 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string content = 3;</code>
          *
          * <pre>
-         * 内容  
+         * 检查内容  /扣分项
          * </pre>
          */
         public com.google.protobuf.ByteString
@@ -4970,10 +4419,10 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string content = 3;</code>
          *
          * <pre>
-         * 内容  
+         * 检查内容  /扣分项
          * </pre>
          */
         public Builder setContent(
@@ -4981,29 +4430,29 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000004;
           content_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string content = 3;</code>
          *
          * <pre>
-         * 内容  
+         * 检查内容  /扣分项
          * </pre>
          */
         public Builder clearContent() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           content_ = getDefaultInstance().getContent();
           onChanged();
           return this;
         }
         /**
-         * <code>optional string content = 2;</code>
+         * <code>optional string content = 3;</code>
          *
          * <pre>
-         * 内容  
+         * 检查内容  /扣分项
          * </pre>
          */
         public Builder setContentBytes(
@@ -5011,26 +4460,26 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000004;
           content_ = value;
           onChanged();
           return this;
         }
 
-        // optional string photo = 3;
+        // optional string photo = 4;
         private java.lang.Object photo_ = "";
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
          * </pre>
          */
         public boolean hasPhoto() {
-          return ((bitField0_ & 0x00000004) == 0x00000004);
+          return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
@@ -5048,7 +4497,7 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
@@ -5068,7 +4517,7 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
@@ -5079,26 +4528,26 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000004;
+  bitField0_ |= 0x00000008;
           photo_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
          * </pre>
          */
         public Builder clearPhoto() {
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000008);
           photo_ = getDefaultInstance().getPhoto();
           onChanged();
           return this;
         }
         /**
-         * <code>optional string photo = 3;</code>
+         * <code>optional string photo = 4;</code>
          *
          * <pre>
          * 附件id
@@ -5109,26 +4558,26 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000004;
+  bitField0_ |= 0x00000008;
           photo_ = value;
           onChanged();
           return this;
         }
 
-        // optional string company = 4;
+        // optional string company = 5;
         private java.lang.Object company_ = "";
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
          * </pre>
          */
         public boolean hasCompany() {
-          return ((bitField0_ & 0x00000008) == 0x00000008);
+          return ((bitField0_ & 0x00000010) == 0x00000010);
         }
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
@@ -5146,7 +4595,7 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
@@ -5166,7 +4615,7 @@ public final class Monitor {
           }
         }
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
@@ -5177,26 +4626,26 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000010;
           company_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
          * </pre>
          */
         public Builder clearCompany() {
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000010);
           company_ = getDefaultInstance().getCompany();
           onChanged();
           return this;
         }
         /**
-         * <code>optional string company = 4;</code>
+         * <code>optional string company = 5;</code>
          *
          * <pre>
          * 单位名称
@@ -5207,106 +4656,8 @@ public final class Monitor {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000010;
           company_ = value;
-          onChanged();
-          return this;
-        }
-
-        // optional string score = 5;
-        private java.lang.Object score_ = "";
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public boolean hasScore() {
-          return ((bitField0_ & 0x00000010) == 0x00000010);
-        }
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public java.lang.String getScore() {
-          java.lang.Object ref = score_;
-          if (!(ref instanceof java.lang.String)) {
-            java.lang.String s = ((com.google.protobuf.ByteString) ref)
-                .toStringUtf8();
-            score_ = s;
-            return s;
-          } else {
-            return (java.lang.String) ref;
-          }
-        }
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public com.google.protobuf.ByteString
-            getScoreBytes() {
-          java.lang.Object ref = score_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (java.lang.String) ref);
-            score_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
-        }
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public Builder setScore(
-            java.lang.String value) {
-          if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-          score_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public Builder clearScore() {
-          bitField0_ = (bitField0_ & ~0x00000010);
-          score_ = getDefaultInstance().getScore();
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional string score = 5;</code>
-         *
-         * <pre>
-         * 分数  
-         * </pre>
-         */
-        public Builder setScoreBytes(
-            com.google.protobuf.ByteString value) {
-          if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-          score_ = value;
           onChanged();
           return this;
         }
@@ -5320,6 +4671,7219 @@ public final class Monitor {
       }
 
       // @@protoc_insertion_point(class_scope:MonIndex.submit)
+    }
+
+    public interface monitorissueMapOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // optional string id = 1;
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      boolean hasId();
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      java.lang.String getId();
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getIdBytes();
+
+      // optional string dutyunits = 2;
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      boolean hasDutyunits();
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      java.lang.String getDutyunits();
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getDutyunitsBytes();
+
+      // optional string examinesite = 3;
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      boolean hasExaminesite();
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      java.lang.String getExaminesite();
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getExaminesiteBytes();
+
+      // optional string importsite = 4;
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      boolean hasImportsite();
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      java.lang.String getImportsite();
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getImportsiteBytes();
+
+      // optional string deductmarks = 5;
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      boolean hasDeductmarks();
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      java.lang.String getDeductmarks();
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getDeductmarksBytes();
+
+      // optional string submittime = 6;
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      boolean hasSubmittime();
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      java.lang.String getSubmittime();
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getSubmittimeBytes();
+
+      // optional string states = 7;
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      boolean hasStates();
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      java.lang.String getStates();
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getStatesBytes();
+
+      // repeated .MonIndex.problempictureList problempicturelist = 8;
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> 
+          getProblempicturelistList();
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index);
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      int getProblempicturelistCount();
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+          getProblempicturelistOrBuilderList();
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+          int index);
+
+      // repeated .MonIndex.disposeictureList disposeicturelist = 9;
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> 
+          getDisposeicturelistList();
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index);
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      int getDisposeicturelistCount();
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+          getDisposeicturelistOrBuilderList();
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+          int index);
+
+      // optional string throughtime = 10;
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      boolean hasThroughtime();
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      java.lang.String getThroughtime();
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getThroughtimeBytes();
+
+      // optional string feedbacktime = 11;
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      boolean hasFeedbacktime();
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      java.lang.String getFeedbacktime();
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFeedbacktimeBytes();
+
+      // optional string subname = 12;
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      boolean hasSubname();
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      java.lang.String getSubname();
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getSubnameBytes();
+
+      // optional string telphone = 13;
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      boolean hasTelphone();
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      java.lang.String getTelphone();
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getTelphoneBytes();
+
+      // optional string sum = 14;
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      boolean hasSum();
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      java.lang.String getSum();
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getSumBytes();
+
+      // optional string subsum = 15;
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      boolean hasSubsum();
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      java.lang.String getSubsum();
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getSubsumBytes();
+
+      // optional string fansum = 16;
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      boolean hasFansum();
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      java.lang.String getFansum();
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFansumBytes();
+
+      // optional string bansum = 17;
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      boolean hasBansum();
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      java.lang.String getBansum();
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getBansumBytes();
+
+      // optional string photo = 18;
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      boolean hasPhoto();
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      java.lang.String getPhoto();
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getPhotoBytes();
+    }
+    /**
+     * Protobuf type {@code MonIndex.monitorissueMap}
+     */
+    public static final class monitorissueMap extends
+        com.google.protobuf.GeneratedMessage
+        implements monitorissueMapOrBuilder {
+      // Use monitorissueMap.newBuilder() to construct.
+      private monitorissueMap(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private monitorissueMap(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final monitorissueMap defaultInstance;
+      public static monitorissueMap getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public monitorissueMap getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private monitorissueMap(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                id_ = input.readBytes();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                dutyunits_ = input.readBytes();
+                break;
+              }
+              case 26: {
+                bitField0_ |= 0x00000004;
+                examinesite_ = input.readBytes();
+                break;
+              }
+              case 34: {
+                bitField0_ |= 0x00000008;
+                importsite_ = input.readBytes();
+                break;
+              }
+              case 42: {
+                bitField0_ |= 0x00000010;
+                deductmarks_ = input.readBytes();
+                break;
+              }
+              case 50: {
+                bitField0_ |= 0x00000020;
+                submittime_ = input.readBytes();
+                break;
+              }
+              case 58: {
+                bitField0_ |= 0x00000040;
+                states_ = input.readBytes();
+                break;
+              }
+              case 66: {
+                if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                  problempicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList>();
+                  mutable_bitField0_ |= 0x00000080;
+                }
+                problempicturelist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.PARSER, extensionRegistry));
+                break;
+              }
+              case 74: {
+                if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                  disposeicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList>();
+                  mutable_bitField0_ |= 0x00000100;
+                }
+                disposeicturelist_.add(input.readMessage(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.PARSER, extensionRegistry));
+                break;
+              }
+              case 82: {
+                bitField0_ |= 0x00000080;
+                throughtime_ = input.readBytes();
+                break;
+              }
+              case 90: {
+                bitField0_ |= 0x00000100;
+                feedbacktime_ = input.readBytes();
+                break;
+              }
+              case 98: {
+                bitField0_ |= 0x00000200;
+                subname_ = input.readBytes();
+                break;
+              }
+              case 106: {
+                bitField0_ |= 0x00000400;
+                telphone_ = input.readBytes();
+                break;
+              }
+              case 114: {
+                bitField0_ |= 0x00000800;
+                sum_ = input.readBytes();
+                break;
+              }
+              case 122: {
+                bitField0_ |= 0x00001000;
+                subsum_ = input.readBytes();
+                break;
+              }
+              case 130: {
+                bitField0_ |= 0x00002000;
+                fansum_ = input.readBytes();
+                break;
+              }
+              case 138: {
+                bitField0_ |= 0x00004000;
+                bansum_ = input.readBytes();
+                break;
+              }
+              case 146: {
+                bitField0_ |= 0x00008000;
+                photo_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+            problempicturelist_ = java.util.Collections.unmodifiableList(problempicturelist_);
+          }
+          if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+            disposeicturelist_ = java.util.Collections.unmodifiableList(disposeicturelist_);
+          }
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_monitorissueMap_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_monitorissueMap_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.class, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<monitorissueMap> PARSER =
+          new com.google.protobuf.AbstractParser<monitorissueMap>() {
+        public monitorissueMap parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new monitorissueMap(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<monitorissueMap> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // optional string id = 1;
+      public static final int ID_FIELD_NUMBER = 1;
+      private java.lang.Object id_;
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            id_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string id = 1;</code>
+       *
+       * <pre>
+       * 环境id
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getIdBytes() {
+        java.lang.Object ref = id_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string dutyunits = 2;
+      public static final int DUTYUNITS_FIELD_NUMBER = 2;
+      private java.lang.Object dutyunits_;
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      public boolean hasDutyunits() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      public java.lang.String getDutyunits() {
+        java.lang.Object ref = dutyunits_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            dutyunits_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string dutyunits = 2;</code>
+       *
+       * <pre>
+       * 责任单位
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getDutyunitsBytes() {
+        java.lang.Object ref = dutyunits_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dutyunits_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string examinesite = 3;
+      public static final int EXAMINESITE_FIELD_NUMBER = 3;
+      private java.lang.Object examinesite_;
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      public boolean hasExaminesite() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      public java.lang.String getExaminesite() {
+        java.lang.Object ref = examinesite_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            examinesite_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string examinesite = 3;</code>
+       *
+       * <pre>
+       *检查地点
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getExaminesiteBytes() {
+        java.lang.Object ref = examinesite_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          examinesite_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string importsite = 4;
+      public static final int IMPORTSITE_FIELD_NUMBER = 4;
+      private java.lang.Object importsite_;
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      public boolean hasImportsite() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      public java.lang.String getImportsite() {
+        java.lang.Object ref = importsite_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            importsite_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string importsite = 4;</code>
+       *
+       * <pre>
+       *输入地点
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getImportsiteBytes() {
+        java.lang.Object ref = importsite_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          importsite_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string deductmarks = 5;
+      public static final int DEDUCTMARKS_FIELD_NUMBER = 5;
+      private java.lang.Object deductmarks_;
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      public boolean hasDeductmarks() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      public java.lang.String getDeductmarks() {
+        java.lang.Object ref = deductmarks_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deductmarks_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string deductmarks = 5;</code>
+       *
+       * <pre>
+       *扣分项，检查内容
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getDeductmarksBytes() {
+        java.lang.Object ref = deductmarks_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deductmarks_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string submittime = 6;
+      public static final int SUBMITTIME_FIELD_NUMBER = 6;
+      private java.lang.Object submittime_;
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      public boolean hasSubmittime() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      public java.lang.String getSubmittime() {
+        java.lang.Object ref = submittime_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            submittime_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string submittime = 6;</code>
+       *
+       * <pre>
+       *上报时间
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getSubmittimeBytes() {
+        java.lang.Object ref = submittime_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          submittime_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string states = 7;
+      public static final int STATES_FIELD_NUMBER = 7;
+      private java.lang.Object states_;
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      public boolean hasStates() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      public java.lang.String getStates() {
+        java.lang.Object ref = states_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            states_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string states = 7;</code>
+       *
+       * <pre>
+       *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getStatesBytes() {
+        java.lang.Object ref = states_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          states_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // repeated .MonIndex.problempictureList problempicturelist = 8;
+      public static final int PROBLEMPICTURELIST_FIELD_NUMBER = 8;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> problempicturelist_;
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> getProblempicturelistList() {
+        return problempicturelist_;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+          getProblempicturelistOrBuilderList() {
+        return problempicturelist_;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      public int getProblempicturelistCount() {
+        return problempicturelist_.size();
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index) {
+        return problempicturelist_.get(index);
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+       *
+       * <pre>
+       *问题照片
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+          int index) {
+        return problempicturelist_.get(index);
+      }
+
+      // repeated .MonIndex.disposeictureList disposeicturelist = 9;
+      public static final int DISPOSEICTURELIST_FIELD_NUMBER = 9;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> disposeicturelist_;
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> getDisposeicturelistList() {
+        return disposeicturelist_;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+          getDisposeicturelistOrBuilderList() {
+        return disposeicturelist_;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      public int getDisposeicturelistCount() {
+        return disposeicturelist_.size();
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index) {
+        return disposeicturelist_.get(index);
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+       *
+       * <pre>
+       *处理照片
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+          int index) {
+        return disposeicturelist_.get(index);
+      }
+
+      // optional string throughtime = 10;
+      public static final int THROUGHTIME_FIELD_NUMBER = 10;
+      private java.lang.Object throughtime_;
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      public boolean hasThroughtime() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      public java.lang.String getThroughtime() {
+        java.lang.Object ref = throughtime_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            throughtime_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string throughtime = 10;</code>
+       *
+       * <pre>
+       *办结时间
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getThroughtimeBytes() {
+        java.lang.Object ref = throughtime_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          throughtime_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string feedbacktime = 11;
+      public static final int FEEDBACKTIME_FIELD_NUMBER = 11;
+      private java.lang.Object feedbacktime_;
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      public boolean hasFeedbacktime() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      public java.lang.String getFeedbacktime() {
+        java.lang.Object ref = feedbacktime_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            feedbacktime_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string feedbacktime = 11;</code>
+       *
+       * <pre>
+       *反馈时间
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFeedbacktimeBytes() {
+        java.lang.Object ref = feedbacktime_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          feedbacktime_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string subname = 12;
+      public static final int SUBNAME_FIELD_NUMBER = 12;
+      private java.lang.Object subname_;
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      public boolean hasSubname() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      public java.lang.String getSubname() {
+        java.lang.Object ref = subname_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            subname_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string subname = 12;</code>
+       *
+       * <pre>
+       *上报人
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getSubnameBytes() {
+        java.lang.Object ref = subname_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          subname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string telphone = 13;
+      public static final int TELPHONE_FIELD_NUMBER = 13;
+      private java.lang.Object telphone_;
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      public boolean hasTelphone() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      public java.lang.String getTelphone() {
+        java.lang.Object ref = telphone_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            telphone_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string telphone = 13;</code>
+       *
+       * <pre>
+       *联系电话
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getTelphoneBytes() {
+        java.lang.Object ref = telphone_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          telphone_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string sum = 14;
+      public static final int SUM_FIELD_NUMBER = 14;
+      private java.lang.Object sum_;
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      public boolean hasSum() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      public java.lang.String getSum() {
+        java.lang.Object ref = sum_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            sum_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string sum = 14;</code>
+       *
+       * <pre>
+       *环境问题总记录条数
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getSumBytes() {
+        java.lang.Object ref = sum_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sum_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string subsum = 15;
+      public static final int SUBSUM_FIELD_NUMBER = 15;
+      private java.lang.Object subsum_;
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      public boolean hasSubsum() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      public java.lang.String getSubsum() {
+        java.lang.Object ref = subsum_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            subsum_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string subsum = 15;</code>
+       *
+       * <pre>
+       *已上报条数
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getSubsumBytes() {
+        java.lang.Object ref = subsum_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          subsum_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string fansum = 16;
+      public static final int FANSUM_FIELD_NUMBER = 16;
+      private java.lang.Object fansum_;
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      public boolean hasFansum() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      public java.lang.String getFansum() {
+        java.lang.Object ref = fansum_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            fansum_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string fansum = 16;</code>
+       *
+       * <pre>
+       *已反馈条数
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFansumBytes() {
+        java.lang.Object ref = fansum_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fansum_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string bansum = 17;
+      public static final int BANSUM_FIELD_NUMBER = 17;
+      private java.lang.Object bansum_;
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      public boolean hasBansum() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      public java.lang.String getBansum() {
+        java.lang.Object ref = bansum_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            bansum_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string bansum = 17;</code>
+       *
+       * <pre>
+       *已办结条数
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getBansumBytes() {
+        java.lang.Object ref = bansum_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          bansum_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string photo = 18;
+      public static final int PHOTO_FIELD_NUMBER = 18;
+      private java.lang.Object photo_;
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      public boolean hasPhoto() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      public java.lang.String getPhoto() {
+        java.lang.Object ref = photo_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            photo_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string photo = 18;</code>
+       *
+       * <pre>
+       * 处理图片id
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getPhotoBytes() {
+        java.lang.Object ref = photo_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          photo_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        id_ = "";
+        dutyunits_ = "";
+        examinesite_ = "";
+        importsite_ = "";
+        deductmarks_ = "";
+        submittime_ = "";
+        states_ = "";
+        problempicturelist_ = java.util.Collections.emptyList();
+        disposeicturelist_ = java.util.Collections.emptyList();
+        throughtime_ = "";
+        feedbacktime_ = "";
+        subname_ = "";
+        telphone_ = "";
+        sum_ = "";
+        subsum_ = "";
+        fansum_ = "";
+        bansum_ = "";
+        photo_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getDutyunitsBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeBytes(3, getExaminesiteBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          output.writeBytes(4, getImportsiteBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          output.writeBytes(5, getDeductmarksBytes());
+        }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          output.writeBytes(6, getSubmittimeBytes());
+        }
+        if (((bitField0_ & 0x00000040) == 0x00000040)) {
+          output.writeBytes(7, getStatesBytes());
+        }
+        for (int i = 0; i < problempicturelist_.size(); i++) {
+          output.writeMessage(8, problempicturelist_.get(i));
+        }
+        for (int i = 0; i < disposeicturelist_.size(); i++) {
+          output.writeMessage(9, disposeicturelist_.get(i));
+        }
+        if (((bitField0_ & 0x00000080) == 0x00000080)) {
+          output.writeBytes(10, getThroughtimeBytes());
+        }
+        if (((bitField0_ & 0x00000100) == 0x00000100)) {
+          output.writeBytes(11, getFeedbacktimeBytes());
+        }
+        if (((bitField0_ & 0x00000200) == 0x00000200)) {
+          output.writeBytes(12, getSubnameBytes());
+        }
+        if (((bitField0_ & 0x00000400) == 0x00000400)) {
+          output.writeBytes(13, getTelphoneBytes());
+        }
+        if (((bitField0_ & 0x00000800) == 0x00000800)) {
+          output.writeBytes(14, getSumBytes());
+        }
+        if (((bitField0_ & 0x00001000) == 0x00001000)) {
+          output.writeBytes(15, getSubsumBytes());
+        }
+        if (((bitField0_ & 0x00002000) == 0x00002000)) {
+          output.writeBytes(16, getFansumBytes());
+        }
+        if (((bitField0_ & 0x00004000) == 0x00004000)) {
+          output.writeBytes(17, getBansumBytes());
+        }
+        if (((bitField0_ & 0x00008000) == 0x00008000)) {
+          output.writeBytes(18, getPhotoBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getIdBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getDutyunitsBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(3, getExaminesiteBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(4, getImportsiteBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(5, getDeductmarksBytes());
+        }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(6, getSubmittimeBytes());
+        }
+        if (((bitField0_ & 0x00000040) == 0x00000040)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(7, getStatesBytes());
+        }
+        for (int i = 0; i < problempicturelist_.size(); i++) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(8, problempicturelist_.get(i));
+        }
+        for (int i = 0; i < disposeicturelist_.size(); i++) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(9, disposeicturelist_.get(i));
+        }
+        if (((bitField0_ & 0x00000080) == 0x00000080)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(10, getThroughtimeBytes());
+        }
+        if (((bitField0_ & 0x00000100) == 0x00000100)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(11, getFeedbacktimeBytes());
+        }
+        if (((bitField0_ & 0x00000200) == 0x00000200)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(12, getSubnameBytes());
+        }
+        if (((bitField0_ & 0x00000400) == 0x00000400)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(13, getTelphoneBytes());
+        }
+        if (((bitField0_ & 0x00000800) == 0x00000800)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(14, getSumBytes());
+        }
+        if (((bitField0_ & 0x00001000) == 0x00001000)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(15, getSubsumBytes());
+        }
+        if (((bitField0_ & 0x00002000) == 0x00002000)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(16, getFansumBytes());
+        }
+        if (((bitField0_ & 0x00004000) == 0x00004000)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(17, getBansumBytes());
+        }
+        if (((bitField0_ & 0x00008000) == 0x00008000)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(18, getPhotoBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code MonIndex.monitorissueMap}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_monitorissueMap_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_monitorissueMap_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.class, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder.class);
+        }
+
+        // Construct using com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+            getProblempicturelistFieldBuilder();
+            getDisposeicturelistFieldBuilder();
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          id_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          dutyunits_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          examinesite_ = "";
+          bitField0_ = (bitField0_ & ~0x00000004);
+          importsite_ = "";
+          bitField0_ = (bitField0_ & ~0x00000008);
+          deductmarks_ = "";
+          bitField0_ = (bitField0_ & ~0x00000010);
+          submittime_ = "";
+          bitField0_ = (bitField0_ & ~0x00000020);
+          states_ = "";
+          bitField0_ = (bitField0_ & ~0x00000040);
+          if (problempicturelistBuilder_ == null) {
+            problempicturelist_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000080);
+          } else {
+            problempicturelistBuilder_.clear();
+          }
+          if (disposeicturelistBuilder_ == null) {
+            disposeicturelist_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000100);
+          } else {
+            disposeicturelistBuilder_.clear();
+          }
+          throughtime_ = "";
+          bitField0_ = (bitField0_ & ~0x00000200);
+          feedbacktime_ = "";
+          bitField0_ = (bitField0_ & ~0x00000400);
+          subname_ = "";
+          bitField0_ = (bitField0_ & ~0x00000800);
+          telphone_ = "";
+          bitField0_ = (bitField0_ & ~0x00001000);
+          sum_ = "";
+          bitField0_ = (bitField0_ & ~0x00002000);
+          subsum_ = "";
+          bitField0_ = (bitField0_ & ~0x00004000);
+          fansum_ = "";
+          bitField0_ = (bitField0_ & ~0x00008000);
+          bansum_ = "";
+          bitField0_ = (bitField0_ & ~0x00010000);
+          photo_ = "";
+          bitField0_ = (bitField0_ & ~0x00020000);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_monitorissueMap_descriptor;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getDefaultInstanceForType() {
+          return com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance();
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap build() {
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap buildPartial() {
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap result = new com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.id_ = id_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.dutyunits_ = dutyunits_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
+          result.examinesite_ = examinesite_;
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+            to_bitField0_ |= 0x00000008;
+          }
+          result.importsite_ = importsite_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+            to_bitField0_ |= 0x00000010;
+          }
+          result.deductmarks_ = deductmarks_;
+          if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+            to_bitField0_ |= 0x00000020;
+          }
+          result.submittime_ = submittime_;
+          if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+            to_bitField0_ |= 0x00000040;
+          }
+          result.states_ = states_;
+          if (problempicturelistBuilder_ == null) {
+            if (((bitField0_ & 0x00000080) == 0x00000080)) {
+              problempicturelist_ = java.util.Collections.unmodifiableList(problempicturelist_);
+              bitField0_ = (bitField0_ & ~0x00000080);
+            }
+            result.problempicturelist_ = problempicturelist_;
+          } else {
+            result.problempicturelist_ = problempicturelistBuilder_.build();
+          }
+          if (disposeicturelistBuilder_ == null) {
+            if (((bitField0_ & 0x00000100) == 0x00000100)) {
+              disposeicturelist_ = java.util.Collections.unmodifiableList(disposeicturelist_);
+              bitField0_ = (bitField0_ & ~0x00000100);
+            }
+            result.disposeicturelist_ = disposeicturelist_;
+          } else {
+            result.disposeicturelist_ = disposeicturelistBuilder_.build();
+          }
+          if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+            to_bitField0_ |= 0x00000080;
+          }
+          result.throughtime_ = throughtime_;
+          if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+            to_bitField0_ |= 0x00000100;
+          }
+          result.feedbacktime_ = feedbacktime_;
+          if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+            to_bitField0_ |= 0x00000200;
+          }
+          result.subname_ = subname_;
+          if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+            to_bitField0_ |= 0x00000400;
+          }
+          result.telphone_ = telphone_;
+          if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+            to_bitField0_ |= 0x00000800;
+          }
+          result.sum_ = sum_;
+          if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+            to_bitField0_ |= 0x00001000;
+          }
+          result.subsum_ = subsum_;
+          if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+            to_bitField0_ |= 0x00002000;
+          }
+          result.fansum_ = fansum_;
+          if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+            to_bitField0_ |= 0x00004000;
+          }
+          result.bansum_ = bansum_;
+          if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+            to_bitField0_ |= 0x00008000;
+          }
+          result.photo_ = photo_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap) {
+            return mergeFrom((com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap other) {
+          if (other == com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance()) return this;
+          if (other.hasId()) {
+            bitField0_ |= 0x00000001;
+            id_ = other.id_;
+            onChanged();
+          }
+          if (other.hasDutyunits()) {
+            bitField0_ |= 0x00000002;
+            dutyunits_ = other.dutyunits_;
+            onChanged();
+          }
+          if (other.hasExaminesite()) {
+            bitField0_ |= 0x00000004;
+            examinesite_ = other.examinesite_;
+            onChanged();
+          }
+          if (other.hasImportsite()) {
+            bitField0_ |= 0x00000008;
+            importsite_ = other.importsite_;
+            onChanged();
+          }
+          if (other.hasDeductmarks()) {
+            bitField0_ |= 0x00000010;
+            deductmarks_ = other.deductmarks_;
+            onChanged();
+          }
+          if (other.hasSubmittime()) {
+            bitField0_ |= 0x00000020;
+            submittime_ = other.submittime_;
+            onChanged();
+          }
+          if (other.hasStates()) {
+            bitField0_ |= 0x00000040;
+            states_ = other.states_;
+            onChanged();
+          }
+          if (problempicturelistBuilder_ == null) {
+            if (!other.problempicturelist_.isEmpty()) {
+              if (problempicturelist_.isEmpty()) {
+                problempicturelist_ = other.problempicturelist_;
+                bitField0_ = (bitField0_ & ~0x00000080);
+              } else {
+                ensureProblempicturelistIsMutable();
+                problempicturelist_.addAll(other.problempicturelist_);
+              }
+              onChanged();
+            }
+          } else {
+            if (!other.problempicturelist_.isEmpty()) {
+              if (problempicturelistBuilder_.isEmpty()) {
+                problempicturelistBuilder_.dispose();
+                problempicturelistBuilder_ = null;
+                problempicturelist_ = other.problempicturelist_;
+                bitField0_ = (bitField0_ & ~0x00000080);
+                problempicturelistBuilder_ = 
+                  com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                     getProblempicturelistFieldBuilder() : null;
+              } else {
+                problempicturelistBuilder_.addAllMessages(other.problempicturelist_);
+              }
+            }
+          }
+          if (disposeicturelistBuilder_ == null) {
+            if (!other.disposeicturelist_.isEmpty()) {
+              if (disposeicturelist_.isEmpty()) {
+                disposeicturelist_ = other.disposeicturelist_;
+                bitField0_ = (bitField0_ & ~0x00000100);
+              } else {
+                ensureDisposeicturelistIsMutable();
+                disposeicturelist_.addAll(other.disposeicturelist_);
+              }
+              onChanged();
+            }
+          } else {
+            if (!other.disposeicturelist_.isEmpty()) {
+              if (disposeicturelistBuilder_.isEmpty()) {
+                disposeicturelistBuilder_.dispose();
+                disposeicturelistBuilder_ = null;
+                disposeicturelist_ = other.disposeicturelist_;
+                bitField0_ = (bitField0_ & ~0x00000100);
+                disposeicturelistBuilder_ = 
+                  com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                     getDisposeicturelistFieldBuilder() : null;
+              } else {
+                disposeicturelistBuilder_.addAllMessages(other.disposeicturelist_);
+              }
+            }
+          }
+          if (other.hasThroughtime()) {
+            bitField0_ |= 0x00000200;
+            throughtime_ = other.throughtime_;
+            onChanged();
+          }
+          if (other.hasFeedbacktime()) {
+            bitField0_ |= 0x00000400;
+            feedbacktime_ = other.feedbacktime_;
+            onChanged();
+          }
+          if (other.hasSubname()) {
+            bitField0_ |= 0x00000800;
+            subname_ = other.subname_;
+            onChanged();
+          }
+          if (other.hasTelphone()) {
+            bitField0_ |= 0x00001000;
+            telphone_ = other.telphone_;
+            onChanged();
+          }
+          if (other.hasSum()) {
+            bitField0_ |= 0x00002000;
+            sum_ = other.sum_;
+            onChanged();
+          }
+          if (other.hasSubsum()) {
+            bitField0_ |= 0x00004000;
+            subsum_ = other.subsum_;
+            onChanged();
+          }
+          if (other.hasFansum()) {
+            bitField0_ |= 0x00008000;
+            fansum_ = other.fansum_;
+            onChanged();
+          }
+          if (other.hasBansum()) {
+            bitField0_ |= 0x00010000;
+            bansum_ = other.bansum_;
+            onChanged();
+          }
+          if (other.hasPhoto()) {
+            bitField0_ |= 0x00020000;
+            photo_ = other.photo_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // optional string id = 1;
+        private java.lang.Object id_ = "";
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public boolean hasId() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public java.lang.String getId() {
+          java.lang.Object ref = id_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            id_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getIdBytes() {
+          java.lang.Object ref = id_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            id_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public Builder setId(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          id_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public Builder clearId() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          id_ = getDefaultInstance().getId();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string id = 1;</code>
+         *
+         * <pre>
+         * 环境id
+         * </pre>
+         */
+        public Builder setIdBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          id_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string dutyunits = 2;
+        private java.lang.Object dutyunits_ = "";
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public boolean hasDutyunits() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public java.lang.String getDutyunits() {
+          java.lang.Object ref = dutyunits_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            dutyunits_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getDutyunitsBytes() {
+          java.lang.Object ref = dutyunits_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            dutyunits_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public Builder setDutyunits(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          dutyunits_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public Builder clearDutyunits() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          dutyunits_ = getDefaultInstance().getDutyunits();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dutyunits = 2;</code>
+         *
+         * <pre>
+         * 责任单位
+         * </pre>
+         */
+        public Builder setDutyunitsBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          dutyunits_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string examinesite = 3;
+        private java.lang.Object examinesite_ = "";
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public boolean hasExaminesite() {
+          return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public java.lang.String getExaminesite() {
+          java.lang.Object ref = examinesite_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            examinesite_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getExaminesiteBytes() {
+          java.lang.Object ref = examinesite_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            examinesite_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public Builder setExaminesite(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          examinesite_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public Builder clearExaminesite() {
+          bitField0_ = (bitField0_ & ~0x00000004);
+          examinesite_ = getDefaultInstance().getExaminesite();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string examinesite = 3;</code>
+         *
+         * <pre>
+         *检查地点
+         * </pre>
+         */
+        public Builder setExaminesiteBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          examinesite_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string importsite = 4;
+        private java.lang.Object importsite_ = "";
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public boolean hasImportsite() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public java.lang.String getImportsite() {
+          java.lang.Object ref = importsite_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            importsite_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getImportsiteBytes() {
+          java.lang.Object ref = importsite_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            importsite_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder setImportsite(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          importsite_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder clearImportsite() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          importsite_ = getDefaultInstance().getImportsite();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string importsite = 4;</code>
+         *
+         * <pre>
+         *输入地点
+         * </pre>
+         */
+        public Builder setImportsiteBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          importsite_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string deductmarks = 5;
+        private java.lang.Object deductmarks_ = "";
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public boolean hasDeductmarks() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public java.lang.String getDeductmarks() {
+          java.lang.Object ref = deductmarks_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            deductmarks_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getDeductmarksBytes() {
+          java.lang.Object ref = deductmarks_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            deductmarks_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public Builder setDeductmarks(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          deductmarks_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public Builder clearDeductmarks() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          deductmarks_ = getDefaultInstance().getDeductmarks();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string deductmarks = 5;</code>
+         *
+         * <pre>
+         *扣分项，检查内容
+         * </pre>
+         */
+        public Builder setDeductmarksBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          deductmarks_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string submittime = 6;
+        private java.lang.Object submittime_ = "";
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public boolean hasSubmittime() {
+          return ((bitField0_ & 0x00000020) == 0x00000020);
+        }
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public java.lang.String getSubmittime() {
+          java.lang.Object ref = submittime_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            submittime_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getSubmittimeBytes() {
+          java.lang.Object ref = submittime_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            submittime_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public Builder setSubmittime(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+          submittime_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public Builder clearSubmittime() {
+          bitField0_ = (bitField0_ & ~0x00000020);
+          submittime_ = getDefaultInstance().getSubmittime();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string submittime = 6;</code>
+         *
+         * <pre>
+         *上报时间
+         * </pre>
+         */
+        public Builder setSubmittimeBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+          submittime_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string states = 7;
+        private java.lang.Object states_ = "";
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public boolean hasStates() {
+          return ((bitField0_ & 0x00000040) == 0x00000040);
+        }
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public java.lang.String getStates() {
+          java.lang.Object ref = states_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            states_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getStatesBytes() {
+          java.lang.Object ref = states_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            states_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public Builder setStates(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+          states_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public Builder clearStates() {
+          bitField0_ = (bitField0_ & ~0x00000040);
+          states_ = getDefaultInstance().getStates();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string states = 7;</code>
+         *
+         * <pre>
+         *状态（0 已上报,1 已办结,2 已反馈,3 已驳回）
+         * </pre>
+         */
+        public Builder setStatesBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+          states_ = value;
+          onChanged();
+          return this;
+        }
+
+        // repeated .MonIndex.problempictureList problempicturelist = 8;
+        private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> problempicturelist_ =
+          java.util.Collections.emptyList();
+        private void ensureProblempicturelistIsMutable() {
+          if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+            problempicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList>(problempicturelist_);
+            bitField0_ |= 0x00000080;
+           }
+        }
+
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> problempicturelistBuilder_;
+
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> getProblempicturelistList() {
+          if (problempicturelistBuilder_ == null) {
+            return java.util.Collections.unmodifiableList(problempicturelist_);
+          } else {
+            return problempicturelistBuilder_.getMessageList();
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public int getProblempicturelistCount() {
+          if (problempicturelistBuilder_ == null) {
+            return problempicturelist_.size();
+          } else {
+            return problempicturelistBuilder_.getCount();
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index) {
+          if (problempicturelistBuilder_ == null) {
+            return problempicturelist_.get(index);
+          } else {
+            return problempicturelistBuilder_.getMessage(index);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder setProblempicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+          if (problempicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.set(index, value);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.setMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder setProblempicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+          if (problempicturelistBuilder_ == null) {
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.set(index, builderForValue.build());
+            onChanged();
+          } else {
+            problempicturelistBuilder_.setMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder addProblempicturelist(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+          if (problempicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.add(value);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.addMessage(value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder addProblempicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+          if (problempicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.add(index, value);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.addMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder addProblempicturelist(
+            com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+          if (problempicturelistBuilder_ == null) {
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.add(builderForValue.build());
+            onChanged();
+          } else {
+            problempicturelistBuilder_.addMessage(builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder addProblempicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+          if (problempicturelistBuilder_ == null) {
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.add(index, builderForValue.build());
+            onChanged();
+          } else {
+            problempicturelistBuilder_.addMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder addAllProblempicturelist(
+            java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> values) {
+          if (problempicturelistBuilder_ == null) {
+            ensureProblempicturelistIsMutable();
+            super.addAll(values, problempicturelist_);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.addAllMessages(values);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder clearProblempicturelist() {
+          if (problempicturelistBuilder_ == null) {
+            problempicturelist_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000080);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.clear();
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public Builder removeProblempicturelist(int index) {
+          if (problempicturelistBuilder_ == null) {
+            ensureProblempicturelistIsMutable();
+            problempicturelist_.remove(index);
+            onChanged();
+          } else {
+            problempicturelistBuilder_.remove(index);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder getProblempicturelistBuilder(
+            int index) {
+          return getProblempicturelistFieldBuilder().getBuilder(index);
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+            int index) {
+          if (problempicturelistBuilder_ == null) {
+            return problempicturelist_.get(index);  } else {
+            return problempicturelistBuilder_.getMessageOrBuilder(index);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+             getProblempicturelistOrBuilderList() {
+          if (problempicturelistBuilder_ != null) {
+            return problempicturelistBuilder_.getMessageOrBuilderList();
+          } else {
+            return java.util.Collections.unmodifiableList(problempicturelist_);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder addProblempicturelistBuilder() {
+          return getProblempicturelistFieldBuilder().addBuilder(
+              com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder addProblempicturelistBuilder(
+            int index) {
+          return getProblempicturelistFieldBuilder().addBuilder(
+              index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .MonIndex.problempictureList problempicturelist = 8;</code>
+         *
+         * <pre>
+         *问题照片
+         * </pre>
+         */
+        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder> 
+             getProblempicturelistBuilderList() {
+          return getProblempicturelistFieldBuilder().getBuilderList();
+        }
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+            getProblempicturelistFieldBuilder() {
+          if (problempicturelistBuilder_ == null) {
+            problempicturelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder>(
+                    problempicturelist_,
+                    ((bitField0_ & 0x00000080) == 0x00000080),
+                    getParentForChildren(),
+                    isClean());
+            problempicturelist_ = null;
+          }
+          return problempicturelistBuilder_;
+        }
+
+        // repeated .MonIndex.disposeictureList disposeicturelist = 9;
+        private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> disposeicturelist_ =
+          java.util.Collections.emptyList();
+        private void ensureDisposeicturelistIsMutable() {
+          if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+            disposeicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList>(disposeicturelist_);
+            bitField0_ |= 0x00000100;
+           }
+        }
+
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> disposeicturelistBuilder_;
+
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> getDisposeicturelistList() {
+          if (disposeicturelistBuilder_ == null) {
+            return java.util.Collections.unmodifiableList(disposeicturelist_);
+          } else {
+            return disposeicturelistBuilder_.getMessageList();
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public int getDisposeicturelistCount() {
+          if (disposeicturelistBuilder_ == null) {
+            return disposeicturelist_.size();
+          } else {
+            return disposeicturelistBuilder_.getCount();
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index) {
+          if (disposeicturelistBuilder_ == null) {
+            return disposeicturelist_.get(index);
+          } else {
+            return disposeicturelistBuilder_.getMessage(index);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder setDisposeicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+          if (disposeicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.set(index, value);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.setMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder setDisposeicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+          if (disposeicturelistBuilder_ == null) {
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.set(index, builderForValue.build());
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.setMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder addDisposeicturelist(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+          if (disposeicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.add(value);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.addMessage(value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder addDisposeicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+          if (disposeicturelistBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.add(index, value);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.addMessage(index, value);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder addDisposeicturelist(
+            com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+          if (disposeicturelistBuilder_ == null) {
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.add(builderForValue.build());
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.addMessage(builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder addDisposeicturelist(
+            int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+          if (disposeicturelistBuilder_ == null) {
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.add(index, builderForValue.build());
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.addMessage(index, builderForValue.build());
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder addAllDisposeicturelist(
+            java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> values) {
+          if (disposeicturelistBuilder_ == null) {
+            ensureDisposeicturelistIsMutable();
+            super.addAll(values, disposeicturelist_);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.addAllMessages(values);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder clearDisposeicturelist() {
+          if (disposeicturelistBuilder_ == null) {
+            disposeicturelist_ = java.util.Collections.emptyList();
+            bitField0_ = (bitField0_ & ~0x00000100);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.clear();
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public Builder removeDisposeicturelist(int index) {
+          if (disposeicturelistBuilder_ == null) {
+            ensureDisposeicturelistIsMutable();
+            disposeicturelist_.remove(index);
+            onChanged();
+          } else {
+            disposeicturelistBuilder_.remove(index);
+          }
+          return this;
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder getDisposeicturelistBuilder(
+            int index) {
+          return getDisposeicturelistFieldBuilder().getBuilder(index);
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+            int index) {
+          if (disposeicturelistBuilder_ == null) {
+            return disposeicturelist_.get(index);  } else {
+            return disposeicturelistBuilder_.getMessageOrBuilder(index);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+             getDisposeicturelistOrBuilderList() {
+          if (disposeicturelistBuilder_ != null) {
+            return disposeicturelistBuilder_.getMessageOrBuilderList();
+          } else {
+            return java.util.Collections.unmodifiableList(disposeicturelist_);
+          }
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder addDisposeicturelistBuilder() {
+          return getDisposeicturelistFieldBuilder().addBuilder(
+              com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder addDisposeicturelistBuilder(
+            int index) {
+          return getDisposeicturelistFieldBuilder().addBuilder(
+              index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance());
+        }
+        /**
+         * <code>repeated .MonIndex.disposeictureList disposeicturelist = 9;</code>
+         *
+         * <pre>
+         *处理照片
+         * </pre>
+         */
+        public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder> 
+             getDisposeicturelistBuilderList() {
+          return getDisposeicturelistFieldBuilder().getBuilderList();
+        }
+        private com.google.protobuf.RepeatedFieldBuilder<
+            com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+            getDisposeicturelistFieldBuilder() {
+          if (disposeicturelistBuilder_ == null) {
+            disposeicturelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+                com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder>(
+                    disposeicturelist_,
+                    ((bitField0_ & 0x00000100) == 0x00000100),
+                    getParentForChildren(),
+                    isClean());
+            disposeicturelist_ = null;
+          }
+          return disposeicturelistBuilder_;
+        }
+
+        // optional string throughtime = 10;
+        private java.lang.Object throughtime_ = "";
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public boolean hasThroughtime() {
+          return ((bitField0_ & 0x00000200) == 0x00000200);
+        }
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public java.lang.String getThroughtime() {
+          java.lang.Object ref = throughtime_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            throughtime_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getThroughtimeBytes() {
+          java.lang.Object ref = throughtime_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            throughtime_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public Builder setThroughtime(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000200;
+          throughtime_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public Builder clearThroughtime() {
+          bitField0_ = (bitField0_ & ~0x00000200);
+          throughtime_ = getDefaultInstance().getThroughtime();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string throughtime = 10;</code>
+         *
+         * <pre>
+         *办结时间
+         * </pre>
+         */
+        public Builder setThroughtimeBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000200;
+          throughtime_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string feedbacktime = 11;
+        private java.lang.Object feedbacktime_ = "";
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public boolean hasFeedbacktime() {
+          return ((bitField0_ & 0x00000400) == 0x00000400);
+        }
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public java.lang.String getFeedbacktime() {
+          java.lang.Object ref = feedbacktime_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            feedbacktime_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFeedbacktimeBytes() {
+          java.lang.Object ref = feedbacktime_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            feedbacktime_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public Builder setFeedbacktime(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000400;
+          feedbacktime_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public Builder clearFeedbacktime() {
+          bitField0_ = (bitField0_ & ~0x00000400);
+          feedbacktime_ = getDefaultInstance().getFeedbacktime();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string feedbacktime = 11;</code>
+         *
+         * <pre>
+         *反馈时间
+         * </pre>
+         */
+        public Builder setFeedbacktimeBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000400;
+          feedbacktime_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string subname = 12;
+        private java.lang.Object subname_ = "";
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public boolean hasSubname() {
+          return ((bitField0_ & 0x00000800) == 0x00000800);
+        }
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public java.lang.String getSubname() {
+          java.lang.Object ref = subname_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            subname_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getSubnameBytes() {
+          java.lang.Object ref = subname_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            subname_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public Builder setSubname(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000800;
+          subname_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public Builder clearSubname() {
+          bitField0_ = (bitField0_ & ~0x00000800);
+          subname_ = getDefaultInstance().getSubname();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string subname = 12;</code>
+         *
+         * <pre>
+         *上报人
+         * </pre>
+         */
+        public Builder setSubnameBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000800;
+          subname_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string telphone = 13;
+        private java.lang.Object telphone_ = "";
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public boolean hasTelphone() {
+          return ((bitField0_ & 0x00001000) == 0x00001000);
+        }
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public java.lang.String getTelphone() {
+          java.lang.Object ref = telphone_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            telphone_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getTelphoneBytes() {
+          java.lang.Object ref = telphone_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            telphone_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public Builder setTelphone(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00001000;
+          telphone_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public Builder clearTelphone() {
+          bitField0_ = (bitField0_ & ~0x00001000);
+          telphone_ = getDefaultInstance().getTelphone();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string telphone = 13;</code>
+         *
+         * <pre>
+         *联系电话
+         * </pre>
+         */
+        public Builder setTelphoneBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00001000;
+          telphone_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string sum = 14;
+        private java.lang.Object sum_ = "";
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public boolean hasSum() {
+          return ((bitField0_ & 0x00002000) == 0x00002000);
+        }
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public java.lang.String getSum() {
+          java.lang.Object ref = sum_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            sum_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getSumBytes() {
+          java.lang.Object ref = sum_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            sum_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public Builder setSum(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00002000;
+          sum_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public Builder clearSum() {
+          bitField0_ = (bitField0_ & ~0x00002000);
+          sum_ = getDefaultInstance().getSum();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string sum = 14;</code>
+         *
+         * <pre>
+         *环境问题总记录条数
+         * </pre>
+         */
+        public Builder setSumBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00002000;
+          sum_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string subsum = 15;
+        private java.lang.Object subsum_ = "";
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public boolean hasSubsum() {
+          return ((bitField0_ & 0x00004000) == 0x00004000);
+        }
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public java.lang.String getSubsum() {
+          java.lang.Object ref = subsum_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            subsum_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getSubsumBytes() {
+          java.lang.Object ref = subsum_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            subsum_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public Builder setSubsum(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+          subsum_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public Builder clearSubsum() {
+          bitField0_ = (bitField0_ & ~0x00004000);
+          subsum_ = getDefaultInstance().getSubsum();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string subsum = 15;</code>
+         *
+         * <pre>
+         *已上报条数
+         * </pre>
+         */
+        public Builder setSubsumBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+          subsum_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string fansum = 16;
+        private java.lang.Object fansum_ = "";
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public boolean hasFansum() {
+          return ((bitField0_ & 0x00008000) == 0x00008000);
+        }
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public java.lang.String getFansum() {
+          java.lang.Object ref = fansum_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            fansum_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFansumBytes() {
+          java.lang.Object ref = fansum_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            fansum_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public Builder setFansum(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00008000;
+          fansum_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public Builder clearFansum() {
+          bitField0_ = (bitField0_ & ~0x00008000);
+          fansum_ = getDefaultInstance().getFansum();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fansum = 16;</code>
+         *
+         * <pre>
+         *已反馈条数
+         * </pre>
+         */
+        public Builder setFansumBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00008000;
+          fansum_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string bansum = 17;
+        private java.lang.Object bansum_ = "";
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public boolean hasBansum() {
+          return ((bitField0_ & 0x00010000) == 0x00010000);
+        }
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public java.lang.String getBansum() {
+          java.lang.Object ref = bansum_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            bansum_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getBansumBytes() {
+          java.lang.Object ref = bansum_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            bansum_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public Builder setBansum(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00010000;
+          bansum_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public Builder clearBansum() {
+          bitField0_ = (bitField0_ & ~0x00010000);
+          bansum_ = getDefaultInstance().getBansum();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string bansum = 17;</code>
+         *
+         * <pre>
+         *已办结条数
+         * </pre>
+         */
+        public Builder setBansumBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00010000;
+          bansum_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string photo = 18;
+        private java.lang.Object photo_ = "";
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public boolean hasPhoto() {
+          return ((bitField0_ & 0x00020000) == 0x00020000);
+        }
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public java.lang.String getPhoto() {
+          java.lang.Object ref = photo_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            photo_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getPhotoBytes() {
+          java.lang.Object ref = photo_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            photo_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public Builder setPhoto(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00020000;
+          photo_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public Builder clearPhoto() {
+          bitField0_ = (bitField0_ & ~0x00020000);
+          photo_ = getDefaultInstance().getPhoto();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string photo = 18;</code>
+         *
+         * <pre>
+         * 处理图片id
+         * </pre>
+         */
+        public Builder setPhotoBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00020000;
+          photo_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:MonIndex.monitorissueMap)
+      }
+
+      static {
+        defaultInstance = new monitorissueMap(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:MonIndex.monitorissueMap)
+    }
+
+    public interface problempictureListOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // optional string name = 1;
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      boolean hasName();
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      java.lang.String getName();
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getNameBytes();
+
+      // optional string url = 2;
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      boolean hasUrl();
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      java.lang.String getUrl();
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getUrlBytes();
+
+      // optional string dx = 3;
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      boolean hasDx();
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      java.lang.String getDx();
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getDxBytes();
+
+      // optional string ft = 4;
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      boolean hasFt();
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      java.lang.String getFt();
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFtBytes();
+
+      // optional string fpk = 5;
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      boolean hasFpk();
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      java.lang.String getFpk();
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFpkBytes();
+    }
+    /**
+     * Protobuf type {@code MonIndex.problempictureList}
+     *
+     * <pre>
+     *环境监测记录中的问题照片
+     * </pre>
+     */
+    public static final class problempictureList extends
+        com.google.protobuf.GeneratedMessage
+        implements problempictureListOrBuilder {
+      // Use problempictureList.newBuilder() to construct.
+      private problempictureList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private problempictureList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final problempictureList defaultInstance;
+      public static problempictureList getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public problempictureList getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private problempictureList(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                name_ = input.readBytes();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                url_ = input.readBytes();
+                break;
+              }
+              case 26: {
+                bitField0_ |= 0x00000004;
+                dx_ = input.readBytes();
+                break;
+              }
+              case 34: {
+                bitField0_ |= 0x00000008;
+                ft_ = input.readBytes();
+                break;
+              }
+              case 42: {
+                bitField0_ |= 0x00000010;
+                fpk_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_problempictureList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_problempictureList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.class, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<problempictureList> PARSER =
+          new com.google.protobuf.AbstractParser<problempictureList>() {
+        public problempictureList parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new problempictureList(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<problempictureList> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // optional string name = 1;
+      public static final int NAME_FIELD_NUMBER = 1;
+      private java.lang.Object name_;
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string url = 2;
+      public static final int URL_FIELD_NUMBER = 2;
+      private java.lang.Object url_;
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public boolean hasUrl() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            url_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getUrlBytes() {
+        java.lang.Object ref = url_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          url_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string dx = 3;
+      public static final int DX_FIELD_NUMBER = 3;
+      private java.lang.Object dx_;
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public boolean hasDx() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public java.lang.String getDx() {
+        java.lang.Object ref = dx_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            dx_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getDxBytes() {
+        java.lang.Object ref = dx_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dx_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string ft = 4;
+      public static final int FT_FIELD_NUMBER = 4;
+      private java.lang.Object ft_;
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public boolean hasFt() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public java.lang.String getFt() {
+        java.lang.Object ref = ft_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            ft_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFtBytes() {
+        java.lang.Object ref = ft_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ft_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string fpk = 5;
+      public static final int FPK_FIELD_NUMBER = 5;
+      private java.lang.Object fpk_;
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public boolean hasFpk() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public java.lang.String getFpk() {
+        java.lang.Object ref = fpk_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            fpk_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFpkBytes() {
+        java.lang.Object ref = fpk_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fpk_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        name_ = "";
+        url_ = "";
+        dx_ = "";
+        ft_ = "";
+        fpk_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getNameBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getUrlBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeBytes(3, getDxBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          output.writeBytes(4, getFtBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          output.writeBytes(5, getFpkBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getNameBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getUrlBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(3, getDxBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(4, getFtBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(5, getFpkBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code MonIndex.problempictureList}
+       *
+       * <pre>
+       *环境监测记录中的问题照片
+       * </pre>
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_problempictureList_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_problempictureList_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.class, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder.class);
+        }
+
+        // Construct using com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          name_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          url_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          dx_ = "";
+          bitField0_ = (bitField0_ & ~0x00000004);
+          ft_ = "";
+          bitField0_ = (bitField0_ & ~0x00000008);
+          fpk_ = "";
+          bitField0_ = (bitField0_ & ~0x00000010);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_problempictureList_descriptor;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getDefaultInstanceForType() {
+          return com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance();
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList build() {
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList buildPartial() {
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList result = new com.zhang.sqone.bean.Monitor.MonIndex.problempictureList(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.name_ = name_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.url_ = url_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
+          result.dx_ = dx_;
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+            to_bitField0_ |= 0x00000008;
+          }
+          result.ft_ = ft_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+            to_bitField0_ |= 0x00000010;
+          }
+          result.fpk_ = fpk_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.zhang.sqone.bean.Monitor.MonIndex.problempictureList) {
+            return mergeFrom((com.zhang.sqone.bean.Monitor.MonIndex.problempictureList)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList other) {
+          if (other == com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance()) return this;
+          if (other.hasName()) {
+            bitField0_ |= 0x00000001;
+            name_ = other.name_;
+            onChanged();
+          }
+          if (other.hasUrl()) {
+            bitField0_ |= 0x00000002;
+            url_ = other.url_;
+            onChanged();
+          }
+          if (other.hasDx()) {
+            bitField0_ |= 0x00000004;
+            dx_ = other.dx_;
+            onChanged();
+          }
+          if (other.hasFt()) {
+            bitField0_ |= 0x00000008;
+            ft_ = other.ft_;
+            onChanged();
+          }
+          if (other.hasFpk()) {
+            bitField0_ |= 0x00000010;
+            fpk_ = other.fpk_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.zhang.sqone.bean.Monitor.MonIndex.problempictureList) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // optional string name = 1;
+        private java.lang.Object name_ = "";
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public boolean hasName() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public java.lang.String getName() {
+          java.lang.Object ref = name_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            name_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getNameBytes() {
+          java.lang.Object ref = name_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            name_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder setName(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          name_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder clearName() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          name_ = getDefaultInstance().getName();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder setNameBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          name_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string url = 2;
+        private java.lang.Object url_ = "";
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public boolean hasUrl() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public java.lang.String getUrl() {
+          java.lang.Object ref = url_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            url_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getUrlBytes() {
+          java.lang.Object ref = url_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            url_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder setUrl(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          url_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder clearUrl() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          url_ = getDefaultInstance().getUrl();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder setUrlBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          url_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string dx = 3;
+        private java.lang.Object dx_ = "";
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public boolean hasDx() {
+          return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public java.lang.String getDx() {
+          java.lang.Object ref = dx_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            dx_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getDxBytes() {
+          java.lang.Object ref = dx_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            dx_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder setDx(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          dx_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder clearDx() {
+          bitField0_ = (bitField0_ & ~0x00000004);
+          dx_ = getDefaultInstance().getDx();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder setDxBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          dx_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string ft = 4;
+        private java.lang.Object ft_ = "";
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public boolean hasFt() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public java.lang.String getFt() {
+          java.lang.Object ref = ft_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            ft_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFtBytes() {
+          java.lang.Object ref = ft_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            ft_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder setFt(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          ft_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder clearFt() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          ft_ = getDefaultInstance().getFt();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder setFtBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          ft_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string fpk = 5;
+        private java.lang.Object fpk_ = "";
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public boolean hasFpk() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public java.lang.String getFpk() {
+          java.lang.Object ref = fpk_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            fpk_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFpkBytes() {
+          java.lang.Object ref = fpk_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            fpk_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder setFpk(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          fpk_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder clearFpk() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          fpk_ = getDefaultInstance().getFpk();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder setFpkBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          fpk_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:MonIndex.problempictureList)
+      }
+
+      static {
+        defaultInstance = new problempictureList(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:MonIndex.problempictureList)
+    }
+
+    public interface disposeictureListOrBuilder
+        extends com.google.protobuf.MessageOrBuilder {
+
+      // optional string name = 1;
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      boolean hasName();
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      java.lang.String getName();
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getNameBytes();
+
+      // optional string url = 2;
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      boolean hasUrl();
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      java.lang.String getUrl();
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getUrlBytes();
+
+      // optional string dx = 3;
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      boolean hasDx();
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      java.lang.String getDx();
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getDxBytes();
+
+      // optional string ft = 4;
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      boolean hasFt();
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      java.lang.String getFt();
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFtBytes();
+
+      // optional string fpk = 5;
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      boolean hasFpk();
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      java.lang.String getFpk();
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      com.google.protobuf.ByteString
+          getFpkBytes();
+    }
+    /**
+     * Protobuf type {@code MonIndex.disposeictureList}
+     *
+     * <pre>
+     *环境监测记录中的处理照片
+     * </pre>
+     */
+    public static final class disposeictureList extends
+        com.google.protobuf.GeneratedMessage
+        implements disposeictureListOrBuilder {
+      // Use disposeictureList.newBuilder() to construct.
+      private disposeictureList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+        super(builder);
+        this.unknownFields = builder.getUnknownFields();
+      }
+      private disposeictureList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final disposeictureList defaultInstance;
+      public static disposeictureList getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public disposeictureList getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
+      private disposeictureList(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        initFields();
+        int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!parseUnknownField(input, unknownFields,
+                                       extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                bitField0_ |= 0x00000001;
+                name_ = input.readBytes();
+                break;
+              }
+              case 18: {
+                bitField0_ |= 0x00000002;
+                url_ = input.readBytes();
+                break;
+              }
+              case 26: {
+                bitField0_ |= 0x00000004;
+                dx_ = input.readBytes();
+                break;
+              }
+              case 34: {
+                bitField0_ |= 0x00000008;
+                ft_ = input.readBytes();
+                break;
+              }
+              case 42: {
+                bitField0_ |= 0x00000010;
+                fpk_ = input.readBytes();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e.getMessage()).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_disposeictureList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_disposeictureList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.class, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder.class);
+      }
+
+      public static com.google.protobuf.Parser<disposeictureList> PARSER =
+          new com.google.protobuf.AbstractParser<disposeictureList>() {
+        public disposeictureList parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new disposeictureList(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<disposeictureList> getParserForType() {
+        return PARSER;
+      }
+
+      private int bitField0_;
+      // optional string name = 1;
+      public static final int NAME_FIELD_NUMBER = 1;
+      private java.lang.Object name_;
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       *文件名称
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string url = 2;
+      public static final int URL_FIELD_NUMBER = 2;
+      private java.lang.Object url_;
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public boolean hasUrl() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            url_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string url = 2;</code>
+       *
+       * <pre>
+       *文件的下载url
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getUrlBytes() {
+        java.lang.Object ref = url_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          url_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string dx = 3;
+      public static final int DX_FIELD_NUMBER = 3;
+      private java.lang.Object dx_;
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public boolean hasDx() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public java.lang.String getDx() {
+        java.lang.Object ref = dx_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            dx_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string dx = 3;</code>
+       *
+       * <pre>
+       *文件的大小
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getDxBytes() {
+        java.lang.Object ref = dx_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dx_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string ft = 4;
+      public static final int FT_FIELD_NUMBER = 4;
+      private java.lang.Object ft_;
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public boolean hasFt() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public java.lang.String getFt() {
+        java.lang.Object ref = ft_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            ft_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string ft = 4;</code>
+       *
+       * <pre>
+       *文件类型
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFtBytes() {
+        java.lang.Object ref = ft_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ft_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      // optional string fpk = 5;
+      public static final int FPK_FIELD_NUMBER = 5;
+      private java.lang.Object fpk_;
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public boolean hasFpk() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public java.lang.String getFpk() {
+        java.lang.Object ref = fpk_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            fpk_ = s;
+          }
+          return s;
+        }
+      }
+      /**
+       * <code>optional string fpk = 5;</code>
+       *
+       * <pre>
+       *附件的ID
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getFpkBytes() {
+        java.lang.Object ref = fpk_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fpk_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private void initFields() {
+        name_ = "";
+        url_ = "";
+        dx_ = "";
+        ft_ = "";
+        fpk_ = "";
+      }
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized != -1) return isInitialized == 1;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        getSerializedSize();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          output.writeBytes(1, getNameBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          output.writeBytes(2, getUrlBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          output.writeBytes(3, getDxBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          output.writeBytes(4, getFtBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          output.writeBytes(5, getFpkBytes());
+        }
+        getUnknownFields().writeTo(output);
+      }
+
+      private int memoizedSerializedSize = -1;
+      public int getSerializedSize() {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(1, getNameBytes());
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(2, getUrlBytes());
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(3, getDxBytes());
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(4, getFtBytes());
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeBytesSize(5, getFpkBytes());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSerializedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
+        return super.writeReplace();
+      }
+
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() { return newBuilder(this); }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code MonIndex.disposeictureList}
+       *
+       * <pre>
+       *环境监测记录中的处理照片
+       * </pre>
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessage.Builder<Builder>
+         implements com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_disposeictureList_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_disposeictureList_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.class, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder.class);
+        }
+
+        // Construct using com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          }
+        }
+        private static Builder create() {
+          return new Builder();
+        }
+
+        public Builder clear() {
+          super.clear();
+          name_ = "";
+          bitField0_ = (bitField0_ & ~0x00000001);
+          url_ = "";
+          bitField0_ = (bitField0_ & ~0x00000002);
+          dx_ = "";
+          bitField0_ = (bitField0_ & ~0x00000004);
+          ft_ = "";
+          bitField0_ = (bitField0_ & ~0x00000008);
+          fpk_ = "";
+          bitField0_ = (bitField0_ & ~0x00000010);
+          return this;
+        }
+
+        public Builder clone() {
+          return create().mergeFrom(buildPartial());
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.zhang.sqone.bean.Monitor.internal_static_MonIndex_disposeictureList_descriptor;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDefaultInstanceForType() {
+          return com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance();
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList build() {
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList buildPartial() {
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList result = new com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+            to_bitField0_ |= 0x00000001;
+          }
+          result.name_ = name_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+            to_bitField0_ |= 0x00000002;
+          }
+          result.url_ = url_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+            to_bitField0_ |= 0x00000004;
+          }
+          result.dx_ = dx_;
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+            to_bitField0_ |= 0x00000008;
+          }
+          result.ft_ = ft_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+            to_bitField0_ |= 0x00000010;
+          }
+          result.fpk_ = fpk_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList) {
+            return mergeFrom((com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList other) {
+          if (other == com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance()) return this;
+          if (other.hasName()) {
+            bitField0_ |= 0x00000001;
+            name_ = other.name_;
+            onChanged();
+          }
+          if (other.hasUrl()) {
+            bitField0_ |= 0x00000002;
+            url_ = other.url_;
+            onChanged();
+          }
+          if (other.hasDx()) {
+            bitField0_ |= 0x00000004;
+            dx_ = other.dx_;
+            onChanged();
+          }
+          if (other.hasFt()) {
+            bitField0_ |= 0x00000008;
+            ft_ = other.ft_;
+            onChanged();
+          }
+          if (other.hasFpk()) {
+            bitField0_ |= 0x00000010;
+            fpk_ = other.fpk_;
+            onChanged();
+          }
+          this.mergeUnknownFields(other.getUnknownFields());
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList) e.getUnfinishedMessage();
+            throw e;
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+        private int bitField0_;
+
+        // optional string name = 1;
+        private java.lang.Object name_ = "";
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public boolean hasName() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public java.lang.String getName() {
+          java.lang.Object ref = name_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            name_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getNameBytes() {
+          java.lang.Object ref = name_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            name_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder setName(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          name_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder clearName() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          name_ = getDefaultInstance().getName();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string name = 1;</code>
+         *
+         * <pre>
+         *文件名称
+         * </pre>
+         */
+        public Builder setNameBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+          name_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string url = 2;
+        private java.lang.Object url_ = "";
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public boolean hasUrl() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public java.lang.String getUrl() {
+          java.lang.Object ref = url_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            url_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getUrlBytes() {
+          java.lang.Object ref = url_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            url_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder setUrl(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          url_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder clearUrl() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          url_ = getDefaultInstance().getUrl();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string url = 2;</code>
+         *
+         * <pre>
+         *文件的下载url
+         * </pre>
+         */
+        public Builder setUrlBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+          url_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string dx = 3;
+        private java.lang.Object dx_ = "";
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public boolean hasDx() {
+          return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public java.lang.String getDx() {
+          java.lang.Object ref = dx_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            dx_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getDxBytes() {
+          java.lang.Object ref = dx_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            dx_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder setDx(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          dx_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder clearDx() {
+          bitField0_ = (bitField0_ & ~0x00000004);
+          dx_ = getDefaultInstance().getDx();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string dx = 3;</code>
+         *
+         * <pre>
+         *文件的大小
+         * </pre>
+         */
+        public Builder setDxBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+          dx_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string ft = 4;
+        private java.lang.Object ft_ = "";
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public boolean hasFt() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public java.lang.String getFt() {
+          java.lang.Object ref = ft_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            ft_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFtBytes() {
+          java.lang.Object ref = ft_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            ft_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder setFt(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          ft_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder clearFt() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          ft_ = getDefaultInstance().getFt();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string ft = 4;</code>
+         *
+         * <pre>
+         *文件类型
+         * </pre>
+         */
+        public Builder setFtBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+          ft_ = value;
+          onChanged();
+          return this;
+        }
+
+        // optional string fpk = 5;
+        private java.lang.Object fpk_ = "";
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public boolean hasFpk() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public java.lang.String getFpk() {
+          java.lang.Object ref = fpk_;
+          if (!(ref instanceof java.lang.String)) {
+            java.lang.String s = ((com.google.protobuf.ByteString) ref)
+                .toStringUtf8();
+            fpk_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public com.google.protobuf.ByteString
+            getFpkBytes() {
+          java.lang.Object ref = fpk_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            fpk_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder setFpk(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          fpk_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder clearFpk() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          fpk_ = getDefaultInstance().getFpk();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string fpk = 5;</code>
+         *
+         * <pre>
+         *附件的ID
+         * </pre>
+         */
+        public Builder setFpkBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+          fpk_ = value;
+          onChanged();
+          return this;
+        }
+
+        // @@protoc_insertion_point(builder_scope:MonIndex.disposeictureList)
+      }
+
+      static {
+        defaultInstance = new disposeictureList(true);
+        defaultInstance.initFields();
+      }
+
+      // @@protoc_insertion_point(class_scope:MonIndex.disposeictureList)
     }
 
     private int bitField0_;
@@ -5543,81 +12107,194 @@ public final class Monitor {
       }
     }
 
-    // repeated .MonIndex.companyMap companylist = 5;
-    public static final int COMPANYLIST_FIELD_NUMBER = 5;
+    // optional string sid = 5;
+    public static final int SID_FIELD_NUMBER = 5;
+    private java.lang.Object sid_;
+    /**
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    public boolean hasSid() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    public java.lang.String getSid() {
+      java.lang.Object ref = sid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          sid_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string sid = 5;</code>
+     *
+     * <pre>
+     *请求的用户sid
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getSidBytes() {
+      java.lang.Object ref = sid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        sid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // repeated .MonIndex.companyMap companylist = 6;
+    public static final int COMPANYLIST_FIELD_NUMBER = 6;
     private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap> companylist_;
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap> getCompanylistList() {
       return companylist_;
     }
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder> 
         getCompanylistOrBuilderList() {
       return companylist_;
     }
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     public int getCompanylistCount() {
       return companylist_.size();
     }
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     public com.zhang.sqone.bean.Monitor.MonIndex.companyMap getCompanylist(int index) {
       return companylist_.get(index);
     }
     /**
-     * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+     * <code>repeated .MonIndex.companyMap companylist = 6;</code>
      */
     public com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder getCompanylistOrBuilder(
         int index) {
       return companylist_.get(index);
     }
 
-    // optional .MonIndex.contentMap content = 6;
-    public static final int CONTENT_FIELD_NUMBER = 6;
-    private com.zhang.sqone.bean.Monitor.MonIndex.contentMap content_;
+    // repeated .MonIndex.adressMap adresslist = 7;
+    public static final int ADRESSLIST_FIELD_NUMBER = 7;
+    private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap> adresslist_;
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    public boolean hasContent() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+    public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap> getAdresslistList() {
+      return adresslist_;
     }
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    public com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContent() {
-      return content_;
+    public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder> 
+        getAdresslistOrBuilderList() {
+      return adresslist_;
     }
     /**
-     * <code>optional .MonIndex.contentMap content = 6;</code>
-     *
-     * <pre>
-     *检查内容列表
-     * </pre>
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
      */
-    public com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentOrBuilder() {
-      return content_;
+    public int getAdresslistCount() {
+      return adresslist_.size();
+    }
+    /**
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.adressMap getAdresslist(int index) {
+      return adresslist_.get(index);
+    }
+    /**
+     * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder getAdresslistOrBuilder(
+        int index) {
+      return adresslist_.get(index);
     }
 
-    // optional .MonIndex.submit sub = 7;
-    public static final int SUB_FIELD_NUMBER = 7;
+    // repeated .MonIndex.contentMap contentlist = 8;
+    public static final int CONTENTLIST_FIELD_NUMBER = 8;
+    private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap> contentlist_;
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap> getContentlistList() {
+      return contentlist_;
+    }
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> 
+        getContentlistOrBuilderList() {
+      return contentlist_;
+    }
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    public int getContentlistCount() {
+      return contentlist_.size();
+    }
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContentlist(int index) {
+      return contentlist_.get(index);
+    }
+    /**
+     * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+     *
+     * <pre>
+     *检查内容列表
+     * </pre>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentlistOrBuilder(
+        int index) {
+      return contentlist_.get(index);
+    }
+
+    // optional .MonIndex.submit sub = 9;
+    public static final int SUB_FIELD_NUMBER = 9;
     private com.zhang.sqone.bean.Monitor.MonIndex.submit sub_;
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
@@ -5627,7 +12304,7 @@ public final class Monitor {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
@@ -5637,7 +12314,7 @@ public final class Monitor {
       return sub_;
     }
     /**
-     * <code>optional .MonIndex.submit sub = 7;</code>
+     * <code>optional .MonIndex.submit sub = 9;</code>
      *
      * <pre>
      *提交
@@ -5647,14 +12324,170 @@ public final class Monitor {
       return sub_;
     }
 
+    // repeated .MonIndex.monitorissueMap monilist = 10;
+    public static final int MONILIST_FIELD_NUMBER = 10;
+    private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> monilist_;
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> getMonilistList() {
+      return monilist_;
+    }
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> 
+        getMonilistOrBuilderList() {
+      return monilist_;
+    }
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    public int getMonilistCount() {
+      return monilist_.size();
+    }
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonilist(int index) {
+      return monilist_.get(index);
+    }
+    /**
+     * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+     *
+     * <pre>
+     *环境监测记录列表
+     * </pre>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonilistOrBuilder(
+        int index) {
+      return monilist_.get(index);
+    }
+
+    // optional .MonIndex.monitorissueMap monimap = 11;
+    public static final int MONIMAP_FIELD_NUMBER = 11;
+    private com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap monimap_;
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    public boolean hasMonimap() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonimap() {
+      return monimap_;
+    }
+    /**
+     * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonimapOrBuilder() {
+      return monimap_;
+    }
+
+    // repeated .MonIndex.problempictureList problempicturelist = 12;
+    public static final int PROBLEMPICTURELIST_FIELD_NUMBER = 12;
+    private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> problempicturelist_;
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> getProblempicturelistList() {
+      return problempicturelist_;
+    }
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+        getProblempicturelistOrBuilderList() {
+      return problempicturelist_;
+    }
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    public int getProblempicturelistCount() {
+      return problempicturelist_.size();
+    }
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index) {
+      return problempicturelist_.get(index);
+    }
+    /**
+     * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+        int index) {
+      return problempicturelist_.get(index);
+    }
+
+    // repeated .MonIndex.disposeictureList disposeicturelist = 13;
+    public static final int DISPOSEICTURELIST_FIELD_NUMBER = 13;
+    private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> disposeicturelist_;
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> getDisposeicturelistList() {
+      return disposeicturelist_;
+    }
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+        getDisposeicturelistOrBuilderList() {
+      return disposeicturelist_;
+    }
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    public int getDisposeicturelistCount() {
+      return disposeicturelist_.size();
+    }
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index) {
+      return disposeicturelist_.get(index);
+    }
+    /**
+     * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+     */
+    public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+        int index) {
+      return disposeicturelist_.get(index);
+    }
+
     private void initFields() {
       ac_ = "";
       stu_ = "";
       scd_ = "";
       msg_ = "";
+      sid_ = "";
       companylist_ = java.util.Collections.emptyList();
-      content_ = com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance();
+      adresslist_ = java.util.Collections.emptyList();
+      contentlist_ = java.util.Collections.emptyList();
       sub_ = com.zhang.sqone.bean.Monitor.MonIndex.submit.getDefaultInstance();
+      monilist_ = java.util.Collections.emptyList();
+      monimap_ = com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance();
+      problempicturelist_ = java.util.Collections.emptyList();
+      disposeicturelist_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -5680,14 +12513,32 @@ public final class Monitor {
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         output.writeBytes(4, getMsgBytes());
       }
-      for (int i = 0; i < companylist_.size(); i++) {
-        output.writeMessage(5, companylist_.get(i));
-      }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(6, content_);
+        output.writeBytes(5, getSidBytes());
+      }
+      for (int i = 0; i < companylist_.size(); i++) {
+        output.writeMessage(6, companylist_.get(i));
+      }
+      for (int i = 0; i < adresslist_.size(); i++) {
+        output.writeMessage(7, adresslist_.get(i));
+      }
+      for (int i = 0; i < contentlist_.size(); i++) {
+        output.writeMessage(8, contentlist_.get(i));
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeMessage(7, sub_);
+        output.writeMessage(9, sub_);
+      }
+      for (int i = 0; i < monilist_.size(); i++) {
+        output.writeMessage(10, monilist_.get(i));
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeMessage(11, monimap_);
+      }
+      for (int i = 0; i < problempicturelist_.size(); i++) {
+        output.writeMessage(12, problempicturelist_.get(i));
+      }
+      for (int i = 0; i < disposeicturelist_.size(); i++) {
+        output.writeMessage(13, disposeicturelist_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -5714,17 +12565,41 @@ public final class Monitor {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(4, getMsgBytes());
       }
-      for (int i = 0; i < companylist_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, companylist_.get(i));
-      }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, content_);
+          .computeBytesSize(5, getSidBytes());
+      }
+      for (int i = 0; i < companylist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, companylist_.get(i));
+      }
+      for (int i = 0; i < adresslist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, adresslist_.get(i));
+      }
+      for (int i = 0; i < contentlist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, contentlist_.get(i));
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, sub_);
+          .computeMessageSize(9, sub_);
+      }
+      for (int i = 0; i < monilist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, monilist_.get(i));
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, monimap_);
+      }
+      for (int i = 0; i < problempicturelist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, problempicturelist_.get(i));
+      }
+      for (int i = 0; i < disposeicturelist_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, disposeicturelist_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5839,8 +12714,13 @@ public final class Monitor {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
           getCompanylistFieldBuilder();
-          getContentFieldBuilder();
+          getAdresslistFieldBuilder();
+          getContentlistFieldBuilder();
           getSubFieldBuilder();
+          getMonilistFieldBuilder();
+          getMonimapFieldBuilder();
+          getProblempicturelistFieldBuilder();
+          getDisposeicturelistFieldBuilder();
         }
       }
       private static Builder create() {
@@ -5857,24 +12737,56 @@ public final class Monitor {
         bitField0_ = (bitField0_ & ~0x00000004);
         msg_ = "";
         bitField0_ = (bitField0_ & ~0x00000008);
+        sid_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
         if (companylistBuilder_ == null) {
           companylist_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           companylistBuilder_.clear();
         }
-        if (contentBuilder_ == null) {
-          content_ = com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance();
+        if (adresslistBuilder_ == null) {
+          adresslist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
         } else {
-          contentBuilder_.clear();
+          adresslistBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000020);
+        if (contentlistBuilder_ == null) {
+          contentlist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          contentlistBuilder_.clear();
+        }
         if (subBuilder_ == null) {
           sub_ = com.zhang.sqone.bean.Monitor.MonIndex.submit.getDefaultInstance();
         } else {
           subBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000100);
+        if (monilistBuilder_ == null) {
+          monilist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000200);
+        } else {
+          monilistBuilder_.clear();
+        }
+        if (monimapBuilder_ == null) {
+          monimap_ = com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance();
+        } else {
+          monimapBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        if (problempicturelistBuilder_ == null) {
+          problempicturelist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000800);
+        } else {
+          problempicturelistBuilder_.clear();
+        }
+        if (disposeicturelistBuilder_ == null) {
+          disposeicturelist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00001000);
+        } else {
+          disposeicturelistBuilder_.clear();
+        }
         return this;
       }
 
@@ -5919,30 +12831,79 @@ public final class Monitor {
           to_bitField0_ |= 0x00000008;
         }
         result.msg_ = msg_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.sid_ = sid_;
         if (companylistBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
             companylist_ = java.util.Collections.unmodifiableList(companylist_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.companylist_ = companylist_;
         } else {
           result.companylist_ = companylistBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        if (contentBuilder_ == null) {
-          result.content_ = content_;
+        if (adresslistBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040)) {
+            adresslist_ = java.util.Collections.unmodifiableList(adresslist_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.adresslist_ = adresslist_;
         } else {
-          result.content_ = contentBuilder_.build();
+          result.adresslist_ = adresslistBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+        if (contentlistBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080)) {
+            contentlist_ = java.util.Collections.unmodifiableList(contentlist_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.contentlist_ = contentlist_;
+        } else {
+          result.contentlist_ = contentlistBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
           to_bitField0_ |= 0x00000020;
         }
         if (subBuilder_ == null) {
           result.sub_ = sub_;
         } else {
           result.sub_ = subBuilder_.build();
+        }
+        if (monilistBuilder_ == null) {
+          if (((bitField0_ & 0x00000200) == 0x00000200)) {
+            monilist_ = java.util.Collections.unmodifiableList(monilist_);
+            bitField0_ = (bitField0_ & ~0x00000200);
+          }
+          result.monilist_ = monilist_;
+        } else {
+          result.monilist_ = monilistBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        if (monimapBuilder_ == null) {
+          result.monimap_ = monimap_;
+        } else {
+          result.monimap_ = monimapBuilder_.build();
+        }
+        if (problempicturelistBuilder_ == null) {
+          if (((bitField0_ & 0x00000800) == 0x00000800)) {
+            problempicturelist_ = java.util.Collections.unmodifiableList(problempicturelist_);
+            bitField0_ = (bitField0_ & ~0x00000800);
+          }
+          result.problempicturelist_ = problempicturelist_;
+        } else {
+          result.problempicturelist_ = problempicturelistBuilder_.build();
+        }
+        if (disposeicturelistBuilder_ == null) {
+          if (((bitField0_ & 0x00001000) == 0x00001000)) {
+            disposeicturelist_ = java.util.Collections.unmodifiableList(disposeicturelist_);
+            bitField0_ = (bitField0_ & ~0x00001000);
+          }
+          result.disposeicturelist_ = disposeicturelist_;
+        } else {
+          result.disposeicturelist_ = disposeicturelistBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -5980,11 +12941,16 @@ public final class Monitor {
           msg_ = other.msg_;
           onChanged();
         }
+        if (other.hasSid()) {
+          bitField0_ |= 0x00000010;
+          sid_ = other.sid_;
+          onChanged();
+        }
         if (companylistBuilder_ == null) {
           if (!other.companylist_.isEmpty()) {
             if (companylist_.isEmpty()) {
               companylist_ = other.companylist_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureCompanylistIsMutable();
               companylist_.addAll(other.companylist_);
@@ -5997,7 +12963,7 @@ public final class Monitor {
               companylistBuilder_.dispose();
               companylistBuilder_ = null;
               companylist_ = other.companylist_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000020);
               companylistBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getCompanylistFieldBuilder() : null;
@@ -6006,11 +12972,141 @@ public final class Monitor {
             }
           }
         }
-        if (other.hasContent()) {
-          mergeContent(other.getContent());
+        if (adresslistBuilder_ == null) {
+          if (!other.adresslist_.isEmpty()) {
+            if (adresslist_.isEmpty()) {
+              adresslist_ = other.adresslist_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureAdresslistIsMutable();
+              adresslist_.addAll(other.adresslist_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.adresslist_.isEmpty()) {
+            if (adresslistBuilder_.isEmpty()) {
+              adresslistBuilder_.dispose();
+              adresslistBuilder_ = null;
+              adresslist_ = other.adresslist_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              adresslistBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getAdresslistFieldBuilder() : null;
+            } else {
+              adresslistBuilder_.addAllMessages(other.adresslist_);
+            }
+          }
+        }
+        if (contentlistBuilder_ == null) {
+          if (!other.contentlist_.isEmpty()) {
+            if (contentlist_.isEmpty()) {
+              contentlist_ = other.contentlist_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureContentlistIsMutable();
+              contentlist_.addAll(other.contentlist_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.contentlist_.isEmpty()) {
+            if (contentlistBuilder_.isEmpty()) {
+              contentlistBuilder_.dispose();
+              contentlistBuilder_ = null;
+              contentlist_ = other.contentlist_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              contentlistBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getContentlistFieldBuilder() : null;
+            } else {
+              contentlistBuilder_.addAllMessages(other.contentlist_);
+            }
+          }
         }
         if (other.hasSub()) {
           mergeSub(other.getSub());
+        }
+        if (monilistBuilder_ == null) {
+          if (!other.monilist_.isEmpty()) {
+            if (monilist_.isEmpty()) {
+              monilist_ = other.monilist_;
+              bitField0_ = (bitField0_ & ~0x00000200);
+            } else {
+              ensureMonilistIsMutable();
+              monilist_.addAll(other.monilist_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.monilist_.isEmpty()) {
+            if (monilistBuilder_.isEmpty()) {
+              monilistBuilder_.dispose();
+              monilistBuilder_ = null;
+              monilist_ = other.monilist_;
+              bitField0_ = (bitField0_ & ~0x00000200);
+              monilistBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getMonilistFieldBuilder() : null;
+            } else {
+              monilistBuilder_.addAllMessages(other.monilist_);
+            }
+          }
+        }
+        if (other.hasMonimap()) {
+          mergeMonimap(other.getMonimap());
+        }
+        if (problempicturelistBuilder_ == null) {
+          if (!other.problempicturelist_.isEmpty()) {
+            if (problempicturelist_.isEmpty()) {
+              problempicturelist_ = other.problempicturelist_;
+              bitField0_ = (bitField0_ & ~0x00000800);
+            } else {
+              ensureProblempicturelistIsMutable();
+              problempicturelist_.addAll(other.problempicturelist_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.problempicturelist_.isEmpty()) {
+            if (problempicturelistBuilder_.isEmpty()) {
+              problempicturelistBuilder_.dispose();
+              problempicturelistBuilder_ = null;
+              problempicturelist_ = other.problempicturelist_;
+              bitField0_ = (bitField0_ & ~0x00000800);
+              problempicturelistBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getProblempicturelistFieldBuilder() : null;
+            } else {
+              problempicturelistBuilder_.addAllMessages(other.problempicturelist_);
+            }
+          }
+        }
+        if (disposeicturelistBuilder_ == null) {
+          if (!other.disposeicturelist_.isEmpty()) {
+            if (disposeicturelist_.isEmpty()) {
+              disposeicturelist_ = other.disposeicturelist_;
+              bitField0_ = (bitField0_ & ~0x00001000);
+            } else {
+              ensureDisposeicturelistIsMutable();
+              disposeicturelist_.addAll(other.disposeicturelist_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.disposeicturelist_.isEmpty()) {
+            if (disposeicturelistBuilder_.isEmpty()) {
+              disposeicturelistBuilder_.dispose();
+              disposeicturelistBuilder_ = null;
+              disposeicturelist_ = other.disposeicturelist_;
+              bitField0_ = (bitField0_ & ~0x00001000);
+              disposeicturelistBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getDisposeicturelistFieldBuilder() : null;
+            } else {
+              disposeicturelistBuilder_.addAllMessages(other.disposeicturelist_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -6431,13 +13527,111 @@ public final class Monitor {
         return this;
       }
 
-      // repeated .MonIndex.companyMap companylist = 5;
+      // optional string sid = 5;
+      private java.lang.Object sid_ = "";
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public boolean hasSid() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public java.lang.String getSid() {
+        java.lang.Object ref = sid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          sid_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getSidBytes() {
+        java.lang.Object ref = sid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public Builder setSid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        sid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public Builder clearSid() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        sid_ = getDefaultInstance().getSid();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string sid = 5;</code>
+       *
+       * <pre>
+       *请求的用户sid
+       * </pre>
+       */
+      public Builder setSidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        sid_ = value;
+        onChanged();
+        return this;
+      }
+
+      // repeated .MonIndex.companyMap companylist = 6;
       private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap> companylist_ =
         java.util.Collections.emptyList();
       private void ensureCompanylistIsMutable() {
-        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
           companylist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.companyMap>(companylist_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -6445,7 +13639,7 @@ public final class Monitor {
           com.zhang.sqone.bean.Monitor.MonIndex.companyMap, com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder> companylistBuilder_;
 
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap> getCompanylistList() {
         if (companylistBuilder_ == null) {
@@ -6455,7 +13649,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public int getCompanylistCount() {
         if (companylistBuilder_ == null) {
@@ -6465,7 +13659,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.companyMap getCompanylist(int index) {
         if (companylistBuilder_ == null) {
@@ -6475,7 +13669,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder setCompanylist(
           int index, com.zhang.sqone.bean.Monitor.MonIndex.companyMap value) {
@@ -6492,7 +13686,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder setCompanylist(
           int index, com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder builderForValue) {
@@ -6506,7 +13700,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder addCompanylist(com.zhang.sqone.bean.Monitor.MonIndex.companyMap value) {
         if (companylistBuilder_ == null) {
@@ -6522,7 +13716,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder addCompanylist(
           int index, com.zhang.sqone.bean.Monitor.MonIndex.companyMap value) {
@@ -6539,7 +13733,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder addCompanylist(
           com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder builderForValue) {
@@ -6553,7 +13747,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder addCompanylist(
           int index, com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder builderForValue) {
@@ -6567,7 +13761,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder addAllCompanylist(
           java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.companyMap> values) {
@@ -6581,12 +13775,12 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder clearCompanylist() {
         if (companylistBuilder_ == null) {
           companylist_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           companylistBuilder_.clear();
@@ -6594,7 +13788,7 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public Builder removeCompanylist(int index) {
         if (companylistBuilder_ == null) {
@@ -6607,14 +13801,14 @@ public final class Monitor {
         return this;
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder getCompanylistBuilder(
           int index) {
         return getCompanylistFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder getCompanylistOrBuilder(
           int index) {
@@ -6624,7 +13818,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder> 
            getCompanylistOrBuilderList() {
@@ -6635,14 +13829,14 @@ public final class Monitor {
         }
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder addCompanylistBuilder() {
         return getCompanylistFieldBuilder().addBuilder(
             com.zhang.sqone.bean.Monitor.MonIndex.companyMap.getDefaultInstance());
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder addCompanylistBuilder(
           int index) {
@@ -6650,7 +13844,7 @@ public final class Monitor {
             index, com.zhang.sqone.bean.Monitor.MonIndex.companyMap.getDefaultInstance());
       }
       /**
-       * <code>repeated .MonIndex.companyMap companylist = 5;</code>
+       * <code>repeated .MonIndex.companyMap companylist = 6;</code>
        */
       public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder> 
            getCompanylistBuilderList() {
@@ -6663,7 +13857,7 @@ public final class Monitor {
           companylistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               com.zhang.sqone.bean.Monitor.MonIndex.companyMap, com.zhang.sqone.bean.Monitor.MonIndex.companyMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.companyMapOrBuilder>(
                   companylist_,
-                  ((bitField0_ & 0x00000010) == 0x00000010),
+                  ((bitField0_ & 0x00000020) == 0x00000020),
                   getParentForChildren(),
                   isClean());
           companylist_ = null;
@@ -6671,175 +13865,574 @@ public final class Monitor {
         return companylistBuilder_;
       }
 
-      // optional .MonIndex.contentMap content = 6;
-      private com.zhang.sqone.bean.Monitor.MonIndex.contentMap content_ = com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> contentBuilder_;
-      /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
-       */
-      public boolean hasContent() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
+      // repeated .MonIndex.adressMap adresslist = 7;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap> adresslist_ =
+        java.util.Collections.emptyList();
+      private void ensureAdresslistIsMutable() {
+        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+          adresslist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.adressMap>(adresslist_);
+          bitField0_ |= 0x00000040;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.adressMap, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder> adresslistBuilder_;
+
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContent() {
-        if (contentBuilder_ == null) {
-          return content_;
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap> getAdresslistList() {
+        if (adresslistBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(adresslist_);
         } else {
-          return contentBuilder_.getMessage();
+          return adresslistBuilder_.getMessageList();
         }
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public Builder setContent(com.zhang.sqone.bean.Monitor.MonIndex.contentMap value) {
-        if (contentBuilder_ == null) {
+      public int getAdresslistCount() {
+        if (adresslistBuilder_ == null) {
+          return adresslist_.size();
+        } else {
+          return adresslistBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.adressMap getAdresslist(int index) {
+        if (adresslistBuilder_ == null) {
+          return adresslist_.get(index);
+        } else {
+          return adresslistBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public Builder setAdresslist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.adressMap value) {
+        if (adresslistBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          content_ = value;
+          ensureAdresslistIsMutable();
+          adresslist_.set(index, value);
           onChanged();
         } else {
-          contentBuilder_.setMessage(value);
+          adresslistBuilder_.setMessage(index, value);
         }
-        bitField0_ |= 0x00000020;
         return this;
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public Builder setContent(
-          com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder builderForValue) {
-        if (contentBuilder_ == null) {
-          content_ = builderForValue.build();
+      public Builder setAdresslist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder builderForValue) {
+        if (adresslistBuilder_ == null) {
+          ensureAdresslistIsMutable();
+          adresslist_.set(index, builderForValue.build());
           onChanged();
         } else {
-          contentBuilder_.setMessage(builderForValue.build());
+          adresslistBuilder_.setMessage(index, builderForValue.build());
         }
-        bitField0_ |= 0x00000020;
         return this;
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public Builder mergeContent(com.zhang.sqone.bean.Monitor.MonIndex.contentMap value) {
-        if (contentBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) == 0x00000020) &&
-              content_ != com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance()) {
-            content_ =
-              com.zhang.sqone.bean.Monitor.MonIndex.contentMap.newBuilder(content_).mergeFrom(value).buildPartial();
-          } else {
-            content_ = value;
+      public Builder addAdresslist(com.zhang.sqone.bean.Monitor.MonIndex.adressMap value) {
+        if (adresslistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensureAdresslistIsMutable();
+          adresslist_.add(value);
           onChanged();
         } else {
-          contentBuilder_.mergeFrom(value);
+          adresslistBuilder_.addMessage(value);
         }
-        bitField0_ |= 0x00000020;
         return this;
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public Builder clearContent() {
-        if (contentBuilder_ == null) {
-          content_ = com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance();
+      public Builder addAdresslist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.adressMap value) {
+        if (adresslistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAdresslistIsMutable();
+          adresslist_.add(index, value);
           onChanged();
         } else {
-          contentBuilder_.clear();
+          adresslistBuilder_.addMessage(index, value);
         }
-        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder getContentBuilder() {
-        bitField0_ |= 0x00000020;
-        onChanged();
-        return getContentFieldBuilder().getBuilder();
+      public Builder addAdresslist(
+          com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder builderForValue) {
+        if (adresslistBuilder_ == null) {
+          ensureAdresslistIsMutable();
+          adresslist_.add(builderForValue.build());
+          onChanged();
+        } else {
+          adresslistBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      public com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentOrBuilder() {
-        if (contentBuilder_ != null) {
-          return contentBuilder_.getMessageOrBuilder();
+      public Builder addAdresslist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder builderForValue) {
+        if (adresslistBuilder_ == null) {
+          ensureAdresslistIsMutable();
+          adresslist_.add(index, builderForValue.build());
+          onChanged();
         } else {
-          return content_;
+          adresslistBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public Builder addAllAdresslist(
+          java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.adressMap> values) {
+        if (adresslistBuilder_ == null) {
+          ensureAdresslistIsMutable();
+          super.addAll(values, adresslist_);
+          onChanged();
+        } else {
+          adresslistBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public Builder clearAdresslist() {
+        if (adresslistBuilder_ == null) {
+          adresslist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          adresslistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public Builder removeAdresslist(int index) {
+        if (adresslistBuilder_ == null) {
+          ensureAdresslistIsMutable();
+          adresslist_.remove(index);
+          onChanged();
+        } else {
+          adresslistBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder getAdresslistBuilder(
+          int index) {
+        return getAdresslistFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder getAdresslistOrBuilder(
+          int index) {
+        if (adresslistBuilder_ == null) {
+          return adresslist_.get(index);  } else {
+          return adresslistBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>optional .MonIndex.contentMap content = 6;</code>
-       *
-       * <pre>
-       *检查内容列表
-       * </pre>
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
        */
-      private com.google.protobuf.SingleFieldBuilder<
-          com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> 
-          getContentFieldBuilder() {
-        if (contentBuilder_ == null) {
-          contentBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder>(
-                  content_,
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder> 
+           getAdresslistOrBuilderList() {
+        if (adresslistBuilder_ != null) {
+          return adresslistBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(adresslist_);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder addAdresslistBuilder() {
+        return getAdresslistFieldBuilder().addBuilder(
+            com.zhang.sqone.bean.Monitor.MonIndex.adressMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder addAdresslistBuilder(
+          int index) {
+        return getAdresslistFieldBuilder().addBuilder(
+            index, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.adressMap adresslist = 7;</code>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder> 
+           getAdresslistBuilderList() {
+        return getAdresslistFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.adressMap, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder> 
+          getAdresslistFieldBuilder() {
+        if (adresslistBuilder_ == null) {
+          adresslistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.adressMap, com.zhang.sqone.bean.Monitor.MonIndex.adressMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.adressMapOrBuilder>(
+                  adresslist_,
+                  ((bitField0_ & 0x00000040) == 0x00000040),
                   getParentForChildren(),
                   isClean());
-          content_ = null;
+          adresslist_ = null;
         }
-        return contentBuilder_;
+        return adresslistBuilder_;
       }
 
-      // optional .MonIndex.submit sub = 7;
+      // repeated .MonIndex.contentMap contentlist = 8;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap> contentlist_ =
+        java.util.Collections.emptyList();
+      private void ensureContentlistIsMutable() {
+        if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+          contentlist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.contentMap>(contentlist_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> contentlistBuilder_;
+
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap> getContentlistList() {
+        if (contentlistBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(contentlist_);
+        } else {
+          return contentlistBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public int getContentlistCount() {
+        if (contentlistBuilder_ == null) {
+          return contentlist_.size();
+        } else {
+          return contentlistBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap getContentlist(int index) {
+        if (contentlistBuilder_ == null) {
+          return contentlist_.get(index);
+        } else {
+          return contentlistBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder setContentlist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.contentMap value) {
+        if (contentlistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContentlistIsMutable();
+          contentlist_.set(index, value);
+          onChanged();
+        } else {
+          contentlistBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder setContentlist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder builderForValue) {
+        if (contentlistBuilder_ == null) {
+          ensureContentlistIsMutable();
+          contentlist_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          contentlistBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder addContentlist(com.zhang.sqone.bean.Monitor.MonIndex.contentMap value) {
+        if (contentlistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContentlistIsMutable();
+          contentlist_.add(value);
+          onChanged();
+        } else {
+          contentlistBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder addContentlist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.contentMap value) {
+        if (contentlistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureContentlistIsMutable();
+          contentlist_.add(index, value);
+          onChanged();
+        } else {
+          contentlistBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder addContentlist(
+          com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder builderForValue) {
+        if (contentlistBuilder_ == null) {
+          ensureContentlistIsMutable();
+          contentlist_.add(builderForValue.build());
+          onChanged();
+        } else {
+          contentlistBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder addContentlist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder builderForValue) {
+        if (contentlistBuilder_ == null) {
+          ensureContentlistIsMutable();
+          contentlist_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          contentlistBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder addAllContentlist(
+          java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.contentMap> values) {
+        if (contentlistBuilder_ == null) {
+          ensureContentlistIsMutable();
+          super.addAll(values, contentlist_);
+          onChanged();
+        } else {
+          contentlistBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder clearContentlist() {
+        if (contentlistBuilder_ == null) {
+          contentlist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          contentlistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public Builder removeContentlist(int index) {
+        if (contentlistBuilder_ == null) {
+          ensureContentlistIsMutable();
+          contentlist_.remove(index);
+          onChanged();
+        } else {
+          contentlistBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder getContentlistBuilder(
+          int index) {
+        return getContentlistFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder getContentlistOrBuilder(
+          int index) {
+        if (contentlistBuilder_ == null) {
+          return contentlist_.get(index);  } else {
+          return contentlistBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> 
+           getContentlistOrBuilderList() {
+        if (contentlistBuilder_ != null) {
+          return contentlistBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(contentlist_);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder addContentlistBuilder() {
+        return getContentlistFieldBuilder().addBuilder(
+            com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder addContentlistBuilder(
+          int index) {
+        return getContentlistFieldBuilder().addBuilder(
+            index, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.contentMap contentlist = 8;</code>
+       *
+       * <pre>
+       *检查内容列表
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder> 
+           getContentlistBuilderList() {
+        return getContentlistFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder> 
+          getContentlistFieldBuilder() {
+        if (contentlistBuilder_ == null) {
+          contentlistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.contentMap, com.zhang.sqone.bean.Monitor.MonIndex.contentMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.contentMapOrBuilder>(
+                  contentlist_,
+                  ((bitField0_ & 0x00000080) == 0x00000080),
+                  getParentForChildren(),
+                  isClean());
+          contentlist_ = null;
+        }
+        return contentlistBuilder_;
+      }
+
+      // optional .MonIndex.submit sub = 9;
       private com.zhang.sqone.bean.Monitor.MonIndex.submit sub_ = com.zhang.sqone.bean.Monitor.MonIndex.submit.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           com.zhang.sqone.bean.Monitor.MonIndex.submit, com.zhang.sqone.bean.Monitor.MonIndex.submit.Builder, com.zhang.sqone.bean.Monitor.MonIndex.submitOrBuilder> subBuilder_;
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
        * </pre>
        */
       public boolean hasSub() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6853,7 +14446,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6869,11 +14462,11 @@ public final class Monitor {
         } else {
           subBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6887,11 +14480,11 @@ public final class Monitor {
         } else {
           subBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6899,7 +14492,7 @@ public final class Monitor {
        */
       public Builder mergeSub(com.zhang.sqone.bean.Monitor.MonIndex.submit value) {
         if (subBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+          if (((bitField0_ & 0x00000100) == 0x00000100) &&
               sub_ != com.zhang.sqone.bean.Monitor.MonIndex.submit.getDefaultInstance()) {
             sub_ =
               com.zhang.sqone.bean.Monitor.MonIndex.submit.newBuilder(sub_).mergeFrom(value).buildPartial();
@@ -6910,11 +14503,11 @@ public final class Monitor {
         } else {
           subBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6927,23 +14520,23 @@ public final class Monitor {
         } else {
           subBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
        * </pre>
        */
       public com.zhang.sqone.bean.Monitor.MonIndex.submit.Builder getSubBuilder() {
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000100;
         onChanged();
         return getSubFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6957,7 +14550,7 @@ public final class Monitor {
         }
       }
       /**
-       * <code>optional .MonIndex.submit sub = 7;</code>
+       * <code>optional .MonIndex.submit sub = 9;</code>
        *
        * <pre>
        *提交
@@ -6975,6 +14568,915 @@ public final class Monitor {
           sub_ = null;
         }
         return subBuilder_;
+      }
+
+      // repeated .MonIndex.monitorissueMap monilist = 10;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> monilist_ =
+        java.util.Collections.emptyList();
+      private void ensureMonilistIsMutable() {
+        if (!((bitField0_ & 0x00000200) == 0x00000200)) {
+          monilist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap>(monilist_);
+          bitField0_ |= 0x00000200;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> monilistBuilder_;
+
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> getMonilistList() {
+        if (monilistBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(monilist_);
+        } else {
+          return monilistBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public int getMonilistCount() {
+        if (monilistBuilder_ == null) {
+          return monilist_.size();
+        } else {
+          return monilistBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonilist(int index) {
+        if (monilistBuilder_ == null) {
+          return monilist_.get(index);
+        } else {
+          return monilistBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder setMonilist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap value) {
+        if (monilistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonilistIsMutable();
+          monilist_.set(index, value);
+          onChanged();
+        } else {
+          monilistBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder setMonilist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder builderForValue) {
+        if (monilistBuilder_ == null) {
+          ensureMonilistIsMutable();
+          monilist_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          monilistBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder addMonilist(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap value) {
+        if (monilistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonilistIsMutable();
+          monilist_.add(value);
+          onChanged();
+        } else {
+          monilistBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder addMonilist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap value) {
+        if (monilistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMonilistIsMutable();
+          monilist_.add(index, value);
+          onChanged();
+        } else {
+          monilistBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder addMonilist(
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder builderForValue) {
+        if (monilistBuilder_ == null) {
+          ensureMonilistIsMutable();
+          monilist_.add(builderForValue.build());
+          onChanged();
+        } else {
+          monilistBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder addMonilist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder builderForValue) {
+        if (monilistBuilder_ == null) {
+          ensureMonilistIsMutable();
+          monilist_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          monilistBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder addAllMonilist(
+          java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap> values) {
+        if (monilistBuilder_ == null) {
+          ensureMonilistIsMutable();
+          super.addAll(values, monilist_);
+          onChanged();
+        } else {
+          monilistBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder clearMonilist() {
+        if (monilistBuilder_ == null) {
+          monilist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000200);
+          onChanged();
+        } else {
+          monilistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public Builder removeMonilist(int index) {
+        if (monilistBuilder_ == null) {
+          ensureMonilistIsMutable();
+          monilist_.remove(index);
+          onChanged();
+        } else {
+          monilistBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder getMonilistBuilder(
+          int index) {
+        return getMonilistFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonilistOrBuilder(
+          int index) {
+        if (monilistBuilder_ == null) {
+          return monilist_.get(index);  } else {
+          return monilistBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> 
+           getMonilistOrBuilderList() {
+        if (monilistBuilder_ != null) {
+          return monilistBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(monilist_);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder addMonilistBuilder() {
+        return getMonilistFieldBuilder().addBuilder(
+            com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder addMonilistBuilder(
+          int index) {
+        return getMonilistFieldBuilder().addBuilder(
+            index, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.monitorissueMap monilist = 10;</code>
+       *
+       * <pre>
+       *环境监测记录列表
+       * </pre>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder> 
+           getMonilistBuilderList() {
+        return getMonilistFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> 
+          getMonilistFieldBuilder() {
+        if (monilistBuilder_ == null) {
+          monilistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder>(
+                  monilist_,
+                  ((bitField0_ & 0x00000200) == 0x00000200),
+                  getParentForChildren(),
+                  isClean());
+          monilist_ = null;
+        }
+        return monilistBuilder_;
+      }
+
+      // optional .MonIndex.monitorissueMap monimap = 11;
+      private com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap monimap_ = com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> monimapBuilder_;
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public boolean hasMonimap() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap getMonimap() {
+        if (monimapBuilder_ == null) {
+          return monimap_;
+        } else {
+          return monimapBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public Builder setMonimap(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap value) {
+        if (monimapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          monimap_ = value;
+          onChanged();
+        } else {
+          monimapBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public Builder setMonimap(
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder builderForValue) {
+        if (monimapBuilder_ == null) {
+          monimap_ = builderForValue.build();
+          onChanged();
+        } else {
+          monimapBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public Builder mergeMonimap(com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap value) {
+        if (monimapBuilder_ == null) {
+          if (((bitField0_ & 0x00000400) == 0x00000400) &&
+              monimap_ != com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance()) {
+            monimap_ =
+              com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.newBuilder(monimap_).mergeFrom(value).buildPartial();
+          } else {
+            monimap_ = value;
+          }
+          onChanged();
+        } else {
+          monimapBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public Builder clearMonimap() {
+        if (monimapBuilder_ == null) {
+          monimap_ = com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.getDefaultInstance();
+          onChanged();
+        } else {
+          monimapBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        return this;
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder getMonimapBuilder() {
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return getMonimapFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder getMonimapOrBuilder() {
+        if (monimapBuilder_ != null) {
+          return monimapBuilder_.getMessageOrBuilder();
+        } else {
+          return monimap_;
+        }
+      }
+      /**
+       * <code>optional .MonIndex.monitorissueMap monimap = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder> 
+          getMonimapFieldBuilder() {
+        if (monimapBuilder_ == null) {
+          monimapBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMap.Builder, com.zhang.sqone.bean.Monitor.MonIndex.monitorissueMapOrBuilder>(
+                  monimap_,
+                  getParentForChildren(),
+                  isClean());
+          monimap_ = null;
+        }
+        return monimapBuilder_;
+      }
+
+      // repeated .MonIndex.problempictureList problempicturelist = 12;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> problempicturelist_ =
+        java.util.Collections.emptyList();
+      private void ensureProblempicturelistIsMutable() {
+        if (!((bitField0_ & 0x00000800) == 0x00000800)) {
+          problempicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList>(problempicturelist_);
+          bitField0_ |= 0x00000800;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> problempicturelistBuilder_;
+
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> getProblempicturelistList() {
+        if (problempicturelistBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(problempicturelist_);
+        } else {
+          return problempicturelistBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public int getProblempicturelistCount() {
+        if (problempicturelistBuilder_ == null) {
+          return problempicturelist_.size();
+        } else {
+          return problempicturelistBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList getProblempicturelist(int index) {
+        if (problempicturelistBuilder_ == null) {
+          return problempicturelist_.get(index);
+        } else {
+          return problempicturelistBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder setProblempicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+        if (problempicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.set(index, value);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder setProblempicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+        if (problempicturelistBuilder_ == null) {
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          problempicturelistBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder addProblempicturelist(com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+        if (problempicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.add(value);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder addProblempicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList value) {
+        if (problempicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.add(index, value);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder addProblempicturelist(
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+        if (problempicturelistBuilder_ == null) {
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.add(builderForValue.build());
+          onChanged();
+        } else {
+          problempicturelistBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder addProblempicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder builderForValue) {
+        if (problempicturelistBuilder_ == null) {
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          problempicturelistBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder addAllProblempicturelist(
+          java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureList> values) {
+        if (problempicturelistBuilder_ == null) {
+          ensureProblempicturelistIsMutable();
+          super.addAll(values, problempicturelist_);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder clearProblempicturelist() {
+        if (problempicturelistBuilder_ == null) {
+          problempicturelist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000800);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public Builder removeProblempicturelist(int index) {
+        if (problempicturelistBuilder_ == null) {
+          ensureProblempicturelistIsMutable();
+          problempicturelist_.remove(index);
+          onChanged();
+        } else {
+          problempicturelistBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder getProblempicturelistBuilder(
+          int index) {
+        return getProblempicturelistFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder getProblempicturelistOrBuilder(
+          int index) {
+        if (problempicturelistBuilder_ == null) {
+          return problempicturelist_.get(index);  } else {
+          return problempicturelistBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+           getProblempicturelistOrBuilderList() {
+        if (problempicturelistBuilder_ != null) {
+          return problempicturelistBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(problempicturelist_);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder addProblempicturelistBuilder() {
+        return getProblempicturelistFieldBuilder().addBuilder(
+            com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder addProblempicturelistBuilder(
+          int index) {
+        return getProblempicturelistFieldBuilder().addBuilder(
+            index, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.problempictureList problempicturelist = 12;</code>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder> 
+           getProblempicturelistBuilderList() {
+        return getProblempicturelistFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder> 
+          getProblempicturelistFieldBuilder() {
+        if (problempicturelistBuilder_ == null) {
+          problempicturelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.problempictureList, com.zhang.sqone.bean.Monitor.MonIndex.problempictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.problempictureListOrBuilder>(
+                  problempicturelist_,
+                  ((bitField0_ & 0x00000800) == 0x00000800),
+                  getParentForChildren(),
+                  isClean());
+          problempicturelist_ = null;
+        }
+        return problempicturelistBuilder_;
+      }
+
+      // repeated .MonIndex.disposeictureList disposeicturelist = 13;
+      private java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> disposeicturelist_ =
+        java.util.Collections.emptyList();
+      private void ensureDisposeicturelistIsMutable() {
+        if (!((bitField0_ & 0x00001000) == 0x00001000)) {
+          disposeicturelist_ = new java.util.ArrayList<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList>(disposeicturelist_);
+          bitField0_ |= 0x00001000;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> disposeicturelistBuilder_;
+
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> getDisposeicturelistList() {
+        if (disposeicturelistBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(disposeicturelist_);
+        } else {
+          return disposeicturelistBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public int getDisposeicturelistCount() {
+        if (disposeicturelistBuilder_ == null) {
+          return disposeicturelist_.size();
+        } else {
+          return disposeicturelistBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList getDisposeicturelist(int index) {
+        if (disposeicturelistBuilder_ == null) {
+          return disposeicturelist_.get(index);
+        } else {
+          return disposeicturelistBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder setDisposeicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+        if (disposeicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.set(index, value);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder setDisposeicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+        if (disposeicturelistBuilder_ == null) {
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder addDisposeicturelist(com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+        if (disposeicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.add(value);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder addDisposeicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList value) {
+        if (disposeicturelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.add(index, value);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder addDisposeicturelist(
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+        if (disposeicturelistBuilder_ == null) {
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.add(builderForValue.build());
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder addDisposeicturelist(
+          int index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder builderForValue) {
+        if (disposeicturelistBuilder_ == null) {
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder addAllDisposeicturelist(
+          java.lang.Iterable<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList> values) {
+        if (disposeicturelistBuilder_ == null) {
+          ensureDisposeicturelistIsMutable();
+          super.addAll(values, disposeicturelist_);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder clearDisposeicturelist() {
+        if (disposeicturelistBuilder_ == null) {
+          disposeicturelist_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00001000);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public Builder removeDisposeicturelist(int index) {
+        if (disposeicturelistBuilder_ == null) {
+          ensureDisposeicturelistIsMutable();
+          disposeicturelist_.remove(index);
+          onChanged();
+        } else {
+          disposeicturelistBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder getDisposeicturelistBuilder(
+          int index) {
+        return getDisposeicturelistFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder getDisposeicturelistOrBuilder(
+          int index) {
+        if (disposeicturelistBuilder_ == null) {
+          return disposeicturelist_.get(index);  } else {
+          return disposeicturelistBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public java.util.List<? extends com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+           getDisposeicturelistOrBuilderList() {
+        if (disposeicturelistBuilder_ != null) {
+          return disposeicturelistBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(disposeicturelist_);
+        }
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder addDisposeicturelistBuilder() {
+        return getDisposeicturelistFieldBuilder().addBuilder(
+            com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder addDisposeicturelistBuilder(
+          int index) {
+        return getDisposeicturelistFieldBuilder().addBuilder(
+            index, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .MonIndex.disposeictureList disposeicturelist = 13;</code>
+       */
+      public java.util.List<com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder> 
+           getDisposeicturelistBuilderList() {
+        return getDisposeicturelistFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder> 
+          getDisposeicturelistFieldBuilder() {
+        if (disposeicturelistBuilder_ == null) {
+          disposeicturelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureList.Builder, com.zhang.sqone.bean.Monitor.MonIndex.disposeictureListOrBuilder>(
+                  disposeicturelist_,
+                  ((bitField0_ & 0x00001000) == 0x00001000),
+                  getParentForChildren(),
+                  isClean());
+          disposeicturelist_ = null;
+        }
+        return disposeicturelistBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:MonIndex)
@@ -7009,15 +15511,25 @@ public final class Monitor {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MonIndex_contentMap_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_MonIndex_detailMap_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_MonIndex_detailMap_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_MonIndex_submit_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_MonIndex_submit_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_MonIndex_monitorissueMap_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MonIndex_monitorissueMap_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_MonIndex_problempictureList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MonIndex_problempictureList_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_MonIndex_disposeictureList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_MonIndex_disposeictureList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -7027,21 +15539,41 @@ public final class Monitor {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rmonitor.proto\"\244\004\n\010MonIndex\022\n\n\002ac\030\001 \001(\t" +
+      "\n\rmonitor.proto\"\272\n\n\010MonIndex\022\n\n\002ac\030\001 \001(\t" +
       "\022\013\n\003stu\030\002 \001(\t\022\013\n\003scd\030\003 \001(\t\022\013\n\003msg\030\004 \001(\t\022" +
-      ")\n\013companylist\030\005 \003(\0132\024.MonIndex.companyM" +
-      "ap\022%\n\007content\030\006 \001(\0132\024.MonIndex.contentMa" +
-      "p\022\035\n\003sub\030\007 \001(\0132\020.MonIndex.submit\032]\n\ncomp" +
-      "anyMap\022\021\n\tcompanyid\030\001 \001(\t\022\023\n\013companyname" +
-      "\030\002 \001(\t\022\'\n\nadresslist\030\003 \003(\0132\023.MonIndex.ad" +
-      "ressMap\0321\n\tadressMap\022\020\n\010adressid\030\001 \001(\t\022\022" +
-      "\n\nadressname\030\002 \001(\t\032H\n\ncontentMap\022\021\n\taddr" +
-      "essid\030\001 \001(\t\022\'\n\ndetaillist\030\002 \003(\0132\023.MonInd",
-      "ex.detailMap\032>\n\tdetailMap\022\021\n\tcontentid\030\001" +
-      " \001(\t\022\017\n\007content\030\002 \001(\t\022\r\n\005score\030\003 \001(\t\032X\n\006" +
-      "submit\022\016\n\006adress\030\001 \001(\t\022\017\n\007content\030\002 \001(\t\022" +
-      "\r\n\005photo\030\003 \001(\t\022\017\n\007company\030\004 \001(\t\022\r\n\005score" +
-      "\030\005 \001(\tB\026\n\024com.zhang.sqone.bean"
+      "\013\n\003sid\030\005 \001(\t\022)\n\013companylist\030\006 \003(\0132\024.MonI" +
+      "ndex.companyMap\022\'\n\nadresslist\030\007 \003(\0132\023.Mo" +
+      "nIndex.adressMap\022)\n\013contentlist\030\010 \003(\0132\024." +
+      "MonIndex.contentMap\022\035\n\003sub\030\t \001(\0132\020.MonIn" +
+      "dex.submit\022+\n\010monilist\030\n \003(\0132\031.MonIndex." +
+      "monitorissueMap\022*\n\007monimap\030\013 \001(\0132\031.MonIn" +
+      "dex.monitorissueMap\0228\n\022problempicturelis" +
+      "t\030\014 \003(\0132\034.MonIndex.problempictureList\0226\n",
+      "\021disposeicturelist\030\r \003(\0132\033.MonIndex.disp" +
+      "oseictureList\032]\n\ncompanyMap\022\021\n\tcompanyid" +
+      "\030\001 \001(\t\022\023\n\013companyname\030\002 \001(\t\022\'\n\nadresslis" +
+      "t\030\003 \003(\0132\023.MonIndex.adressMap\0321\n\tadressMa" +
+      "p\022\020\n\010adressid\030\001 \001(\t\022\022\n\nadressname\030\002 \001(\t\032" +
+      "C\n\ncontentMap\022\021\n\tcontentid\030\001 \001(\t\022\023\n\013cont" +
+      "entname\030\002 \001(\t\022\r\n\005score\030\003 \001(\t\032b\n\006submit\022\023" +
+      "\n\013examinesite\030\001 \001(\t\022\022\n\nimportsite\030\002 \001(\t\022" +
+      "\017\n\007content\030\003 \001(\t\022\r\n\005photo\030\004 \001(\t\022\017\n\007compa" +
+      "ny\030\005 \001(\t\032\236\003\n\017monitorissueMap\022\n\n\002id\030\001 \001(\t",
+      "\022\021\n\tdutyunits\030\002 \001(\t\022\023\n\013examinesite\030\003 \001(\t" +
+      "\022\022\n\nimportsite\030\004 \001(\t\022\023\n\013deductmarks\030\005 \001(" +
+      "\t\022\022\n\nsubmittime\030\006 \001(\t\022\016\n\006states\030\007 \001(\t\0228\n" +
+      "\022problempicturelist\030\010 \003(\0132\034.MonIndex.pro" +
+      "blempictureList\0226\n\021disposeicturelist\030\t \003" +
+      "(\0132\033.MonIndex.disposeictureList\022\023\n\013throu" +
+      "ghtime\030\n \001(\t\022\024\n\014feedbacktime\030\013 \001(\t\022\017\n\007su" +
+      "bname\030\014 \001(\t\022\020\n\010telphone\030\r \001(\t\022\013\n\003sum\030\016 \001" +
+      "(\t\022\016\n\006subsum\030\017 \001(\t\022\016\n\006fansum\030\020 \001(\t\022\016\n\006ba" +
+      "nsum\030\021 \001(\t\022\r\n\005photo\030\022 \001(\t\032T\n\022problempict",
+      "ureList\022\014\n\004name\030\001 \001(\t\022\013\n\003url\030\002 \001(\t\022\n\n\002dx" +
+      "\030\003 \001(\t\022\n\n\002ft\030\004 \001(\t\022\013\n\003fpk\030\005 \001(\t\032S\n\021dispo" +
+      "seictureList\022\014\n\004name\030\001 \001(\t\022\013\n\003url\030\002 \001(\t\022" +
+      "\n\n\002dx\030\003 \001(\t\022\n\n\002ft\030\004 \001(\t\022\013\n\003fpk\030\005 \001(\tB\026\n\024" +
+      "com.zhang.sqone.bean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -7053,7 +15585,7 @@ public final class Monitor {
           internal_static_MonIndex_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_MonIndex_descriptor,
-              new java.lang.String[] { "Ac", "Stu", "Scd", "Msg", "Companylist", "Content", "Sub", });
+              new java.lang.String[] { "Ac", "Stu", "Scd", "Msg", "Sid", "Companylist", "Adresslist", "Contentlist", "Sub", "Monilist", "Monimap", "Problempicturelist", "Disposeicturelist", });
           internal_static_MonIndex_companyMap_descriptor =
             internal_static_MonIndex_descriptor.getNestedTypes().get(0);
           internal_static_MonIndex_companyMap_fieldAccessorTable = new
@@ -7071,19 +15603,31 @@ public final class Monitor {
           internal_static_MonIndex_contentMap_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_MonIndex_contentMap_descriptor,
-              new java.lang.String[] { "Addressid", "Detaillist", });
-          internal_static_MonIndex_detailMap_descriptor =
-            internal_static_MonIndex_descriptor.getNestedTypes().get(3);
-          internal_static_MonIndex_detailMap_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_MonIndex_detailMap_descriptor,
-              new java.lang.String[] { "Contentid", "Content", "Score", });
+              new java.lang.String[] { "Contentid", "Contentname", "Score", });
           internal_static_MonIndex_submit_descriptor =
-            internal_static_MonIndex_descriptor.getNestedTypes().get(4);
+            internal_static_MonIndex_descriptor.getNestedTypes().get(3);
           internal_static_MonIndex_submit_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_MonIndex_submit_descriptor,
-              new java.lang.String[] { "Adress", "Content", "Photo", "Company", "Score", });
+              new java.lang.String[] { "Examinesite", "Importsite", "Content", "Photo", "Company", });
+          internal_static_MonIndex_monitorissueMap_descriptor =
+            internal_static_MonIndex_descriptor.getNestedTypes().get(4);
+          internal_static_MonIndex_monitorissueMap_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_MonIndex_monitorissueMap_descriptor,
+              new java.lang.String[] { "Id", "Dutyunits", "Examinesite", "Importsite", "Deductmarks", "Submittime", "States", "Problempicturelist", "Disposeicturelist", "Throughtime", "Feedbacktime", "Subname", "Telphone", "Sum", "Subsum", "Fansum", "Bansum", "Photo", });
+          internal_static_MonIndex_problempictureList_descriptor =
+            internal_static_MonIndex_descriptor.getNestedTypes().get(5);
+          internal_static_MonIndex_problempictureList_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_MonIndex_problempictureList_descriptor,
+              new java.lang.String[] { "Name", "Url", "Dx", "Ft", "Fpk", });
+          internal_static_MonIndex_disposeictureList_descriptor =
+            internal_static_MonIndex_descriptor.getNestedTypes().get(6);
+          internal_static_MonIndex_disposeictureList_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_MonIndex_disposeictureList_descriptor,
+              new java.lang.String[] { "Name", "Url", "Dx", "Ft", "Fpk", });
           return null;
         }
       };
